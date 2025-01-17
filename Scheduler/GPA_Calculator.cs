@@ -19,6 +19,8 @@ namespace Scheduler
             gBox_En2.Hide();
             gBox3.Hide();
             gBox_En3.Hide();
+            gBox4.Hide();
+            gBox_En4.Hide();
         }
 
         private void rbtn_En_CheckedChanged(object sender, EventArgs e)
@@ -39,6 +41,8 @@ namespace Scheduler
             gBox_En2.Hide();
             gBox3.Hide();
             gBox_En3.Hide();
+            gBox4.Hide();
+            gBox_En4.Hide();
         }
 
         private void rbtn_En2_CheckedChanged(object sender, EventArgs e)
@@ -57,6 +61,8 @@ namespace Scheduler
             gBox_En2.Show();
             gBox3.Show();
             gBox_En3.Show();
+            gBox4.Show();
+            gBox_En4.Show();
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -71,7 +77,17 @@ namespace Scheduler
 
         private void rbtn_Disabled3_CheckedChanged(object sender, EventArgs e)
         {
-            gBox3.Enabled=false;
+            gBox3.Enabled = false;
+        }
+
+        private void rbtn_En4_CheckedChanged(object sender, EventArgs e)
+        {
+            gBox4.Enabled = true;
+        }
+
+        private void rbtn_Disabled4_CheckedChanged(object sender, EventArgs e)
+        {
+            gBox4.Enabled = false;
         }
     }
 }

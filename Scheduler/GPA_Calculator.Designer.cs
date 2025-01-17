@@ -171,6 +171,52 @@ namespace Scheduler
             gBox_En3 = new GroupBox();
             rbtn_En3 = new RadioButton();
             rbtn_Disabled3 = new RadioButton();
+            gBox4 = new GroupBox();
+            label9 = new Label();
+            txtItem1B5 = new TextBox();
+            txt_CourseNameB4 = new TextBox();
+            txtGrade11B4 = new TextBox();
+            txt_CourseCodeB4 = new TextBox();
+            txtGrade10B4 = new TextBox();
+            txtItem0B4 = new TextBox();
+            txtGrade9B4 = new TextBox();
+            txt_Weight0B4 = new TextBox();
+            txtGrade8B4 = new TextBox();
+            txtGrade0B4 = new TextBox();
+            txtGrade7B4 = new TextBox();
+            txtGrade6B4 = new TextBox();
+            txtGrade5B4 = new TextBox();
+            label10 = new Label();
+            txtGrade4B4 = new TextBox();
+            label11 = new Label();
+            txtGrade3B4 = new TextBox();
+            label12 = new Label();
+            txtGrade2B4 = new TextBox();
+            txtGrade1B4 = new TextBox();
+            txtItem2B4 = new TextBox();
+            txtItem3B4 = new TextBox();
+            txt_Weight11B4 = new TextBox();
+            txtItem4B4 = new TextBox();
+            txt_Weight10B4 = new TextBox();
+            txtItem5B4 = new TextBox();
+            txt_Weight9B4 = new TextBox();
+            txtItem6B4 = new TextBox();
+            txt_Weight8B4 = new TextBox();
+            txtItem7B4 = new TextBox();
+            txt_Weight7B4 = new TextBox();
+            txtItem8B4 = new TextBox();
+            txt_Weight6B4 = new TextBox();
+            txtItem9B4 = new TextBox();
+            txt_Weight5B4 = new TextBox();
+            txtItem10B4 = new TextBox();
+            txt_Weight4B4 = new TextBox();
+            txtItem11B4 = new TextBox();
+            txt_Weight3B4 = new TextBox();
+            txt_Weight1B4 = new TextBox();
+            txt_Weight2B4 = new TextBox();
+            gBox_En4 = new GroupBox();
+            rbtn_En4 = new RadioButton();
+            rbtn_Disabled4 = new RadioButton();
             gBox1.SuspendLayout();
             gBoxMain.SuspendLayout();
             gbox_En1.SuspendLayout();
@@ -178,6 +224,8 @@ namespace Scheduler
             gBox_En2.SuspendLayout();
             gBox3.SuspendLayout();
             gBox_En3.SuspendLayout();
+            gBox4.SuspendLayout();
+            gBox_En4.SuspendLayout();
             SuspendLayout();
             // 
             // txt_CourseNameB1
@@ -1437,12 +1485,414 @@ namespace Scheduler
             rbtn_Disabled3.UseVisualStyleBackColor = true;
             rbtn_Disabled3.CheckedChanged += rbtn_Disabled3_CheckedChanged;
             // 
+            // gBox4
+            // 
+            gBox4.BackColor = Color.MediumPurple;
+            gBox4.Controls.Add(label9);
+            gBox4.Controls.Add(txtItem1B5);
+            gBox4.Controls.Add(txt_CourseNameB4);
+            gBox4.Controls.Add(txtGrade11B4);
+            gBox4.Controls.Add(txt_CourseCodeB4);
+            gBox4.Controls.Add(txtGrade10B4);
+            gBox4.Controls.Add(txtItem0B4);
+            gBox4.Controls.Add(txtGrade9B4);
+            gBox4.Controls.Add(txt_Weight0B4);
+            gBox4.Controls.Add(txtGrade8B4);
+            gBox4.Controls.Add(txtGrade0B4);
+            gBox4.Controls.Add(txtGrade7B4);
+            gBox4.Controls.Add(txtGrade6B4);
+            gBox4.Controls.Add(txtGrade5B4);
+            gBox4.Controls.Add(label10);
+            gBox4.Controls.Add(txtGrade4B4);
+            gBox4.Controls.Add(label11);
+            gBox4.Controls.Add(txtGrade3B4);
+            gBox4.Controls.Add(label12);
+            gBox4.Controls.Add(txtGrade2B4);
+            gBox4.Controls.Add(txtGrade1B4);
+            gBox4.Controls.Add(txtItem2B4);
+            gBox4.Controls.Add(txtItem3B4);
+            gBox4.Controls.Add(txt_Weight11B4);
+            gBox4.Controls.Add(txtItem4B4);
+            gBox4.Controls.Add(txt_Weight10B4);
+            gBox4.Controls.Add(txtItem5B4);
+            gBox4.Controls.Add(txt_Weight9B4);
+            gBox4.Controls.Add(txtItem6B4);
+            gBox4.Controls.Add(txt_Weight8B4);
+            gBox4.Controls.Add(txtItem7B4);
+            gBox4.Controls.Add(txt_Weight7B4);
+            gBox4.Controls.Add(txtItem8B4);
+            gBox4.Controls.Add(txt_Weight6B4);
+            gBox4.Controls.Add(txtItem9B4);
+            gBox4.Controls.Add(txt_Weight5B4);
+            gBox4.Controls.Add(txtItem10B4);
+            gBox4.Controls.Add(txt_Weight4B4);
+            gBox4.Controls.Add(txtItem11B4);
+            gBox4.Controls.Add(txt_Weight3B4);
+            gBox4.Controls.Add(txt_Weight1B4);
+            gBox4.Controls.Add(txt_Weight2B4);
+            gBox4.Location = new Point(1259, 149);
+            gBox4.Name = "gBox4";
+            gBox4.Size = new Size(395, 527);
+            gBox4.TabIndex = 51;
+            gBox4.TabStop = false;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Verdana", 11.25F);
+            label9.Location = new Point(22, 375);
+            label9.Name = "label9";
+            label9.Size = new Size(42, 18);
+            label9.TabIndex = 48;
+            label9.Text = "Labs";
+            label9.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtItem1B5
+            // 
+            txtItem1B5.Location = new Point(22, 164);
+            txtItem1B5.Name = "txtItem1B5";
+            txtItem1B5.Size = new Size(133, 23);
+            txtItem1B5.TabIndex = 13;
+            // 
+            // txt_CourseNameB4
+            // 
+            txt_CourseNameB4.Font = new Font("Verdana", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txt_CourseNameB4.Location = new Point(22, 32);
+            txt_CourseNameB4.Name = "txt_CourseNameB4";
+            txt_CourseNameB4.PlaceholderText = "Enter Course Name...";
+            txt_CourseNameB4.Size = new Size(344, 33);
+            txt_CourseNameB4.TabIndex = 0;
+            // 
+            // txtGrade11B4
+            // 
+            txtGrade11B4.Location = new Point(267, 483);
+            txtGrade11B4.Name = "txtGrade11B4";
+            txtGrade11B4.Size = new Size(100, 23);
+            txtGrade11B4.TabIndex = 46;
+            // 
+            // txt_CourseCodeB4
+            // 
+            txt_CourseCodeB4.Location = new Point(22, 79);
+            txt_CourseCodeB4.Name = "txt_CourseCodeB4";
+            txt_CourseCodeB4.PlaceholderText = "Enter Course Code...";
+            txt_CourseCodeB4.Size = new Size(121, 23);
+            txt_CourseCodeB4.TabIndex = 1;
+            // 
+            // txtGrade10B4
+            // 
+            txtGrade10B4.Location = new Point(267, 454);
+            txtGrade10B4.Name = "txtGrade10B4";
+            txtGrade10B4.Size = new Size(100, 23);
+            txtGrade10B4.TabIndex = 45;
+            // 
+            // txtItem0B4
+            // 
+            txtItem0B4.Location = new Point(22, 135);
+            txtItem0B4.Name = "txtItem0B4";
+            txtItem0B4.Size = new Size(133, 23);
+            txtItem0B4.TabIndex = 2;
+            // 
+            // txtGrade9B4
+            // 
+            txtGrade9B4.Location = new Point(267, 425);
+            txtGrade9B4.Name = "txtGrade9B4";
+            txtGrade9B4.Size = new Size(100, 23);
+            txtGrade9B4.TabIndex = 44;
+            // 
+            // txt_Weight0B4
+            // 
+            txt_Weight0B4.Location = new Point(161, 135);
+            txt_Weight0B4.Name = "txt_Weight0B4";
+            txt_Weight0B4.Size = new Size(100, 23);
+            txt_Weight0B4.TabIndex = 3;
+            // 
+            // txtGrade8B4
+            // 
+            txtGrade8B4.Location = new Point(267, 396);
+            txtGrade8B4.Name = "txtGrade8B4";
+            txtGrade8B4.Size = new Size(100, 23);
+            txtGrade8B4.TabIndex = 43;
+            // 
+            // txtGrade0B4
+            // 
+            txtGrade0B4.Location = new Point(266, 135);
+            txtGrade0B4.Name = "txtGrade0B4";
+            txtGrade0B4.Size = new Size(100, 23);
+            txtGrade0B4.TabIndex = 4;
+            // 
+            // txtGrade7B4
+            // 
+            txtGrade7B4.Location = new Point(267, 338);
+            txtGrade7B4.Name = "txtGrade7B4";
+            txtGrade7B4.Size = new Size(100, 23);
+            txtGrade7B4.TabIndex = 42;
+            // 
+            // txtGrade6B4
+            // 
+            txtGrade6B4.Location = new Point(267, 309);
+            txtGrade6B4.Name = "txtGrade6B4";
+            txtGrade6B4.Size = new Size(100, 23);
+            txtGrade6B4.TabIndex = 41;
+            // 
+            // txtGrade5B4
+            // 
+            txtGrade5B4.Location = new Point(267, 280);
+            txtGrade5B4.Name = "txtGrade5B4";
+            txtGrade5B4.Size = new Size(100, 23);
+            txtGrade5B4.TabIndex = 40;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Verdana", 11.25F);
+            label10.Location = new Point(22, 117);
+            label10.Name = "label10";
+            label10.Size = new Size(43, 18);
+            label10.TabIndex = 7;
+            label10.Text = "Item";
+            label10.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtGrade4B4
+            // 
+            txtGrade4B4.Location = new Point(267, 251);
+            txtGrade4B4.Name = "txtGrade4B4";
+            txtGrade4B4.Size = new Size(100, 23);
+            txtGrade4B4.TabIndex = 39;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Verdana", 11.25F);
+            label11.Location = new Point(161, 117);
+            label11.Name = "label11";
+            label11.Size = new Size(88, 18);
+            label11.TabIndex = 8;
+            label11.Text = "Weight(%)";
+            label11.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtGrade3B4
+            // 
+            txtGrade3B4.Location = new Point(267, 222);
+            txtGrade3B4.Name = "txtGrade3B4";
+            txtGrade3B4.Size = new Size(100, 23);
+            txtGrade3B4.TabIndex = 38;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Verdana", 11.25F);
+            label12.Location = new Point(266, 117);
+            label12.Name = "label12";
+            label12.Size = new Size(83, 18);
+            label12.TabIndex = 9;
+            label12.Text = "Grade(%)";
+            label12.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtGrade2B4
+            // 
+            txtGrade2B4.Location = new Point(267, 193);
+            txtGrade2B4.Name = "txtGrade2B4";
+            txtGrade2B4.Size = new Size(100, 23);
+            txtGrade2B4.TabIndex = 37;
+            // 
+            // txtGrade1B4
+            // 
+            txtGrade1B4.Location = new Point(267, 164);
+            txtGrade1B4.Name = "txtGrade1B4";
+            txtGrade1B4.Size = new Size(100, 23);
+            txtGrade1B4.TabIndex = 36;
+            // 
+            // txtItem2B4
+            // 
+            txtItem2B4.Location = new Point(22, 193);
+            txtItem2B4.Name = "txtItem2B4";
+            txtItem2B4.Size = new Size(133, 23);
+            txtItem2B4.TabIndex = 14;
+            // 
+            // txtItem3B4
+            // 
+            txtItem3B4.Location = new Point(22, 222);
+            txtItem3B4.Name = "txtItem3B4";
+            txtItem3B4.Size = new Size(133, 23);
+            txtItem3B4.TabIndex = 15;
+            // 
+            // txt_Weight11B4
+            // 
+            txt_Weight11B4.Location = new Point(161, 483);
+            txt_Weight11B4.Name = "txt_Weight11B4";
+            txt_Weight11B4.Size = new Size(100, 23);
+            txt_Weight11B4.TabIndex = 34;
+            // 
+            // txtItem4B4
+            // 
+            txtItem4B4.Location = new Point(22, 251);
+            txtItem4B4.Name = "txtItem4B4";
+            txtItem4B4.Size = new Size(133, 23);
+            txtItem4B4.TabIndex = 16;
+            // 
+            // txt_Weight10B4
+            // 
+            txt_Weight10B4.Location = new Point(161, 454);
+            txt_Weight10B4.Name = "txt_Weight10B4";
+            txt_Weight10B4.Size = new Size(100, 23);
+            txt_Weight10B4.TabIndex = 33;
+            // 
+            // txtItem5B4
+            // 
+            txtItem5B4.Location = new Point(22, 280);
+            txtItem5B4.Name = "txtItem5B4";
+            txtItem5B4.Size = new Size(133, 23);
+            txtItem5B4.TabIndex = 17;
+            // 
+            // txt_Weight9B4
+            // 
+            txt_Weight9B4.Location = new Point(161, 425);
+            txt_Weight9B4.Name = "txt_Weight9B4";
+            txt_Weight9B4.Size = new Size(100, 23);
+            txt_Weight9B4.TabIndex = 32;
+            // 
+            // txtItem6B4
+            // 
+            txtItem6B4.Location = new Point(22, 309);
+            txtItem6B4.Name = "txtItem6B4";
+            txtItem6B4.Size = new Size(133, 23);
+            txtItem6B4.TabIndex = 18;
+            // 
+            // txt_Weight8B4
+            // 
+            txt_Weight8B4.Location = new Point(161, 396);
+            txt_Weight8B4.Name = "txt_Weight8B4";
+            txt_Weight8B4.Size = new Size(100, 23);
+            txt_Weight8B4.TabIndex = 31;
+            // 
+            // txtItem7B4
+            // 
+            txtItem7B4.Location = new Point(22, 338);
+            txtItem7B4.Name = "txtItem7B4";
+            txtItem7B4.Size = new Size(133, 23);
+            txtItem7B4.TabIndex = 19;
+            // 
+            // txt_Weight7B4
+            // 
+            txt_Weight7B4.Location = new Point(161, 338);
+            txt_Weight7B4.Name = "txt_Weight7B4";
+            txt_Weight7B4.Size = new Size(100, 23);
+            txt_Weight7B4.TabIndex = 30;
+            // 
+            // txtItem8B4
+            // 
+            txtItem8B4.Location = new Point(22, 396);
+            txtItem8B4.Name = "txtItem8B4";
+            txtItem8B4.Size = new Size(133, 23);
+            txtItem8B4.TabIndex = 20;
+            // 
+            // txt_Weight6B4
+            // 
+            txt_Weight6B4.Location = new Point(161, 309);
+            txt_Weight6B4.Name = "txt_Weight6B4";
+            txt_Weight6B4.Size = new Size(100, 23);
+            txt_Weight6B4.TabIndex = 29;
+            // 
+            // txtItem9B4
+            // 
+            txtItem9B4.Location = new Point(22, 425);
+            txtItem9B4.Name = "txtItem9B4";
+            txtItem9B4.Size = new Size(133, 23);
+            txtItem9B4.TabIndex = 21;
+            // 
+            // txt_Weight5B4
+            // 
+            txt_Weight5B4.Location = new Point(161, 280);
+            txt_Weight5B4.Name = "txt_Weight5B4";
+            txt_Weight5B4.Size = new Size(100, 23);
+            txt_Weight5B4.TabIndex = 28;
+            // 
+            // txtItem10B4
+            // 
+            txtItem10B4.Location = new Point(22, 454);
+            txtItem10B4.Name = "txtItem10B4";
+            txtItem10B4.Size = new Size(133, 23);
+            txtItem10B4.TabIndex = 22;
+            // 
+            // txt_Weight4B4
+            // 
+            txt_Weight4B4.Location = new Point(161, 251);
+            txt_Weight4B4.Name = "txt_Weight4B4";
+            txt_Weight4B4.Size = new Size(100, 23);
+            txt_Weight4B4.TabIndex = 27;
+            // 
+            // txtItem11B4
+            // 
+            txtItem11B4.Location = new Point(22, 483);
+            txtItem11B4.Name = "txtItem11B4";
+            txtItem11B4.Size = new Size(133, 23);
+            txtItem11B4.TabIndex = 23;
+            // 
+            // txt_Weight3B4
+            // 
+            txt_Weight3B4.Location = new Point(161, 222);
+            txt_Weight3B4.Name = "txt_Weight3B4";
+            txt_Weight3B4.Size = new Size(100, 23);
+            txt_Weight3B4.TabIndex = 26;
+            // 
+            // txt_Weight1B4
+            // 
+            txt_Weight1B4.Location = new Point(161, 164);
+            txt_Weight1B4.Name = "txt_Weight1B4";
+            txt_Weight1B4.Size = new Size(100, 23);
+            txt_Weight1B4.TabIndex = 24;
+            // 
+            // txt_Weight2B4
+            // 
+            txt_Weight2B4.Location = new Point(161, 193);
+            txt_Weight2B4.Name = "txt_Weight2B4";
+            txt_Weight2B4.Size = new Size(100, 23);
+            txt_Weight2B4.TabIndex = 25;
+            // 
+            // gBox_En4
+            // 
+            gBox_En4.BackColor = Color.MediumPurple;
+            gBox_En4.Controls.Add(rbtn_En4);
+            gBox_En4.Controls.Add(rbtn_Disabled4);
+            gBox_En4.Location = new Point(1259, 111);
+            gBox_En4.Name = "gBox_En4";
+            gBox_En4.Size = new Size(155, 32);
+            gBox_En4.TabIndex = 53;
+            gBox_En4.TabStop = false;
+            // 
+            // rbtn_En4
+            // 
+            rbtn_En4.AutoSize = true;
+            rbtn_En4.Checked = true;
+            rbtn_En4.Location = new Point(6, 7);
+            rbtn_En4.Name = "rbtn_En4";
+            rbtn_En4.Size = new Size(67, 19);
+            rbtn_En4.TabIndex = 5;
+            rbtn_En4.TabStop = true;
+            rbtn_En4.Text = "Enabled";
+            rbtn_En4.UseVisualStyleBackColor = true;
+            rbtn_En4.CheckedChanged += rbtn_En4_CheckedChanged;
+            // 
+            // rbtn_Disabled4
+            // 
+            rbtn_Disabled4.AutoSize = true;
+            rbtn_Disabled4.Location = new Point(79, 7);
+            rbtn_Disabled4.Name = "rbtn_Disabled4";
+            rbtn_Disabled4.Size = new Size(70, 19);
+            rbtn_Disabled4.TabIndex = 6;
+            rbtn_Disabled4.TabStop = true;
+            rbtn_Disabled4.Text = "Disabled";
+            rbtn_Disabled4.UseVisualStyleBackColor = true;
+            rbtn_Disabled4.CheckedChanged += rbtn_Disabled4_CheckedChanged;
+            // 
             // GPA_Calculator
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bg;
-            ClientSize = new Size(1506, 819);
+            ClientSize = new Size(1924, 819);
+            Controls.Add(gBox_En4);
+            Controls.Add(gBox4);
             Controls.Add(gBox_En3);
             Controls.Add(gBox3);
             Controls.Add(gBox_En2);
@@ -1467,6 +1917,10 @@ namespace Scheduler
             gBox3.PerformLayout();
             gBox_En3.ResumeLayout(false);
             gBox_En3.PerformLayout();
+            gBox4.ResumeLayout(false);
+            gBox4.PerformLayout();
+            gBox_En4.ResumeLayout(false);
+            gBox_En4.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1646,5 +2100,51 @@ namespace Scheduler
         private GroupBox gBox_En3;
         private RadioButton rbtn_En3;
         private RadioButton rbtn_Disabled3;
+        private GroupBox gBox4;
+        private Label label9;
+        private TextBox txtItem1B5;
+        private TextBox txt_CourseNameB4;
+        private TextBox txtGrade11B4;
+        private TextBox txt_CourseCodeB4;
+        private TextBox txtGrade10B4;
+        private TextBox txtItem0B4;
+        private TextBox txtGrade9B4;
+        private TextBox txt_Weight0B4;
+        private TextBox txtGrade8B4;
+        private TextBox txtGrade0B4;
+        private TextBox txtGrade7B4;
+        private TextBox txtGrade6B4;
+        private TextBox txtGrade5B4;
+        private Label label10;
+        private TextBox txtGrade4B4;
+        private Label label11;
+        private TextBox txtGrade3B4;
+        private Label label12;
+        private TextBox txtGrade2B4;
+        private TextBox txtGrade1B4;
+        private TextBox txtItem2B4;
+        private TextBox txtItem3B4;
+        private TextBox txt_Weight11B4;
+        private TextBox txtItem4B4;
+        private TextBox txt_Weight10B4;
+        private TextBox txtItem5B4;
+        private TextBox txt_Weight9B4;
+        private TextBox txtItem6B4;
+        private TextBox txt_Weight8B4;
+        private TextBox txtItem7B4;
+        private TextBox txt_Weight7B4;
+        private TextBox txtItem8B4;
+        private TextBox txt_Weight6B4;
+        private TextBox txtItem9B4;
+        private TextBox txt_Weight5B4;
+        private TextBox txtItem10B4;
+        private TextBox txt_Weight4B4;
+        private TextBox txtItem11B4;
+        private TextBox txt_Weight3B4;
+        private TextBox txt_Weight1B4;
+        private TextBox txt_Weight2B4;
+        private GroupBox gBox_En4;
+        private RadioButton rbtn_En4;
+        private RadioButton rbtn_Disabled4;
     }
 }

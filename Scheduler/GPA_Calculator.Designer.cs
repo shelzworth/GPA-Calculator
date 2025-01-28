@@ -87,12 +87,19 @@ namespace Scheduler
             gBoxMain = new GroupBox();
             gbox_En1 = new GroupBox();
             gBox2 = new GroupBox();
+            lblGPA2 = new Label();
             lbl_Labs2 = new Label();
+            lblGPATag2 = new Label();
             txtItem1B2 = new TextBox();
+            lblLetterGrade2 = new Label();
             txt_CourseNameB2 = new TextBox();
+            lblLetterTag2 = new Label();
             txtGrade11B2 = new TextBox();
+            lblPercentTag2 = new Label();
             txt_CourseCodeB2 = new TextBox();
+            lblResult2 = new Label();
             txtGrade10B2 = new TextBox();
+            btn_g2Calculate = new Button();
             txtItem0B2 = new TextBox();
             txtGrade9B2 = new TextBox();
             txt_Weight0B2 = new TextBox();
@@ -133,6 +140,13 @@ namespace Scheduler
             rbtn_En2 = new RadioButton();
             rbtn_Disabled2 = new RadioButton();
             gBox3 = new GroupBox();
+            lblGPA3 = new Label();
+            lblGPATag3 = new Label();
+            lblLetterGrade3 = new Label();
+            lblLetterTag3 = new Label();
+            lblPercentTag3 = new Label();
+            lblResult3 = new Label();
+            btn_g3Calculate = new Button();
             label5 = new Label();
             txtItem1B3 = new TextBox();
             txt_CourseNameB3 = new TextBox();
@@ -179,12 +193,19 @@ namespace Scheduler
             rbtn_En3 = new RadioButton();
             rbtn_Disabled3 = new RadioButton();
             gBox4 = new GroupBox();
+            lblGPA4 = new Label();
             label9 = new Label();
-            txtItem1B5 = new TextBox();
+            lblGPATag4 = new Label();
+            txtItem1B4 = new TextBox();
+            lblLetterGrade4 = new Label();
             txt_CourseNameB4 = new TextBox();
+            lblLetterTag4 = new Label();
             txtGrade11B4 = new TextBox();
+            lblPercentTag4 = new Label();
             txt_CourseCodeB4 = new TextBox();
+            lblResult4 = new Label();
             txtGrade10B4 = new TextBox();
+            btn_g4Calculate = new Button();
             txtItem0B4 = new TextBox();
             txtGrade9B4 = new TextBox();
             txt_Weight0B4 = new TextBox();
@@ -224,6 +245,59 @@ namespace Scheduler
             gBox_En4 = new GroupBox();
             rbtn_En4 = new RadioButton();
             rbtn_Disabled4 = new RadioButton();
+            gBox5 = new GroupBox();
+            lblGPA5 = new Label();
+            label14 = new Label();
+            lblGPATag5 = new Label();
+            txtItem1B5 = new TextBox();
+            lblLetterGrade5 = new Label();
+            textBox2 = new TextBox();
+            lblLetterTag5 = new Label();
+            txtGrade11B5 = new TextBox();
+            lblPercentTag5 = new Label();
+            textBox4 = new TextBox();
+            lblResult5 = new Label();
+            txtGrade10B5 = new TextBox();
+            btn_g5Calculate = new Button();
+            txtItem0B5 = new TextBox();
+            txtGrade9B5 = new TextBox();
+            txt_Weight0B5 = new TextBox();
+            txtGrade8B5 = new TextBox();
+            txtGrade0B5 = new TextBox();
+            txtGrade7B5 = new TextBox();
+            txtGrade6B5 = new TextBox();
+            txtGrade5B5 = new TextBox();
+            label20 = new Label();
+            txtGrade4B5 = new TextBox();
+            label21 = new Label();
+            txtGrade3B5 = new TextBox();
+            label22 = new Label();
+            txtGrade2B5 = new TextBox();
+            txtGrade1B5 = new TextBox();
+            txtItem2B5 = new TextBox();
+            txtItem3B5 = new TextBox();
+            txt_Weight11B5 = new TextBox();
+            txtItem4B5 = new TextBox();
+            txt_Weight10B5 = new TextBox();
+            txtItem5B5 = new TextBox();
+            txt_Weight9B5 = new TextBox();
+            txtItem6B5 = new TextBox();
+            txt_Weight8B5 = new TextBox();
+            txtItem7B5 = new TextBox();
+            txt_Weight7B5 = new TextBox();
+            txtItem8B5 = new TextBox();
+            txt_Weight6B5 = new TextBox();
+            txtItem9B5 = new TextBox();
+            txt_Weight5B5 = new TextBox();
+            txtItem10B5 = new TextBox();
+            txt_Weight4B5 = new TextBox();
+            txtItem11B5 = new TextBox();
+            txt_Weight3B5 = new TextBox();
+            txt_Weight1B5 = new TextBox();
+            txt_Weight2B5 = new TextBox();
+            gBox_En5 = new GroupBox();
+            radioButton1 = new RadioButton();
+            radioButton2 = new RadioButton();
             gBox1.SuspendLayout();
             gBoxMain.SuspendLayout();
             gbox_En1.SuspendLayout();
@@ -233,6 +307,8 @@ namespace Scheduler
             gBox_En3.SuspendLayout();
             gBox4.SuspendLayout();
             gBox_En4.SuspendLayout();
+            gBox5.SuspendLayout();
+            gBox_En5.SuspendLayout();
             SuspendLayout();
             // 
             // txt_CourseNameB1
@@ -241,7 +317,7 @@ namespace Scheduler
             txt_CourseNameB1.Location = new Point(22, 32);
             txt_CourseNameB1.Name = "txt_CourseNameB1";
             txt_CourseNameB1.PlaceholderText = "Enter Course Name...";
-            txt_CourseNameB1.Size = new Size(344, 33);
+            txt_CourseNameB1.Size = new Size(246, 33);
             txt_CourseNameB1.TabIndex = 0;
             txt_CourseNameB1.TextChanged += textBox1_TextChanged;
             // 
@@ -256,23 +332,26 @@ namespace Scheduler
             // 
             // txtItem0B1
             // 
+            txtItem0B1.Font = new Font("Segoe UI", 8.25F);
             txtItem0B1.Location = new Point(22, 135);
             txtItem0B1.Name = "txtItem0B1";
-            txtItem0B1.Size = new Size(133, 23);
+            txtItem0B1.Size = new Size(111, 22);
             txtItem0B1.TabIndex = 2;
             // 
             // txt_Weight0B1
             // 
-            txt_Weight0B1.Location = new Point(161, 135);
+            txt_Weight0B1.Font = new Font("Segoe UI", 8.25F);
+            txt_Weight0B1.Location = new Point(141, 135);
             txt_Weight0B1.Name = "txt_Weight0B1";
-            txt_Weight0B1.Size = new Size(100, 23);
+            txt_Weight0B1.Size = new Size(100, 22);
             txt_Weight0B1.TabIndex = 3;
             // 
             // txtGrade0B1
             // 
-            txtGrade0B1.Location = new Point(266, 135);
+            txtGrade0B1.Font = new Font("Segoe UI", 8.25F);
+            txtGrade0B1.Location = new Point(246, 135);
             txtGrade0B1.Name = "txtGrade0B1";
-            txtGrade0B1.Size = new Size(100, 23);
+            txtGrade0B1.Size = new Size(100, 22);
             txtGrade0B1.TabIndex = 4;
             txtGrade0B1.TextChanged += textBox1_TextChanged_2;
             // 
@@ -316,18 +395,19 @@ namespace Scheduler
             // 
             lbl_Weight.AutoSize = true;
             lbl_Weight.Font = new Font("Verdana", 11.25F);
-            lbl_Weight.Location = new Point(161, 117);
+            lbl_Weight.Location = new Point(141, 117);
             lbl_Weight.Name = "lbl_Weight";
             lbl_Weight.Size = new Size(88, 18);
             lbl_Weight.TabIndex = 8;
             lbl_Weight.Text = "Weight(%)";
             lbl_Weight.TextAlign = ContentAlignment.MiddleCenter;
+            lbl_Weight.Click += lbl_Weight_Click;
             // 
             // lblGrade
             // 
             lblGrade.AutoSize = true;
             lblGrade.Font = new Font("Verdana", 11.25F);
-            lblGrade.Location = new Point(266, 117);
+            lblGrade.Location = new Point(247, 117);
             lblGrade.Name = "lblGrade";
             lblGrade.Size = new Size(83, 18);
             lblGrade.TabIndex = 9;
@@ -362,234 +442,272 @@ namespace Scheduler
             // 
             // txtItem1B1
             // 
+            txtItem1B1.Font = new Font("Segoe UI", 8.25F);
             txtItem1B1.Location = new Point(22, 164);
             txtItem1B1.Name = "txtItem1B1";
-            txtItem1B1.Size = new Size(133, 23);
+            txtItem1B1.Size = new Size(111, 22);
             txtItem1B1.TabIndex = 13;
             // 
             // txtItem2B1
             // 
+            txtItem2B1.Font = new Font("Segoe UI", 8.25F);
             txtItem2B1.Location = new Point(22, 193);
             txtItem2B1.Name = "txtItem2B1";
-            txtItem2B1.Size = new Size(133, 23);
+            txtItem2B1.Size = new Size(111, 22);
             txtItem2B1.TabIndex = 14;
             // 
             // txtItem3B1
             // 
+            txtItem3B1.Font = new Font("Segoe UI", 8.25F);
             txtItem3B1.Location = new Point(22, 222);
             txtItem3B1.Name = "txtItem3B1";
-            txtItem3B1.Size = new Size(133, 23);
+            txtItem3B1.Size = new Size(111, 22);
             txtItem3B1.TabIndex = 15;
             // 
             // txtItem4B1
             // 
+            txtItem4B1.Font = new Font("Segoe UI", 8.25F);
             txtItem4B1.Location = new Point(22, 251);
             txtItem4B1.Name = "txtItem4B1";
-            txtItem4B1.Size = new Size(133, 23);
+            txtItem4B1.Size = new Size(111, 22);
             txtItem4B1.TabIndex = 16;
             // 
             // txtItem5B1
             // 
+            txtItem5B1.Font = new Font("Segoe UI", 8.25F);
             txtItem5B1.Location = new Point(22, 280);
             txtItem5B1.Name = "txtItem5B1";
-            txtItem5B1.Size = new Size(133, 23);
+            txtItem5B1.Size = new Size(111, 22);
             txtItem5B1.TabIndex = 17;
             // 
             // txtItem6B1
             // 
+            txtItem6B1.Font = new Font("Segoe UI", 8.25F);
             txtItem6B1.Location = new Point(22, 309);
             txtItem6B1.Name = "txtItem6B1";
-            txtItem6B1.Size = new Size(133, 23);
+            txtItem6B1.Size = new Size(111, 22);
             txtItem6B1.TabIndex = 18;
             // 
             // txtItem7B1
             // 
+            txtItem7B1.Font = new Font("Segoe UI", 8.25F);
             txtItem7B1.Location = new Point(22, 338);
             txtItem7B1.Name = "txtItem7B1";
-            txtItem7B1.Size = new Size(133, 23);
+            txtItem7B1.Size = new Size(111, 22);
             txtItem7B1.TabIndex = 19;
             // 
             // txtItem8B1
             // 
+            txtItem8B1.Font = new Font("Segoe UI", 8.25F);
             txtItem8B1.Location = new Point(22, 384);
             txtItem8B1.Name = "txtItem8B1";
-            txtItem8B1.Size = new Size(133, 23);
+            txtItem8B1.Size = new Size(111, 22);
             txtItem8B1.TabIndex = 20;
             // 
             // txtItem9B1
             // 
+            txtItem9B1.Font = new Font("Segoe UI", 8.25F);
             txtItem9B1.Location = new Point(22, 413);
             txtItem9B1.Name = "txtItem9B1";
-            txtItem9B1.Size = new Size(133, 23);
+            txtItem9B1.Size = new Size(111, 22);
             txtItem9B1.TabIndex = 21;
             // 
             // txtItem10B1
             // 
+            txtItem10B1.Font = new Font("Segoe UI", 8.25F);
             txtItem10B1.Location = new Point(22, 442);
             txtItem10B1.Name = "txtItem10B1";
-            txtItem10B1.Size = new Size(133, 23);
+            txtItem10B1.Size = new Size(111, 22);
             txtItem10B1.TabIndex = 22;
             // 
             // txtItem11B1
             // 
+            txtItem11B1.Font = new Font("Segoe UI", 8.25F);
             txtItem11B1.Location = new Point(22, 471);
             txtItem11B1.Name = "txtItem11B1";
-            txtItem11B1.Size = new Size(133, 23);
+            txtItem11B1.Size = new Size(111, 22);
             txtItem11B1.TabIndex = 23;
             // 
             // txt_Weight11B1
             // 
-            txt_Weight11B1.Location = new Point(161, 471);
+            txt_Weight11B1.Font = new Font("Segoe UI", 8.25F);
+            txt_Weight11B1.Location = new Point(141, 471);
             txt_Weight11B1.Name = "txt_Weight11B1";
-            txt_Weight11B1.Size = new Size(100, 23);
+            txt_Weight11B1.Size = new Size(100, 22);
             txt_Weight11B1.TabIndex = 34;
             // 
             // txt_Weight10B1
             // 
-            txt_Weight10B1.Location = new Point(161, 442);
+            txt_Weight10B1.Font = new Font("Segoe UI", 8.25F);
+            txt_Weight10B1.Location = new Point(141, 443);
             txt_Weight10B1.Name = "txt_Weight10B1";
-            txt_Weight10B1.Size = new Size(100, 23);
+            txt_Weight10B1.Size = new Size(100, 22);
             txt_Weight10B1.TabIndex = 33;
             // 
             // txt_Weight9B1
             // 
-            txt_Weight9B1.Location = new Point(161, 413);
+            txt_Weight9B1.Font = new Font("Segoe UI", 8.25F);
+            txt_Weight9B1.Location = new Point(141, 414);
             txt_Weight9B1.Name = "txt_Weight9B1";
-            txt_Weight9B1.Size = new Size(100, 23);
+            txt_Weight9B1.Size = new Size(100, 22);
             txt_Weight9B1.TabIndex = 32;
             // 
             // txt_Weight8B1
             // 
-            txt_Weight8B1.Location = new Point(161, 384);
+            txt_Weight8B1.Font = new Font("Segoe UI", 8.25F);
+            txt_Weight8B1.Location = new Point(141, 385);
             txt_Weight8B1.Name = "txt_Weight8B1";
-            txt_Weight8B1.Size = new Size(100, 23);
+            txt_Weight8B1.Size = new Size(100, 22);
             txt_Weight8B1.TabIndex = 31;
             // 
             // txt_Weight7B1
             // 
-            txt_Weight7B1.Location = new Point(161, 338);
+            txt_Weight7B1.Font = new Font("Segoe UI", 8.25F);
+            txt_Weight7B1.Location = new Point(141, 338);
             txt_Weight7B1.Name = "txt_Weight7B1";
-            txt_Weight7B1.Size = new Size(100, 23);
+            txt_Weight7B1.Size = new Size(100, 22);
             txt_Weight7B1.TabIndex = 30;
+            txt_Weight7B1.TextChanged += txt_Weight7B1_TextChanged;
             // 
             // txt_Weight6B1
             // 
-            txt_Weight6B1.Location = new Point(161, 309);
+            txt_Weight6B1.Font = new Font("Segoe UI", 8.25F);
+            txt_Weight6B1.Location = new Point(141, 309);
             txt_Weight6B1.Name = "txt_Weight6B1";
-            txt_Weight6B1.Size = new Size(100, 23);
+            txt_Weight6B1.Size = new Size(100, 22);
             txt_Weight6B1.TabIndex = 29;
             // 
             // txt_Weight5B1
             // 
-            txt_Weight5B1.Location = new Point(161, 280);
+            txt_Weight5B1.Font = new Font("Segoe UI", 8.25F);
+            txt_Weight5B1.Location = new Point(141, 280);
             txt_Weight5B1.Name = "txt_Weight5B1";
-            txt_Weight5B1.Size = new Size(100, 23);
+            txt_Weight5B1.Size = new Size(100, 22);
             txt_Weight5B1.TabIndex = 28;
             // 
             // txt_Weight4B1
             // 
-            txt_Weight4B1.Location = new Point(161, 251);
+            txt_Weight4B1.Font = new Font("Segoe UI", 8.25F);
+            txt_Weight4B1.Location = new Point(141, 251);
             txt_Weight4B1.Name = "txt_Weight4B1";
-            txt_Weight4B1.Size = new Size(100, 23);
+            txt_Weight4B1.Size = new Size(100, 22);
             txt_Weight4B1.TabIndex = 27;
             // 
             // txt_Weight3B1
             // 
-            txt_Weight3B1.Location = new Point(161, 222);
+            txt_Weight3B1.Font = new Font("Segoe UI", 8.25F);
+            txt_Weight3B1.Location = new Point(141, 222);
             txt_Weight3B1.Name = "txt_Weight3B1";
-            txt_Weight3B1.Size = new Size(100, 23);
+            txt_Weight3B1.Size = new Size(100, 22);
             txt_Weight3B1.TabIndex = 26;
             // 
             // txt_Weight2B1
             // 
-            txt_Weight2B1.Location = new Point(161, 193);
+            txt_Weight2B1.Font = new Font("Segoe UI", 8.25F);
+            txt_Weight2B1.Location = new Point(141, 193);
             txt_Weight2B1.Name = "txt_Weight2B1";
-            txt_Weight2B1.Size = new Size(100, 23);
+            txt_Weight2B1.Size = new Size(100, 22);
             txt_Weight2B1.TabIndex = 25;
             // 
             // txt_Weight1B1
             // 
-            txt_Weight1B1.Location = new Point(161, 164);
+            txt_Weight1B1.Font = new Font("Segoe UI", 8.25F);
+            txt_Weight1B1.Location = new Point(141, 164);
             txt_Weight1B1.Name = "txt_Weight1B1";
-            txt_Weight1B1.Size = new Size(100, 23);
+            txt_Weight1B1.Size = new Size(100, 22);
             txt_Weight1B1.TabIndex = 24;
             txt_Weight1B1.TextChanged += textBox13_TextChanged;
             // 
             // txtGrade11B1
             // 
-            txtGrade11B1.Location = new Point(267, 471);
+            txtGrade11B1.Font = new Font("Segoe UI", 8.25F);
+            txtGrade11B1.Location = new Point(247, 471);
             txtGrade11B1.Name = "txtGrade11B1";
-            txtGrade11B1.Size = new Size(100, 23);
+            txtGrade11B1.Size = new Size(100, 22);
             txtGrade11B1.TabIndex = 46;
+            txtGrade11B1.TextChanged += txtGrade11B1_TextChanged;
             // 
             // txtGrade10B1
             // 
-            txtGrade10B1.Location = new Point(267, 442);
+            txtGrade10B1.Font = new Font("Segoe UI", 8.25F);
+            txtGrade10B1.Location = new Point(247, 442);
             txtGrade10B1.Name = "txtGrade10B1";
-            txtGrade10B1.Size = new Size(100, 23);
+            txtGrade10B1.Size = new Size(100, 22);
             txtGrade10B1.TabIndex = 45;
+            txtGrade10B1.TextChanged += txtGrade10B1_TextChanged;
             // 
             // txtGrade9B1
             // 
-            txtGrade9B1.Location = new Point(267, 413);
+            txtGrade9B1.Font = new Font("Segoe UI", 8.25F);
+            txtGrade9B1.Location = new Point(247, 413);
             txtGrade9B1.Name = "txtGrade9B1";
-            txtGrade9B1.Size = new Size(100, 23);
+            txtGrade9B1.Size = new Size(100, 22);
             txtGrade9B1.TabIndex = 44;
+            txtGrade9B1.TextChanged += txtGrade9B1_TextChanged;
             // 
             // txtGrade8B1
             // 
-            txtGrade8B1.Location = new Point(267, 384);
+            txtGrade8B1.Font = new Font("Segoe UI", 8.25F);
+            txtGrade8B1.Location = new Point(247, 384);
             txtGrade8B1.Name = "txtGrade8B1";
-            txtGrade8B1.Size = new Size(100, 23);
+            txtGrade8B1.Size = new Size(100, 22);
             txtGrade8B1.TabIndex = 43;
+            txtGrade8B1.TextChanged += txtGrade8B1_TextChanged;
             // 
             // txtGrade7B1
             // 
-            txtGrade7B1.Location = new Point(267, 338);
+            txtGrade7B1.Font = new Font("Segoe UI", 8.25F);
+            txtGrade7B1.Location = new Point(247, 338);
             txtGrade7B1.Name = "txtGrade7B1";
-            txtGrade7B1.Size = new Size(100, 23);
+            txtGrade7B1.Size = new Size(100, 22);
             txtGrade7B1.TabIndex = 42;
             // 
             // txtGrade6B1
             // 
-            txtGrade6B1.Location = new Point(267, 309);
+            txtGrade6B1.Font = new Font("Segoe UI", 8.25F);
+            txtGrade6B1.Location = new Point(247, 309);
             txtGrade6B1.Name = "txtGrade6B1";
-            txtGrade6B1.Size = new Size(100, 23);
+            txtGrade6B1.Size = new Size(100, 22);
             txtGrade6B1.TabIndex = 41;
             // 
             // txtGrade5B1
             // 
-            txtGrade5B1.Location = new Point(267, 280);
+            txtGrade5B1.Font = new Font("Segoe UI", 8.25F);
+            txtGrade5B1.Location = new Point(247, 280);
             txtGrade5B1.Name = "txtGrade5B1";
-            txtGrade5B1.Size = new Size(100, 23);
+            txtGrade5B1.Size = new Size(100, 22);
             txtGrade5B1.TabIndex = 40;
             // 
             // txtGrade4B1
             // 
-            txtGrade4B1.Location = new Point(267, 251);
+            txtGrade4B1.Font = new Font("Segoe UI", 8.25F);
+            txtGrade4B1.Location = new Point(247, 251);
             txtGrade4B1.Name = "txtGrade4B1";
-            txtGrade4B1.Size = new Size(100, 23);
+            txtGrade4B1.Size = new Size(100, 22);
             txtGrade4B1.TabIndex = 39;
             // 
             // txtGrade3B1
             // 
-            txtGrade3B1.Location = new Point(267, 222);
+            txtGrade3B1.Font = new Font("Segoe UI", 8.25F);
+            txtGrade3B1.Location = new Point(247, 222);
             txtGrade3B1.Name = "txtGrade3B1";
-            txtGrade3B1.Size = new Size(100, 23);
+            txtGrade3B1.Size = new Size(100, 22);
             txtGrade3B1.TabIndex = 38;
             // 
             // txtGrade2B1
             // 
-            txtGrade2B1.Location = new Point(267, 193);
+            txtGrade2B1.Font = new Font("Segoe UI", 8.25F);
+            txtGrade2B1.Location = new Point(247, 193);
             txtGrade2B1.Name = "txtGrade2B1";
-            txtGrade2B1.Size = new Size(100, 23);
+            txtGrade2B1.Size = new Size(100, 22);
             txtGrade2B1.TabIndex = 37;
             // 
             // txtGrade1B1
             // 
-            txtGrade1B1.Location = new Point(267, 164);
+            txtGrade1B1.Font = new Font("Segoe UI", 8.25F);
+            txtGrade1B1.Location = new Point(247, 164);
             txtGrade1B1.Name = "txtGrade1B1";
-            txtGrade1B1.Size = new Size(100, 23);
+            txtGrade1B1.Size = new Size(100, 22);
             txtGrade1B1.TabIndex = 36;
             // 
             // gBox1
@@ -644,9 +762,9 @@ namespace Scheduler
             gBox1.Controls.Add(txt_Weight3B1);
             gBox1.Controls.Add(txt_Weight1B1);
             gBox1.Controls.Add(txt_Weight2B1);
-            gBox1.Location = new Point(56, 149);
+            gBox1.Location = new Point(18, 149);
             gBox1.Name = "gBox1";
-            gBox1.Size = new Size(395, 566);
+            gBox1.Size = new Size(369, 566);
             gBox1.TabIndex = 48;
             gBox1.TabStop = false;
             gBox1.Enter += gBox1_Enter;
@@ -736,7 +854,7 @@ namespace Scheduler
             // 
             btn_g1Calculate.BackColor = SystemColors.Window;
             btn_g1Calculate.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_g1Calculate.Location = new Point(266, 518);
+            btn_g1Calculate.Location = new Point(247, 518);
             btn_g1Calculate.Name = "btn_g1Calculate";
             btn_g1Calculate.Size = new Size(99, 31);
             btn_g1Calculate.TabIndex = 48;
@@ -786,7 +904,7 @@ namespace Scheduler
             gbox_En1.BackColor = SystemColors.ActiveCaption;
             gbox_En1.Controls.Add(rbtn_En);
             gbox_En1.Controls.Add(rbtn_Disabled);
-            gbox_En1.Location = new Point(56, 111);
+            gbox_En1.Location = new Point(18, 111);
             gbox_En1.Name = "gbox_En1";
             gbox_En1.Size = new Size(155, 32);
             gbox_En1.TabIndex = 50;
@@ -795,12 +913,19 @@ namespace Scheduler
             // gBox2
             // 
             gBox2.BackColor = Color.Tan;
+            gBox2.Controls.Add(lblGPA2);
             gBox2.Controls.Add(lbl_Labs2);
+            gBox2.Controls.Add(lblGPATag2);
             gBox2.Controls.Add(txtItem1B2);
+            gBox2.Controls.Add(lblLetterGrade2);
             gBox2.Controls.Add(txt_CourseNameB2);
+            gBox2.Controls.Add(lblLetterTag2);
             gBox2.Controls.Add(txtGrade11B2);
+            gBox2.Controls.Add(lblPercentTag2);
             gBox2.Controls.Add(txt_CourseCodeB2);
+            gBox2.Controls.Add(lblResult2);
             gBox2.Controls.Add(txtGrade10B2);
+            gBox2.Controls.Add(btn_g2Calculate);
             gBox2.Controls.Add(txtItem0B2);
             gBox2.Controls.Add(txtGrade9B2);
             gBox2.Controls.Add(txt_Weight0B2);
@@ -837,11 +962,24 @@ namespace Scheduler
             gBox2.Controls.Add(txt_Weight3B2);
             gBox2.Controls.Add(txt_Weight1B2);
             gBox2.Controls.Add(txt_Weight2B2);
-            gBox2.Location = new Point(457, 149);
+            gBox2.Location = new Point(393, 149);
             gBox2.Name = "gBox2";
-            gBox2.Size = new Size(395, 527);
+            gBox2.Size = new Size(382, 566);
             gBox2.TabIndex = 49;
             gBox2.TabStop = false;
+            // 
+            // lblGPA2
+            // 
+            lblGPA2.AutoSize = true;
+            lblGPA2.BackColor = SystemColors.ActiveCaption;
+            lblGPA2.BorderStyle = BorderStyle.FixedSingle;
+            lblGPA2.Font = new Font("Verdana", 11.25F);
+            lblGPA2.ForeColor = SystemColors.WindowText;
+            lblGPA2.Location = new Point(142, 538);
+            lblGPA2.Name = "lblGPA2";
+            lblGPA2.Size = new Size(2, 20);
+            lblGPA2.TabIndex = 62;
+            lblGPA2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lbl_Labs2
             // 
@@ -854,12 +992,39 @@ namespace Scheduler
             lbl_Labs2.Text = "Labs";
             lbl_Labs2.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // lblGPATag2
+            // 
+            lblGPATag2.AutoSize = true;
+            lblGPATag2.BackColor = Color.Tan;
+            lblGPATag2.BorderStyle = BorderStyle.FixedSingle;
+            lblGPATag2.Font = new Font("Verdana", 11.25F);
+            lblGPATag2.ForeColor = SystemColors.WindowText;
+            lblGPATag2.Location = new Point(23, 538);
+            lblGPATag2.Name = "lblGPATag2";
+            lblGPATag2.Size = new Size(48, 20);
+            lblGPATag2.TabIndex = 61;
+            lblGPATag2.Text = "GPA:";
+            lblGPATag2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // txtItem1B2
             // 
             txtItem1B2.Location = new Point(22, 164);
             txtItem1B2.Name = "txtItem1B2";
-            txtItem1B2.Size = new Size(133, 23);
+            txtItem1B2.Size = new Size(111, 23);
             txtItem1B2.TabIndex = 13;
+            // 
+            // lblLetterGrade2
+            // 
+            lblLetterGrade2.AutoSize = true;
+            lblLetterGrade2.BackColor = SystemColors.ActiveCaption;
+            lblLetterGrade2.BorderStyle = BorderStyle.FixedSingle;
+            lblLetterGrade2.Font = new Font("Verdana", 11.25F);
+            lblLetterGrade2.ForeColor = SystemColors.WindowText;
+            lblLetterGrade2.Location = new Point(142, 518);
+            lblLetterGrade2.Name = "lblLetterGrade2";
+            lblLetterGrade2.Size = new Size(2, 20);
+            lblLetterGrade2.TabIndex = 60;
+            lblLetterGrade2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txt_CourseNameB2
             // 
@@ -867,15 +1032,43 @@ namespace Scheduler
             txt_CourseNameB2.Location = new Point(22, 32);
             txt_CourseNameB2.Name = "txt_CourseNameB2";
             txt_CourseNameB2.PlaceholderText = "Enter Course Name...";
-            txt_CourseNameB2.Size = new Size(344, 33);
+            txt_CourseNameB2.Size = new Size(246, 33);
             txt_CourseNameB2.TabIndex = 0;
+            // 
+            // lblLetterTag2
+            // 
+            lblLetterTag2.AutoSize = true;
+            lblLetterTag2.BackColor = Color.Tan;
+            lblLetterTag2.BorderStyle = BorderStyle.FixedSingle;
+            lblLetterTag2.Font = new Font("Verdana", 11.25F);
+            lblLetterTag2.ForeColor = SystemColors.WindowText;
+            lblLetterTag2.Location = new Point(23, 518);
+            lblLetterTag2.Name = "lblLetterTag2";
+            lblLetterTag2.Size = new Size(111, 20);
+            lblLetterTag2.TabIndex = 59;
+            lblLetterTag2.Text = "Letter Grade:";
+            lblLetterTag2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtGrade11B2
             // 
-            txtGrade11B2.Location = new Point(267, 471);
+            txtGrade11B2.Location = new Point(249, 471);
             txtGrade11B2.Name = "txtGrade11B2";
             txtGrade11B2.Size = new Size(100, 23);
             txtGrade11B2.TabIndex = 46;
+            // 
+            // lblPercentTag2
+            // 
+            lblPercentTag2.AutoSize = true;
+            lblPercentTag2.BackColor = Color.Tan;
+            lblPercentTag2.BorderStyle = BorderStyle.FixedSingle;
+            lblPercentTag2.Font = new Font("Verdana", 11.25F);
+            lblPercentTag2.ForeColor = SystemColors.WindowText;
+            lblPercentTag2.Location = new Point(23, 497);
+            lblPercentTag2.Name = "lblPercentTag2";
+            lblPercentTag2.Size = new Size(100, 20);
+            lblPercentTag2.TabIndex = 58;
+            lblPercentTag2.Text = "Percentage:";
+            lblPercentTag2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txt_CourseCodeB2
             // 
@@ -885,65 +1078,89 @@ namespace Scheduler
             txt_CourseCodeB2.Size = new Size(121, 23);
             txt_CourseCodeB2.TabIndex = 1;
             // 
+            // lblResult2
+            // 
+            lblResult2.AutoSize = true;
+            lblResult2.BackColor = SystemColors.ActiveCaption;
+            lblResult2.BorderStyle = BorderStyle.FixedSingle;
+            lblResult2.Font = new Font("Verdana", 11.25F);
+            lblResult2.ForeColor = SystemColors.WindowText;
+            lblResult2.Location = new Point(142, 497);
+            lblResult2.Name = "lblResult2";
+            lblResult2.Size = new Size(2, 20);
+            lblResult2.TabIndex = 57;
+            lblResult2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // txtGrade10B2
             // 
-            txtGrade10B2.Location = new Point(267, 442);
+            txtGrade10B2.Location = new Point(249, 442);
             txtGrade10B2.Name = "txtGrade10B2";
             txtGrade10B2.Size = new Size(100, 23);
             txtGrade10B2.TabIndex = 45;
+            // 
+            // btn_g2Calculate
+            // 
+            btn_g2Calculate.BackColor = SystemColors.Window;
+            btn_g2Calculate.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_g2Calculate.Location = new Point(249, 518);
+            btn_g2Calculate.Name = "btn_g2Calculate";
+            btn_g2Calculate.Size = new Size(99, 31);
+            btn_g2Calculate.TabIndex = 56;
+            btn_g2Calculate.Text = "Calculate";
+            btn_g2Calculate.UseVisualStyleBackColor = false;
             // 
             // txtItem0B2
             // 
             txtItem0B2.Location = new Point(22, 135);
             txtItem0B2.Name = "txtItem0B2";
-            txtItem0B2.Size = new Size(133, 23);
+            txtItem0B2.Size = new Size(111, 23);
             txtItem0B2.TabIndex = 2;
             // 
             // txtGrade9B2
             // 
-            txtGrade9B2.Location = new Point(267, 413);
+            txtGrade9B2.Location = new Point(249, 413);
             txtGrade9B2.Name = "txtGrade9B2";
             txtGrade9B2.Size = new Size(100, 23);
             txtGrade9B2.TabIndex = 44;
             // 
             // txt_Weight0B2
             // 
-            txt_Weight0B2.Location = new Point(161, 135);
+            txt_Weight0B2.Location = new Point(142, 134);
             txt_Weight0B2.Name = "txt_Weight0B2";
             txt_Weight0B2.Size = new Size(100, 23);
             txt_Weight0B2.TabIndex = 3;
             // 
             // txtGrade8B2
             // 
-            txtGrade8B2.Location = new Point(267, 384);
+            txtGrade8B2.Location = new Point(249, 384);
             txtGrade8B2.Name = "txtGrade8B2";
             txtGrade8B2.Size = new Size(100, 23);
             txtGrade8B2.TabIndex = 43;
             // 
             // txtGrade0B2
             // 
-            txtGrade0B2.Location = new Point(266, 135);
+            txtGrade0B2.Location = new Point(248, 135);
             txtGrade0B2.Name = "txtGrade0B2";
             txtGrade0B2.Size = new Size(100, 23);
             txtGrade0B2.TabIndex = 4;
             // 
             // txtGrade7B2
             // 
-            txtGrade7B2.Location = new Point(267, 338);
+            txtGrade7B2.Location = new Point(249, 338);
             txtGrade7B2.Name = "txtGrade7B2";
             txtGrade7B2.Size = new Size(100, 23);
             txtGrade7B2.TabIndex = 42;
             // 
             // txtGrade6B2
             // 
-            txtGrade6B2.Location = new Point(267, 309);
+            txtGrade6B2.Location = new Point(249, 309);
             txtGrade6B2.Name = "txtGrade6B2";
             txtGrade6B2.Size = new Size(100, 23);
             txtGrade6B2.TabIndex = 41;
             // 
             // txtGrade5B2
             // 
-            txtGrade5B2.Location = new Point(267, 280);
+            txtGrade5B2.Location = new Point(249, 280);
             txtGrade5B2.Name = "txtGrade5B2";
             txtGrade5B2.Size = new Size(100, 23);
             txtGrade5B2.TabIndex = 40;
@@ -961,7 +1178,7 @@ namespace Scheduler
             // 
             // txtGrade4B2
             // 
-            txtGrade4B2.Location = new Point(267, 251);
+            txtGrade4B2.Location = new Point(249, 251);
             txtGrade4B2.Name = "txtGrade4B2";
             txtGrade4B2.Size = new Size(100, 23);
             txtGrade4B2.TabIndex = 39;
@@ -970,7 +1187,7 @@ namespace Scheduler
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Verdana", 11.25F);
-            label3.Location = new Point(161, 117);
+            label3.Location = new Point(142, 117);
             label3.Name = "label3";
             label3.Size = new Size(88, 18);
             label3.TabIndex = 8;
@@ -979,7 +1196,7 @@ namespace Scheduler
             // 
             // txtGrade3B2
             // 
-            txtGrade3B2.Location = new Point(267, 222);
+            txtGrade3B2.Location = new Point(249, 222);
             txtGrade3B2.Name = "txtGrade3B2";
             txtGrade3B2.Size = new Size(100, 23);
             txtGrade3B2.TabIndex = 38;
@@ -988,7 +1205,7 @@ namespace Scheduler
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Verdana", 11.25F);
-            label4.Location = new Point(266, 117);
+            label4.Location = new Point(249, 117);
             label4.Name = "label4";
             label4.Size = new Size(83, 18);
             label4.TabIndex = 9;
@@ -997,14 +1214,14 @@ namespace Scheduler
             // 
             // txtGrade2B2
             // 
-            txtGrade2B2.Location = new Point(267, 193);
+            txtGrade2B2.Location = new Point(249, 193);
             txtGrade2B2.Name = "txtGrade2B2";
             txtGrade2B2.Size = new Size(100, 23);
             txtGrade2B2.TabIndex = 37;
             // 
             // txtGrade1B2
             // 
-            txtGrade1B2.Location = new Point(267, 164);
+            txtGrade1B2.Location = new Point(249, 164);
             txtGrade1B2.Name = "txtGrade1B2";
             txtGrade1B2.Size = new Size(100, 23);
             txtGrade1B2.TabIndex = 36;
@@ -1013,19 +1230,19 @@ namespace Scheduler
             // 
             txtItem2B2.Location = new Point(22, 193);
             txtItem2B2.Name = "txtItem2B2";
-            txtItem2B2.Size = new Size(133, 23);
+            txtItem2B2.Size = new Size(111, 23);
             txtItem2B2.TabIndex = 14;
             // 
             // txtItem3B2
             // 
             txtItem3B2.Location = new Point(23, 222);
             txtItem3B2.Name = "txtItem3B2";
-            txtItem3B2.Size = new Size(133, 23);
+            txtItem3B2.Size = new Size(111, 23);
             txtItem3B2.TabIndex = 15;
             // 
             // txt_Weight11B2
             // 
-            txt_Weight11B2.Location = new Point(161, 471);
+            txt_Weight11B2.Location = new Point(142, 470);
             txt_Weight11B2.Name = "txt_Weight11B2";
             txt_Weight11B2.Size = new Size(100, 23);
             txt_Weight11B2.TabIndex = 34;
@@ -1034,12 +1251,12 @@ namespace Scheduler
             // 
             txtItem4B2.Location = new Point(23, 251);
             txtItem4B2.Name = "txtItem4B2";
-            txtItem4B2.Size = new Size(133, 23);
+            txtItem4B2.Size = new Size(111, 23);
             txtItem4B2.TabIndex = 16;
             // 
             // txt_Weight10B2
             // 
-            txt_Weight10B2.Location = new Point(161, 442);
+            txt_Weight10B2.Location = new Point(142, 441);
             txt_Weight10B2.Name = "txt_Weight10B2";
             txt_Weight10B2.Size = new Size(100, 23);
             txt_Weight10B2.TabIndex = 33;
@@ -1048,12 +1265,12 @@ namespace Scheduler
             // 
             txtItem5B2.Location = new Point(22, 280);
             txtItem5B2.Name = "txtItem5B2";
-            txtItem5B2.Size = new Size(133, 23);
+            txtItem5B2.Size = new Size(111, 23);
             txtItem5B2.TabIndex = 17;
             // 
             // txt_Weight9B2
             // 
-            txt_Weight9B2.Location = new Point(161, 413);
+            txt_Weight9B2.Location = new Point(142, 412);
             txt_Weight9B2.Name = "txt_Weight9B2";
             txt_Weight9B2.Size = new Size(100, 23);
             txt_Weight9B2.TabIndex = 32;
@@ -1062,12 +1279,12 @@ namespace Scheduler
             // 
             txtItem6B2.Location = new Point(22, 309);
             txtItem6B2.Name = "txtItem6B2";
-            txtItem6B2.Size = new Size(133, 23);
+            txtItem6B2.Size = new Size(111, 23);
             txtItem6B2.TabIndex = 18;
             // 
             // txt_Weight8B2
             // 
-            txt_Weight8B2.Location = new Point(161, 384);
+            txt_Weight8B2.Location = new Point(142, 383);
             txt_Weight8B2.Name = "txt_Weight8B2";
             txt_Weight8B2.Size = new Size(100, 23);
             txt_Weight8B2.TabIndex = 31;
@@ -1076,12 +1293,12 @@ namespace Scheduler
             // 
             txtItem7B2.Location = new Point(22, 338);
             txtItem7B2.Name = "txtItem7B2";
-            txtItem7B2.Size = new Size(133, 23);
+            txtItem7B2.Size = new Size(111, 23);
             txtItem7B2.TabIndex = 19;
             // 
             // txt_Weight7B2
             // 
-            txt_Weight7B2.Location = new Point(161, 338);
+            txt_Weight7B2.Location = new Point(142, 337);
             txt_Weight7B2.Name = "txt_Weight7B2";
             txt_Weight7B2.Size = new Size(100, 23);
             txt_Weight7B2.TabIndex = 30;
@@ -1090,12 +1307,12 @@ namespace Scheduler
             // 
             txtItem8B2.Location = new Point(22, 384);
             txtItem8B2.Name = "txtItem8B2";
-            txtItem8B2.Size = new Size(133, 23);
+            txtItem8B2.Size = new Size(111, 23);
             txtItem8B2.TabIndex = 20;
             // 
             // txt_Weight6B2
             // 
-            txt_Weight6B2.Location = new Point(161, 309);
+            txt_Weight6B2.Location = new Point(142, 308);
             txt_Weight6B2.Name = "txt_Weight6B2";
             txt_Weight6B2.Size = new Size(100, 23);
             txt_Weight6B2.TabIndex = 29;
@@ -1104,12 +1321,12 @@ namespace Scheduler
             // 
             txtItem9B2.Location = new Point(22, 413);
             txtItem9B2.Name = "txtItem9B2";
-            txtItem9B2.Size = new Size(133, 23);
+            txtItem9B2.Size = new Size(111, 23);
             txtItem9B2.TabIndex = 21;
             // 
             // txt_Weight5B2
             // 
-            txt_Weight5B2.Location = new Point(161, 280);
+            txt_Weight5B2.Location = new Point(142, 279);
             txt_Weight5B2.Name = "txt_Weight5B2";
             txt_Weight5B2.Size = new Size(100, 23);
             txt_Weight5B2.TabIndex = 28;
@@ -1118,12 +1335,12 @@ namespace Scheduler
             // 
             txtItem10B2.Location = new Point(22, 442);
             txtItem10B2.Name = "txtItem10B2";
-            txtItem10B2.Size = new Size(133, 23);
+            txtItem10B2.Size = new Size(111, 23);
             txtItem10B2.TabIndex = 22;
             // 
             // txt_Weight4B2
             // 
-            txt_Weight4B2.Location = new Point(161, 251);
+            txt_Weight4B2.Location = new Point(142, 250);
             txt_Weight4B2.Name = "txt_Weight4B2";
             txt_Weight4B2.Size = new Size(100, 23);
             txt_Weight4B2.TabIndex = 27;
@@ -1132,26 +1349,26 @@ namespace Scheduler
             // 
             txtItem11B2.Location = new Point(22, 471);
             txtItem11B2.Name = "txtItem11B2";
-            txtItem11B2.Size = new Size(133, 23);
+            txtItem11B2.Size = new Size(111, 23);
             txtItem11B2.TabIndex = 23;
             // 
             // txt_Weight3B2
             // 
-            txt_Weight3B2.Location = new Point(161, 222);
+            txt_Weight3B2.Location = new Point(142, 221);
             txt_Weight3B2.Name = "txt_Weight3B2";
             txt_Weight3B2.Size = new Size(100, 23);
             txt_Weight3B2.TabIndex = 26;
             // 
             // txt_Weight1B2
             // 
-            txt_Weight1B2.Location = new Point(161, 164);
+            txt_Weight1B2.Location = new Point(142, 163);
             txt_Weight1B2.Name = "txt_Weight1B2";
             txt_Weight1B2.Size = new Size(100, 23);
             txt_Weight1B2.TabIndex = 24;
             // 
             // txt_Weight2B2
             // 
-            txt_Weight2B2.Location = new Point(161, 193);
+            txt_Weight2B2.Location = new Point(142, 192);
             txt_Weight2B2.Name = "txt_Weight2B2";
             txt_Weight2B2.Size = new Size(100, 23);
             txt_Weight2B2.TabIndex = 25;
@@ -1161,7 +1378,7 @@ namespace Scheduler
             gBox_En2.BackColor = Color.Tan;
             gBox_En2.Controls.Add(rbtn_En2);
             gBox_En2.Controls.Add(rbtn_Disabled2);
-            gBox_En2.Location = new Point(457, 111);
+            gBox_En2.Location = new Point(393, 111);
             gBox_En2.Name = "gBox_En2";
             gBox_En2.Size = new Size(155, 32);
             gBox_En2.TabIndex = 51;
@@ -1195,6 +1412,13 @@ namespace Scheduler
             // gBox3
             // 
             gBox3.BackColor = Color.LightGreen;
+            gBox3.Controls.Add(lblGPA3);
+            gBox3.Controls.Add(lblGPATag3);
+            gBox3.Controls.Add(lblLetterGrade3);
+            gBox3.Controls.Add(lblLetterTag3);
+            gBox3.Controls.Add(lblPercentTag3);
+            gBox3.Controls.Add(lblResult3);
+            gBox3.Controls.Add(btn_g3Calculate);
             gBox3.Controls.Add(label5);
             gBox3.Controls.Add(txtItem1B3);
             gBox3.Controls.Add(txt_CourseNameB3);
@@ -1237,11 +1461,103 @@ namespace Scheduler
             gBox3.Controls.Add(txt_Weight3B3);
             gBox3.Controls.Add(txt_Weight1B3);
             gBox3.Controls.Add(txt_Weight2B3);
-            gBox3.Location = new Point(858, 149);
+            gBox3.Location = new Point(781, 149);
             gBox3.Name = "gBox3";
-            gBox3.Size = new Size(395, 527);
+            gBox3.Size = new Size(374, 566);
             gBox3.TabIndex = 50;
             gBox3.TabStop = false;
+            // 
+            // lblGPA3
+            // 
+            lblGPA3.AutoSize = true;
+            lblGPA3.BackColor = SystemColors.ActiveCaption;
+            lblGPA3.BorderStyle = BorderStyle.FixedSingle;
+            lblGPA3.Font = new Font("Verdana", 11.25F);
+            lblGPA3.ForeColor = SystemColors.WindowText;
+            lblGPA3.Location = new Point(141, 538);
+            lblGPA3.Name = "lblGPA3";
+            lblGPA3.Size = new Size(2, 20);
+            lblGPA3.TabIndex = 62;
+            lblGPA3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblGPATag3
+            // 
+            lblGPATag3.AutoSize = true;
+            lblGPATag3.BackColor = Color.LightGreen;
+            lblGPATag3.BorderStyle = BorderStyle.FixedSingle;
+            lblGPATag3.Font = new Font("Verdana", 11.25F);
+            lblGPATag3.ForeColor = SystemColors.WindowText;
+            lblGPATag3.Location = new Point(22, 538);
+            lblGPATag3.Name = "lblGPATag3";
+            lblGPATag3.Size = new Size(48, 20);
+            lblGPATag3.TabIndex = 61;
+            lblGPATag3.Text = "GPA:";
+            lblGPATag3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblLetterGrade3
+            // 
+            lblLetterGrade3.AutoSize = true;
+            lblLetterGrade3.BackColor = SystemColors.ActiveCaption;
+            lblLetterGrade3.BorderStyle = BorderStyle.FixedSingle;
+            lblLetterGrade3.Font = new Font("Verdana", 11.25F);
+            lblLetterGrade3.ForeColor = SystemColors.WindowText;
+            lblLetterGrade3.Location = new Point(141, 518);
+            lblLetterGrade3.Name = "lblLetterGrade3";
+            lblLetterGrade3.Size = new Size(2, 20);
+            lblLetterGrade3.TabIndex = 60;
+            lblLetterGrade3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblLetterTag3
+            // 
+            lblLetterTag3.AutoSize = true;
+            lblLetterTag3.BackColor = Color.LightGreen;
+            lblLetterTag3.BorderStyle = BorderStyle.FixedSingle;
+            lblLetterTag3.Font = new Font("Verdana", 11.25F);
+            lblLetterTag3.ForeColor = SystemColors.WindowText;
+            lblLetterTag3.Location = new Point(22, 518);
+            lblLetterTag3.Name = "lblLetterTag3";
+            lblLetterTag3.Size = new Size(111, 20);
+            lblLetterTag3.TabIndex = 59;
+            lblLetterTag3.Text = "Letter Grade:";
+            lblLetterTag3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblPercentTag3
+            // 
+            lblPercentTag3.AutoSize = true;
+            lblPercentTag3.BackColor = Color.LightGreen;
+            lblPercentTag3.BorderStyle = BorderStyle.FixedSingle;
+            lblPercentTag3.Font = new Font("Verdana", 11.25F);
+            lblPercentTag3.ForeColor = SystemColors.WindowText;
+            lblPercentTag3.Location = new Point(22, 497);
+            lblPercentTag3.Name = "lblPercentTag3";
+            lblPercentTag3.Size = new Size(100, 20);
+            lblPercentTag3.TabIndex = 58;
+            lblPercentTag3.Text = "Percentage:";
+            lblPercentTag3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblResult3
+            // 
+            lblResult3.AutoSize = true;
+            lblResult3.BackColor = SystemColors.ActiveCaption;
+            lblResult3.BorderStyle = BorderStyle.FixedSingle;
+            lblResult3.Font = new Font("Verdana", 11.25F);
+            lblResult3.ForeColor = SystemColors.WindowText;
+            lblResult3.Location = new Point(141, 497);
+            lblResult3.Name = "lblResult3";
+            lblResult3.Size = new Size(2, 20);
+            lblResult3.TabIndex = 57;
+            lblResult3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btn_g3Calculate
+            // 
+            btn_g3Calculate.BackColor = SystemColors.Window;
+            btn_g3Calculate.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_g3Calculate.Location = new Point(246, 518);
+            btn_g3Calculate.Name = "btn_g3Calculate";
+            btn_g3Calculate.Size = new Size(99, 31);
+            btn_g3Calculate.TabIndex = 56;
+            btn_g3Calculate.Text = "Calculate";
+            btn_g3Calculate.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -1258,7 +1574,7 @@ namespace Scheduler
             // 
             txtItem1B3.Location = new Point(22, 164);
             txtItem1B3.Name = "txtItem1B3";
-            txtItem1B3.Size = new Size(133, 23);
+            txtItem1B3.Size = new Size(111, 23);
             txtItem1B3.TabIndex = 13;
             // 
             // txt_CourseNameB3
@@ -1267,12 +1583,12 @@ namespace Scheduler
             txt_CourseNameB3.Location = new Point(22, 32);
             txt_CourseNameB3.Name = "txt_CourseNameB3";
             txt_CourseNameB3.PlaceholderText = "Enter Course Name...";
-            txt_CourseNameB3.Size = new Size(344, 33);
+            txt_CourseNameB3.Size = new Size(246, 33);
             txt_CourseNameB3.TabIndex = 0;
             // 
             // txtGrade11B3
             // 
-            txtGrade11B3.Location = new Point(267, 471);
+            txtGrade11B3.Location = new Point(245, 471);
             txtGrade11B3.Name = "txtGrade11B3";
             txtGrade11B3.Size = new Size(100, 23);
             txtGrade11B3.TabIndex = 46;
@@ -1287,7 +1603,7 @@ namespace Scheduler
             // 
             // txtGrade10B3
             // 
-            txtGrade10B3.Location = new Point(267, 442);
+            txtGrade10B3.Location = new Point(245, 442);
             txtGrade10B3.Name = "txtGrade10B3";
             txtGrade10B3.Size = new Size(100, 23);
             txtGrade10B3.TabIndex = 45;
@@ -1296,54 +1612,54 @@ namespace Scheduler
             // 
             txtItem0B3.Location = new Point(22, 135);
             txtItem0B3.Name = "txtItem0B3";
-            txtItem0B3.Size = new Size(133, 23);
+            txtItem0B3.Size = new Size(111, 23);
             txtItem0B3.TabIndex = 2;
             // 
             // txtGrade9B3
             // 
-            txtGrade9B3.Location = new Point(267, 413);
+            txtGrade9B3.Location = new Point(245, 413);
             txtGrade9B3.Name = "txtGrade9B3";
             txtGrade9B3.Size = new Size(100, 23);
             txtGrade9B3.TabIndex = 44;
             // 
             // txt_Weight0B3
             // 
-            txt_Weight0B3.Location = new Point(161, 135);
+            txt_Weight0B3.Location = new Point(139, 135);
             txt_Weight0B3.Name = "txt_Weight0B3";
             txt_Weight0B3.Size = new Size(100, 23);
             txt_Weight0B3.TabIndex = 3;
             // 
             // txtGrade8B3
             // 
-            txtGrade8B3.Location = new Point(267, 384);
+            txtGrade8B3.Location = new Point(245, 384);
             txtGrade8B3.Name = "txtGrade8B3";
             txtGrade8B3.Size = new Size(100, 23);
             txtGrade8B3.TabIndex = 43;
             // 
             // txtGrade0B3
             // 
-            txtGrade0B3.Location = new Point(266, 135);
+            txtGrade0B3.Location = new Point(244, 135);
             txtGrade0B3.Name = "txtGrade0B3";
             txtGrade0B3.Size = new Size(100, 23);
             txtGrade0B3.TabIndex = 4;
             // 
             // txtGrade7B3
             // 
-            txtGrade7B3.Location = new Point(267, 338);
+            txtGrade7B3.Location = new Point(245, 338);
             txtGrade7B3.Name = "txtGrade7B3";
             txtGrade7B3.Size = new Size(100, 23);
             txtGrade7B3.TabIndex = 42;
             // 
             // txtGrade6B3
             // 
-            txtGrade6B3.Location = new Point(267, 309);
+            txtGrade6B3.Location = new Point(245, 309);
             txtGrade6B3.Name = "txtGrade6B3";
             txtGrade6B3.Size = new Size(100, 23);
             txtGrade6B3.TabIndex = 41;
             // 
             // txtGrade5B3
             // 
-            txtGrade5B3.Location = new Point(267, 280);
+            txtGrade5B3.Location = new Point(245, 280);
             txtGrade5B3.Name = "txtGrade5B3";
             txtGrade5B3.Size = new Size(100, 23);
             txtGrade5B3.TabIndex = 40;
@@ -1361,7 +1677,7 @@ namespace Scheduler
             // 
             // txtGrade4B3
             // 
-            txtGrade4B3.Location = new Point(267, 251);
+            txtGrade4B3.Location = new Point(245, 251);
             txtGrade4B3.Name = "txtGrade4B3";
             txtGrade4B3.Size = new Size(100, 23);
             txtGrade4B3.TabIndex = 39;
@@ -1370,7 +1686,7 @@ namespace Scheduler
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Verdana", 11.25F);
-            label7.Location = new Point(161, 117);
+            label7.Location = new Point(139, 117);
             label7.Name = "label7";
             label7.Size = new Size(88, 18);
             label7.TabIndex = 8;
@@ -1379,7 +1695,7 @@ namespace Scheduler
             // 
             // txtGrade3B3
             // 
-            txtGrade3B3.Location = new Point(267, 222);
+            txtGrade3B3.Location = new Point(245, 222);
             txtGrade3B3.Name = "txtGrade3B3";
             txtGrade3B3.Size = new Size(100, 23);
             txtGrade3B3.TabIndex = 38;
@@ -1388,7 +1704,7 @@ namespace Scheduler
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Verdana", 11.25F);
-            label8.Location = new Point(266, 117);
+            label8.Location = new Point(244, 117);
             label8.Name = "label8";
             label8.Size = new Size(83, 18);
             label8.TabIndex = 9;
@@ -1397,14 +1713,14 @@ namespace Scheduler
             // 
             // txtGrade2B3
             // 
-            txtGrade2B3.Location = new Point(267, 193);
+            txtGrade2B3.Location = new Point(245, 193);
             txtGrade2B3.Name = "txtGrade2B3";
             txtGrade2B3.Size = new Size(100, 23);
             txtGrade2B3.TabIndex = 37;
             // 
             // txtGrade1B3
             // 
-            txtGrade1B3.Location = new Point(267, 164);
+            txtGrade1B3.Location = new Point(245, 164);
             txtGrade1B3.Name = "txtGrade1B3";
             txtGrade1B3.Size = new Size(100, 23);
             txtGrade1B3.TabIndex = 36;
@@ -1413,19 +1729,19 @@ namespace Scheduler
             // 
             txtItem2B3.Location = new Point(22, 193);
             txtItem2B3.Name = "txtItem2B3";
-            txtItem2B3.Size = new Size(133, 23);
+            txtItem2B3.Size = new Size(111, 23);
             txtItem2B3.TabIndex = 14;
             // 
             // txtItem3B3
             // 
             txtItem3B3.Location = new Point(22, 222);
             txtItem3B3.Name = "txtItem3B3";
-            txtItem3B3.Size = new Size(133, 23);
+            txtItem3B3.Size = new Size(111, 23);
             txtItem3B3.TabIndex = 15;
             // 
             // txt_Weight11B3
             // 
-            txt_Weight11B3.Location = new Point(161, 471);
+            txt_Weight11B3.Location = new Point(139, 471);
             txt_Weight11B3.Name = "txt_Weight11B3";
             txt_Weight11B3.Size = new Size(100, 23);
             txt_Weight11B3.TabIndex = 34;
@@ -1434,12 +1750,12 @@ namespace Scheduler
             // 
             txtItem4B3.Location = new Point(22, 251);
             txtItem4B3.Name = "txtItem4B3";
-            txtItem4B3.Size = new Size(133, 23);
+            txtItem4B3.Size = new Size(111, 23);
             txtItem4B3.TabIndex = 16;
             // 
             // txt_Weight10B3
             // 
-            txt_Weight10B3.Location = new Point(161, 442);
+            txt_Weight10B3.Location = new Point(139, 442);
             txt_Weight10B3.Name = "txt_Weight10B3";
             txt_Weight10B3.Size = new Size(100, 23);
             txt_Weight10B3.TabIndex = 33;
@@ -1448,12 +1764,12 @@ namespace Scheduler
             // 
             txtItem5B3.Location = new Point(22, 280);
             txtItem5B3.Name = "txtItem5B3";
-            txtItem5B3.Size = new Size(133, 23);
+            txtItem5B3.Size = new Size(111, 23);
             txtItem5B3.TabIndex = 17;
             // 
             // txt_Weight9B3
             // 
-            txt_Weight9B3.Location = new Point(161, 413);
+            txt_Weight9B3.Location = new Point(139, 413);
             txt_Weight9B3.Name = "txt_Weight9B3";
             txt_Weight9B3.Size = new Size(100, 23);
             txt_Weight9B3.TabIndex = 32;
@@ -1462,12 +1778,12 @@ namespace Scheduler
             // 
             txtItem6B3.Location = new Point(22, 309);
             txtItem6B3.Name = "txtItem6B3";
-            txtItem6B3.Size = new Size(133, 23);
+            txtItem6B3.Size = new Size(111, 23);
             txtItem6B3.TabIndex = 18;
             // 
             // txt_Weight8B3
             // 
-            txt_Weight8B3.Location = new Point(161, 384);
+            txt_Weight8B3.Location = new Point(139, 384);
             txt_Weight8B3.Name = "txt_Weight8B3";
             txt_Weight8B3.Size = new Size(100, 23);
             txt_Weight8B3.TabIndex = 31;
@@ -1476,12 +1792,12 @@ namespace Scheduler
             // 
             txtItem7B3.Location = new Point(22, 338);
             txtItem7B3.Name = "txtItem7B3";
-            txtItem7B3.Size = new Size(133, 23);
+            txtItem7B3.Size = new Size(111, 23);
             txtItem7B3.TabIndex = 19;
             // 
             // txt_Weight7B3
             // 
-            txt_Weight7B3.Location = new Point(161, 338);
+            txt_Weight7B3.Location = new Point(139, 338);
             txt_Weight7B3.Name = "txt_Weight7B3";
             txt_Weight7B3.Size = new Size(100, 23);
             txt_Weight7B3.TabIndex = 30;
@@ -1490,12 +1806,12 @@ namespace Scheduler
             // 
             txtItem8B3.Location = new Point(22, 384);
             txtItem8B3.Name = "txtItem8B3";
-            txtItem8B3.Size = new Size(133, 23);
+            txtItem8B3.Size = new Size(111, 23);
             txtItem8B3.TabIndex = 20;
             // 
             // txt_Weight6B3
             // 
-            txt_Weight6B3.Location = new Point(161, 309);
+            txt_Weight6B3.Location = new Point(139, 309);
             txt_Weight6B3.Name = "txt_Weight6B3";
             txt_Weight6B3.Size = new Size(100, 23);
             txt_Weight6B3.TabIndex = 29;
@@ -1504,12 +1820,12 @@ namespace Scheduler
             // 
             txtItem9B3.Location = new Point(22, 413);
             txtItem9B3.Name = "txtItem9B3";
-            txtItem9B3.Size = new Size(133, 23);
+            txtItem9B3.Size = new Size(111, 23);
             txtItem9B3.TabIndex = 21;
             // 
             // txt_Weight5B3
             // 
-            txt_Weight5B3.Location = new Point(161, 280);
+            txt_Weight5B3.Location = new Point(139, 280);
             txt_Weight5B3.Name = "txt_Weight5B3";
             txt_Weight5B3.Size = new Size(100, 23);
             txt_Weight5B3.TabIndex = 28;
@@ -1518,12 +1834,12 @@ namespace Scheduler
             // 
             txtItem10B3.Location = new Point(22, 442);
             txtItem10B3.Name = "txtItem10B3";
-            txtItem10B3.Size = new Size(133, 23);
+            txtItem10B3.Size = new Size(111, 23);
             txtItem10B3.TabIndex = 22;
             // 
             // txt_Weight4B3
             // 
-            txt_Weight4B3.Location = new Point(161, 251);
+            txt_Weight4B3.Location = new Point(139, 251);
             txt_Weight4B3.Name = "txt_Weight4B3";
             txt_Weight4B3.Size = new Size(100, 23);
             txt_Weight4B3.TabIndex = 27;
@@ -1532,26 +1848,26 @@ namespace Scheduler
             // 
             txtItem11B3.Location = new Point(22, 471);
             txtItem11B3.Name = "txtItem11B3";
-            txtItem11B3.Size = new Size(133, 23);
+            txtItem11B3.Size = new Size(111, 23);
             txtItem11B3.TabIndex = 23;
             // 
             // txt_Weight3B3
             // 
-            txt_Weight3B3.Location = new Point(161, 222);
+            txt_Weight3B3.Location = new Point(139, 222);
             txt_Weight3B3.Name = "txt_Weight3B3";
             txt_Weight3B3.Size = new Size(100, 23);
             txt_Weight3B3.TabIndex = 26;
             // 
             // txt_Weight1B3
             // 
-            txt_Weight1B3.Location = new Point(161, 164);
+            txt_Weight1B3.Location = new Point(139, 164);
             txt_Weight1B3.Name = "txt_Weight1B3";
             txt_Weight1B3.Size = new Size(100, 23);
             txt_Weight1B3.TabIndex = 24;
             // 
             // txt_Weight2B3
             // 
-            txt_Weight2B3.Location = new Point(161, 193);
+            txt_Weight2B3.Location = new Point(139, 193);
             txt_Weight2B3.Name = "txt_Weight2B3";
             txt_Weight2B3.Size = new Size(100, 23);
             txt_Weight2B3.TabIndex = 25;
@@ -1561,7 +1877,7 @@ namespace Scheduler
             gBox_En3.BackColor = Color.LightGreen;
             gBox_En3.Controls.Add(rbtn_En3);
             gBox_En3.Controls.Add(rbtn_Disabled3);
-            gBox_En3.Location = new Point(858, 111);
+            gBox_En3.Location = new Point(781, 111);
             gBox_En3.Name = "gBox_En3";
             gBox_En3.Size = new Size(155, 32);
             gBox_En3.TabIndex = 52;
@@ -1595,12 +1911,19 @@ namespace Scheduler
             // gBox4
             // 
             gBox4.BackColor = Color.MediumPurple;
+            gBox4.Controls.Add(lblGPA4);
             gBox4.Controls.Add(label9);
-            gBox4.Controls.Add(txtItem1B5);
+            gBox4.Controls.Add(lblGPATag4);
+            gBox4.Controls.Add(txtItem1B4);
+            gBox4.Controls.Add(lblLetterGrade4);
             gBox4.Controls.Add(txt_CourseNameB4);
+            gBox4.Controls.Add(lblLetterTag4);
             gBox4.Controls.Add(txtGrade11B4);
+            gBox4.Controls.Add(lblPercentTag4);
             gBox4.Controls.Add(txt_CourseCodeB4);
+            gBox4.Controls.Add(lblResult4);
             gBox4.Controls.Add(txtGrade10B4);
+            gBox4.Controls.Add(btn_g4Calculate);
             gBox4.Controls.Add(txtItem0B4);
             gBox4.Controls.Add(txtGrade9B4);
             gBox4.Controls.Add(txt_Weight0B4);
@@ -1637,11 +1960,24 @@ namespace Scheduler
             gBox4.Controls.Add(txt_Weight3B4);
             gBox4.Controls.Add(txt_Weight1B4);
             gBox4.Controls.Add(txt_Weight2B4);
-            gBox4.Location = new Point(1259, 149);
+            gBox4.Location = new Point(1161, 149);
             gBox4.Name = "gBox4";
-            gBox4.Size = new Size(395, 527);
+            gBox4.Size = new Size(376, 566);
             gBox4.TabIndex = 51;
             gBox4.TabStop = false;
+            // 
+            // lblGPA4
+            // 
+            lblGPA4.AutoSize = true;
+            lblGPA4.BackColor = SystemColors.ActiveCaption;
+            lblGPA4.BorderStyle = BorderStyle.FixedSingle;
+            lblGPA4.Font = new Font("Verdana", 11.25F);
+            lblGPA4.ForeColor = SystemColors.WindowText;
+            lblGPA4.Location = new Point(141, 538);
+            lblGPA4.Name = "lblGPA4";
+            lblGPA4.Size = new Size(2, 20);
+            lblGPA4.TabIndex = 69;
+            lblGPA4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
@@ -1654,12 +1990,39 @@ namespace Scheduler
             label9.Text = "Labs";
             label9.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // txtItem1B5
+            // lblGPATag4
             // 
-            txtItem1B5.Location = new Point(22, 164);
-            txtItem1B5.Name = "txtItem1B5";
-            txtItem1B5.Size = new Size(133, 23);
-            txtItem1B5.TabIndex = 13;
+            lblGPATag4.AutoSize = true;
+            lblGPATag4.BackColor = Color.MediumPurple;
+            lblGPATag4.BorderStyle = BorderStyle.FixedSingle;
+            lblGPATag4.Font = new Font("Verdana", 11.25F);
+            lblGPATag4.ForeColor = SystemColors.WindowText;
+            lblGPATag4.Location = new Point(22, 538);
+            lblGPATag4.Name = "lblGPATag4";
+            lblGPATag4.Size = new Size(48, 20);
+            lblGPATag4.TabIndex = 68;
+            lblGPATag4.Text = "GPA:";
+            lblGPATag4.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtItem1B4
+            // 
+            txtItem1B4.Location = new Point(22, 164);
+            txtItem1B4.Name = "txtItem1B4";
+            txtItem1B4.Size = new Size(111, 23);
+            txtItem1B4.TabIndex = 13;
+            // 
+            // lblLetterGrade4
+            // 
+            lblLetterGrade4.AutoSize = true;
+            lblLetterGrade4.BackColor = SystemColors.ActiveCaption;
+            lblLetterGrade4.BorderStyle = BorderStyle.FixedSingle;
+            lblLetterGrade4.Font = new Font("Verdana", 11.25F);
+            lblLetterGrade4.ForeColor = SystemColors.WindowText;
+            lblLetterGrade4.Location = new Point(141, 518);
+            lblLetterGrade4.Name = "lblLetterGrade4";
+            lblLetterGrade4.Size = new Size(2, 20);
+            lblLetterGrade4.TabIndex = 67;
+            lblLetterGrade4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txt_CourseNameB4
             // 
@@ -1667,15 +2030,43 @@ namespace Scheduler
             txt_CourseNameB4.Location = new Point(22, 32);
             txt_CourseNameB4.Name = "txt_CourseNameB4";
             txt_CourseNameB4.PlaceholderText = "Enter Course Name...";
-            txt_CourseNameB4.Size = new Size(344, 33);
+            txt_CourseNameB4.Size = new Size(246, 33);
             txt_CourseNameB4.TabIndex = 0;
+            // 
+            // lblLetterTag4
+            // 
+            lblLetterTag4.AutoSize = true;
+            lblLetterTag4.BackColor = Color.MediumPurple;
+            lblLetterTag4.BorderStyle = BorderStyle.FixedSingle;
+            lblLetterTag4.Font = new Font("Verdana", 11.25F);
+            lblLetterTag4.ForeColor = SystemColors.WindowText;
+            lblLetterTag4.Location = new Point(22, 518);
+            lblLetterTag4.Name = "lblLetterTag4";
+            lblLetterTag4.Size = new Size(111, 20);
+            lblLetterTag4.TabIndex = 66;
+            lblLetterTag4.Text = "Letter Grade:";
+            lblLetterTag4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtGrade11B4
             // 
-            txtGrade11B4.Location = new Point(267, 472);
+            txtGrade11B4.Location = new Point(247, 471);
             txtGrade11B4.Name = "txtGrade11B4";
             txtGrade11B4.Size = new Size(100, 23);
             txtGrade11B4.TabIndex = 46;
+            // 
+            // lblPercentTag4
+            // 
+            lblPercentTag4.AutoSize = true;
+            lblPercentTag4.BackColor = Color.MediumPurple;
+            lblPercentTag4.BorderStyle = BorderStyle.FixedSingle;
+            lblPercentTag4.Font = new Font("Verdana", 11.25F);
+            lblPercentTag4.ForeColor = SystemColors.WindowText;
+            lblPercentTag4.Location = new Point(22, 497);
+            lblPercentTag4.Name = "lblPercentTag4";
+            lblPercentTag4.Size = new Size(100, 20);
+            lblPercentTag4.TabIndex = 65;
+            lblPercentTag4.Text = "Percentage:";
+            lblPercentTag4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txt_CourseCodeB4
             // 
@@ -1685,65 +2076,89 @@ namespace Scheduler
             txt_CourseCodeB4.Size = new Size(121, 23);
             txt_CourseCodeB4.TabIndex = 1;
             // 
+            // lblResult4
+            // 
+            lblResult4.AutoSize = true;
+            lblResult4.BackColor = SystemColors.ActiveCaption;
+            lblResult4.BorderStyle = BorderStyle.FixedSingle;
+            lblResult4.Font = new Font("Verdana", 11.25F);
+            lblResult4.ForeColor = SystemColors.WindowText;
+            lblResult4.Location = new Point(141, 497);
+            lblResult4.Name = "lblResult4";
+            lblResult4.Size = new Size(2, 20);
+            lblResult4.TabIndex = 64;
+            lblResult4.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // txtGrade10B4
             // 
-            txtGrade10B4.Location = new Point(267, 443);
+            txtGrade10B4.Location = new Point(247, 442);
             txtGrade10B4.Name = "txtGrade10B4";
             txtGrade10B4.Size = new Size(100, 23);
             txtGrade10B4.TabIndex = 45;
+            // 
+            // btn_g4Calculate
+            // 
+            btn_g4Calculate.BackColor = SystemColors.Window;
+            btn_g4Calculate.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_g4Calculate.Location = new Point(246, 518);
+            btn_g4Calculate.Name = "btn_g4Calculate";
+            btn_g4Calculate.Size = new Size(99, 31);
+            btn_g4Calculate.TabIndex = 63;
+            btn_g4Calculate.Text = "Calculate";
+            btn_g4Calculate.UseVisualStyleBackColor = false;
             // 
             // txtItem0B4
             // 
             txtItem0B4.Location = new Point(22, 135);
             txtItem0B4.Name = "txtItem0B4";
-            txtItem0B4.Size = new Size(133, 23);
+            txtItem0B4.Size = new Size(111, 23);
             txtItem0B4.TabIndex = 2;
             // 
             // txtGrade9B4
             // 
-            txtGrade9B4.Location = new Point(267, 414);
+            txtGrade9B4.Location = new Point(247, 413);
             txtGrade9B4.Name = "txtGrade9B4";
             txtGrade9B4.Size = new Size(100, 23);
             txtGrade9B4.TabIndex = 44;
             // 
             // txt_Weight0B4
             // 
-            txt_Weight0B4.Location = new Point(161, 135);
+            txt_Weight0B4.Location = new Point(141, 133);
             txt_Weight0B4.Name = "txt_Weight0B4";
             txt_Weight0B4.Size = new Size(100, 23);
             txt_Weight0B4.TabIndex = 3;
             // 
             // txtGrade8B4
             // 
-            txtGrade8B4.Location = new Point(267, 385);
+            txtGrade8B4.Location = new Point(247, 384);
             txtGrade8B4.Name = "txtGrade8B4";
             txtGrade8B4.Size = new Size(100, 23);
             txtGrade8B4.TabIndex = 43;
             // 
             // txtGrade0B4
             // 
-            txtGrade0B4.Location = new Point(266, 135);
+            txtGrade0B4.Location = new Point(246, 134);
             txtGrade0B4.Name = "txtGrade0B4";
             txtGrade0B4.Size = new Size(100, 23);
             txtGrade0B4.TabIndex = 4;
             // 
             // txtGrade7B4
             // 
-            txtGrade7B4.Location = new Point(267, 338);
+            txtGrade7B4.Location = new Point(247, 337);
             txtGrade7B4.Name = "txtGrade7B4";
             txtGrade7B4.Size = new Size(100, 23);
             txtGrade7B4.TabIndex = 42;
             // 
             // txtGrade6B4
             // 
-            txtGrade6B4.Location = new Point(267, 309);
+            txtGrade6B4.Location = new Point(247, 308);
             txtGrade6B4.Name = "txtGrade6B4";
             txtGrade6B4.Size = new Size(100, 23);
             txtGrade6B4.TabIndex = 41;
             // 
             // txtGrade5B4
             // 
-            txtGrade5B4.Location = new Point(267, 280);
+            txtGrade5B4.Location = new Point(247, 279);
             txtGrade5B4.Name = "txtGrade5B4";
             txtGrade5B4.Size = new Size(100, 23);
             txtGrade5B4.TabIndex = 40;
@@ -1761,7 +2176,7 @@ namespace Scheduler
             // 
             // txtGrade4B4
             // 
-            txtGrade4B4.Location = new Point(267, 251);
+            txtGrade4B4.Location = new Point(247, 250);
             txtGrade4B4.Name = "txtGrade4B4";
             txtGrade4B4.Size = new Size(100, 23);
             txtGrade4B4.TabIndex = 39;
@@ -1770,16 +2185,17 @@ namespace Scheduler
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Verdana", 11.25F);
-            label11.Location = new Point(161, 117);
+            label11.Location = new Point(141, 117);
             label11.Name = "label11";
             label11.Size = new Size(88, 18);
             label11.TabIndex = 8;
             label11.Text = "Weight(%)";
             label11.TextAlign = ContentAlignment.MiddleCenter;
+            label11.Click += label11_Click;
             // 
             // txtGrade3B4
             // 
-            txtGrade3B4.Location = new Point(267, 222);
+            txtGrade3B4.Location = new Point(247, 221);
             txtGrade3B4.Name = "txtGrade3B4";
             txtGrade3B4.Size = new Size(100, 23);
             txtGrade3B4.TabIndex = 38;
@@ -1788,7 +2204,7 @@ namespace Scheduler
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Verdana", 11.25F);
-            label12.Location = new Point(266, 117);
+            label12.Location = new Point(246, 117);
             label12.Name = "label12";
             label12.Size = new Size(83, 18);
             label12.TabIndex = 9;
@@ -1797,14 +2213,14 @@ namespace Scheduler
             // 
             // txtGrade2B4
             // 
-            txtGrade2B4.Location = new Point(267, 193);
+            txtGrade2B4.Location = new Point(247, 192);
             txtGrade2B4.Name = "txtGrade2B4";
             txtGrade2B4.Size = new Size(100, 23);
             txtGrade2B4.TabIndex = 37;
             // 
             // txtGrade1B4
             // 
-            txtGrade1B4.Location = new Point(267, 164);
+            txtGrade1B4.Location = new Point(247, 163);
             txtGrade1B4.Name = "txtGrade1B4";
             txtGrade1B4.Size = new Size(100, 23);
             txtGrade1B4.TabIndex = 36;
@@ -1813,19 +2229,19 @@ namespace Scheduler
             // 
             txtItem2B4.Location = new Point(22, 193);
             txtItem2B4.Name = "txtItem2B4";
-            txtItem2B4.Size = new Size(133, 23);
+            txtItem2B4.Size = new Size(111, 23);
             txtItem2B4.TabIndex = 14;
             // 
             // txtItem3B4
             // 
             txtItem3B4.Location = new Point(22, 222);
             txtItem3B4.Name = "txtItem3B4";
-            txtItem3B4.Size = new Size(133, 23);
+            txtItem3B4.Size = new Size(111, 23);
             txtItem3B4.TabIndex = 15;
             // 
             // txt_Weight11B4
             // 
-            txt_Weight11B4.Location = new Point(161, 472);
+            txt_Weight11B4.Location = new Point(141, 470);
             txt_Weight11B4.Name = "txt_Weight11B4";
             txt_Weight11B4.Size = new Size(100, 23);
             txt_Weight11B4.TabIndex = 34;
@@ -1834,12 +2250,12 @@ namespace Scheduler
             // 
             txtItem4B4.Location = new Point(22, 251);
             txtItem4B4.Name = "txtItem4B4";
-            txtItem4B4.Size = new Size(133, 23);
+            txtItem4B4.Size = new Size(111, 23);
             txtItem4B4.TabIndex = 16;
             // 
             // txt_Weight10B4
             // 
-            txt_Weight10B4.Location = new Point(161, 443);
+            txt_Weight10B4.Location = new Point(141, 441);
             txt_Weight10B4.Name = "txt_Weight10B4";
             txt_Weight10B4.Size = new Size(100, 23);
             txt_Weight10B4.TabIndex = 33;
@@ -1848,12 +2264,12 @@ namespace Scheduler
             // 
             txtItem5B4.Location = new Point(22, 280);
             txtItem5B4.Name = "txtItem5B4";
-            txtItem5B4.Size = new Size(133, 23);
+            txtItem5B4.Size = new Size(111, 23);
             txtItem5B4.TabIndex = 17;
             // 
             // txt_Weight9B4
             // 
-            txt_Weight9B4.Location = new Point(161, 414);
+            txt_Weight9B4.Location = new Point(141, 412);
             txt_Weight9B4.Name = "txt_Weight9B4";
             txt_Weight9B4.Size = new Size(100, 23);
             txt_Weight9B4.TabIndex = 32;
@@ -1862,12 +2278,12 @@ namespace Scheduler
             // 
             txtItem6B4.Location = new Point(22, 309);
             txtItem6B4.Name = "txtItem6B4";
-            txtItem6B4.Size = new Size(133, 23);
+            txtItem6B4.Size = new Size(111, 23);
             txtItem6B4.TabIndex = 18;
             // 
             // txt_Weight8B4
             // 
-            txt_Weight8B4.Location = new Point(161, 385);
+            txt_Weight8B4.Location = new Point(141, 383);
             txt_Weight8B4.Name = "txt_Weight8B4";
             txt_Weight8B4.Size = new Size(100, 23);
             txt_Weight8B4.TabIndex = 31;
@@ -1876,12 +2292,12 @@ namespace Scheduler
             // 
             txtItem7B4.Location = new Point(22, 338);
             txtItem7B4.Name = "txtItem7B4";
-            txtItem7B4.Size = new Size(133, 23);
+            txtItem7B4.Size = new Size(111, 23);
             txtItem7B4.TabIndex = 19;
             // 
             // txt_Weight7B4
             // 
-            txt_Weight7B4.Location = new Point(161, 338);
+            txt_Weight7B4.Location = new Point(141, 336);
             txt_Weight7B4.Name = "txt_Weight7B4";
             txt_Weight7B4.Size = new Size(100, 23);
             txt_Weight7B4.TabIndex = 30;
@@ -1890,12 +2306,12 @@ namespace Scheduler
             // 
             txtItem8B4.Location = new Point(22, 385);
             txtItem8B4.Name = "txtItem8B4";
-            txtItem8B4.Size = new Size(133, 23);
+            txtItem8B4.Size = new Size(111, 23);
             txtItem8B4.TabIndex = 20;
             // 
             // txt_Weight6B4
             // 
-            txt_Weight6B4.Location = new Point(161, 309);
+            txt_Weight6B4.Location = new Point(141, 307);
             txt_Weight6B4.Name = "txt_Weight6B4";
             txt_Weight6B4.Size = new Size(100, 23);
             txt_Weight6B4.TabIndex = 29;
@@ -1904,12 +2320,12 @@ namespace Scheduler
             // 
             txtItem9B4.Location = new Point(22, 414);
             txtItem9B4.Name = "txtItem9B4";
-            txtItem9B4.Size = new Size(133, 23);
+            txtItem9B4.Size = new Size(111, 23);
             txtItem9B4.TabIndex = 21;
             // 
             // txt_Weight5B4
             // 
-            txt_Weight5B4.Location = new Point(161, 280);
+            txt_Weight5B4.Location = new Point(141, 278);
             txt_Weight5B4.Name = "txt_Weight5B4";
             txt_Weight5B4.Size = new Size(100, 23);
             txt_Weight5B4.TabIndex = 28;
@@ -1918,12 +2334,12 @@ namespace Scheduler
             // 
             txtItem10B4.Location = new Point(22, 443);
             txtItem10B4.Name = "txtItem10B4";
-            txtItem10B4.Size = new Size(133, 23);
+            txtItem10B4.Size = new Size(111, 23);
             txtItem10B4.TabIndex = 22;
             // 
             // txt_Weight4B4
             // 
-            txt_Weight4B4.Location = new Point(161, 251);
+            txt_Weight4B4.Location = new Point(141, 249);
             txt_Weight4B4.Name = "txt_Weight4B4";
             txt_Weight4B4.Size = new Size(100, 23);
             txt_Weight4B4.TabIndex = 27;
@@ -1932,26 +2348,26 @@ namespace Scheduler
             // 
             txtItem11B4.Location = new Point(22, 472);
             txtItem11B4.Name = "txtItem11B4";
-            txtItem11B4.Size = new Size(133, 23);
+            txtItem11B4.Size = new Size(111, 23);
             txtItem11B4.TabIndex = 23;
             // 
             // txt_Weight3B4
             // 
-            txt_Weight3B4.Location = new Point(161, 222);
+            txt_Weight3B4.Location = new Point(141, 220);
             txt_Weight3B4.Name = "txt_Weight3B4";
             txt_Weight3B4.Size = new Size(100, 23);
             txt_Weight3B4.TabIndex = 26;
             // 
             // txt_Weight1B4
             // 
-            txt_Weight1B4.Location = new Point(161, 164);
+            txt_Weight1B4.Location = new Point(141, 162);
             txt_Weight1B4.Name = "txt_Weight1B4";
             txt_Weight1B4.Size = new Size(100, 23);
             txt_Weight1B4.TabIndex = 24;
             // 
             // txt_Weight2B4
             // 
-            txt_Weight2B4.Location = new Point(161, 193);
+            txt_Weight2B4.Location = new Point(141, 191);
             txt_Weight2B4.Name = "txt_Weight2B4";
             txt_Weight2B4.Size = new Size(100, 23);
             txt_Weight2B4.TabIndex = 25;
@@ -1961,7 +2377,7 @@ namespace Scheduler
             gBox_En4.BackColor = Color.MediumPurple;
             gBox_En4.Controls.Add(rbtn_En4);
             gBox_En4.Controls.Add(rbtn_Disabled4);
-            gBox_En4.Location = new Point(1259, 111);
+            gBox_En4.Location = new Point(1161, 111);
             gBox_En4.Name = "gBox_En4";
             gBox_En4.Size = new Size(155, 32);
             gBox_En4.TabIndex = 53;
@@ -1992,12 +2408,511 @@ namespace Scheduler
             rbtn_Disabled4.UseVisualStyleBackColor = true;
             rbtn_Disabled4.CheckedChanged += rbtn_Disabled4_CheckedChanged;
             // 
+            // gBox5
+            // 
+            gBox5.BackColor = Color.FromArgb(255, 128, 128);
+            gBox5.Controls.Add(lblGPA5);
+            gBox5.Controls.Add(label14);
+            gBox5.Controls.Add(lblGPATag5);
+            gBox5.Controls.Add(txtItem1B5);
+            gBox5.Controls.Add(lblLetterGrade5);
+            gBox5.Controls.Add(textBox2);
+            gBox5.Controls.Add(lblLetterTag5);
+            gBox5.Controls.Add(txtGrade11B5);
+            gBox5.Controls.Add(lblPercentTag5);
+            gBox5.Controls.Add(textBox4);
+            gBox5.Controls.Add(lblResult5);
+            gBox5.Controls.Add(txtGrade10B5);
+            gBox5.Controls.Add(btn_g5Calculate);
+            gBox5.Controls.Add(txtItem0B5);
+            gBox5.Controls.Add(txtGrade9B5);
+            gBox5.Controls.Add(txt_Weight0B5);
+            gBox5.Controls.Add(txtGrade8B5);
+            gBox5.Controls.Add(txtGrade0B5);
+            gBox5.Controls.Add(txtGrade7B5);
+            gBox5.Controls.Add(txtGrade6B5);
+            gBox5.Controls.Add(txtGrade5B5);
+            gBox5.Controls.Add(label20);
+            gBox5.Controls.Add(txtGrade4B5);
+            gBox5.Controls.Add(label21);
+            gBox5.Controls.Add(txtGrade3B5);
+            gBox5.Controls.Add(label22);
+            gBox5.Controls.Add(txtGrade2B5);
+            gBox5.Controls.Add(txtGrade1B5);
+            gBox5.Controls.Add(txtItem2B5);
+            gBox5.Controls.Add(txtItem3B5);
+            gBox5.Controls.Add(txt_Weight11B5);
+            gBox5.Controls.Add(txtItem4B5);
+            gBox5.Controls.Add(txt_Weight10B5);
+            gBox5.Controls.Add(txtItem5B5);
+            gBox5.Controls.Add(txt_Weight9B5);
+            gBox5.Controls.Add(txtItem6B5);
+            gBox5.Controls.Add(txt_Weight8B5);
+            gBox5.Controls.Add(txtItem7B5);
+            gBox5.Controls.Add(txt_Weight7B5);
+            gBox5.Controls.Add(txtItem8B5);
+            gBox5.Controls.Add(txt_Weight6B5);
+            gBox5.Controls.Add(txtItem9B5);
+            gBox5.Controls.Add(txt_Weight5B5);
+            gBox5.Controls.Add(txtItem10B5);
+            gBox5.Controls.Add(txt_Weight4B5);
+            gBox5.Controls.Add(txtItem11B5);
+            gBox5.Controls.Add(txt_Weight3B5);
+            gBox5.Controls.Add(txt_Weight1B5);
+            gBox5.Controls.Add(txt_Weight2B5);
+            gBox5.Location = new Point(1543, 149);
+            gBox5.Name = "gBox5";
+            gBox5.Size = new Size(369, 566);
+            gBox5.TabIndex = 70;
+            gBox5.TabStop = false;
+            // 
+            // lblGPA5
+            // 
+            lblGPA5.AutoSize = true;
+            lblGPA5.BackColor = SystemColors.ActiveCaption;
+            lblGPA5.BorderStyle = BorderStyle.FixedSingle;
+            lblGPA5.Font = new Font("Verdana", 11.25F);
+            lblGPA5.ForeColor = SystemColors.WindowText;
+            lblGPA5.Location = new Point(141, 538);
+            lblGPA5.Name = "lblGPA5";
+            lblGPA5.Size = new Size(2, 20);
+            lblGPA5.TabIndex = 69;
+            lblGPA5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Verdana", 11.25F);
+            label14.Location = new Point(22, 364);
+            label14.Name = "label14";
+            label14.Size = new Size(42, 18);
+            label14.TabIndex = 48;
+            label14.Text = "Labs";
+            label14.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblGPATag5
+            // 
+            lblGPATag5.AutoSize = true;
+            lblGPATag5.BackColor = Color.FromArgb(255, 128, 128);
+            lblGPATag5.BorderStyle = BorderStyle.FixedSingle;
+            lblGPATag5.Font = new Font("Verdana", 11.25F);
+            lblGPATag5.ForeColor = SystemColors.WindowText;
+            lblGPATag5.Location = new Point(22, 538);
+            lblGPATag5.Name = "lblGPATag5";
+            lblGPATag5.Size = new Size(48, 20);
+            lblGPATag5.TabIndex = 68;
+            lblGPATag5.Text = "GPA:";
+            lblGPATag5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtItem1B5
+            // 
+            txtItem1B5.Location = new Point(22, 164);
+            txtItem1B5.Name = "txtItem1B5";
+            txtItem1B5.Size = new Size(111, 23);
+            txtItem1B5.TabIndex = 13;
+            // 
+            // lblLetterGrade5
+            // 
+            lblLetterGrade5.AutoSize = true;
+            lblLetterGrade5.BackColor = SystemColors.ActiveCaption;
+            lblLetterGrade5.BorderStyle = BorderStyle.FixedSingle;
+            lblLetterGrade5.Font = new Font("Verdana", 11.25F);
+            lblLetterGrade5.ForeColor = SystemColors.WindowText;
+            lblLetterGrade5.Location = new Point(141, 518);
+            lblLetterGrade5.Name = "lblLetterGrade5";
+            lblLetterGrade5.Size = new Size(2, 20);
+            lblLetterGrade5.TabIndex = 67;
+            lblLetterGrade5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Verdana", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(22, 32);
+            textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "Enter Course Name...";
+            textBox2.Size = new Size(246, 33);
+            textBox2.TabIndex = 0;
+            // 
+            // lblLetterTag5
+            // 
+            lblLetterTag5.AutoSize = true;
+            lblLetterTag5.BackColor = Color.FromArgb(255, 128, 128);
+            lblLetterTag5.BorderStyle = BorderStyle.FixedSingle;
+            lblLetterTag5.Font = new Font("Verdana", 11.25F);
+            lblLetterTag5.ForeColor = SystemColors.WindowText;
+            lblLetterTag5.Location = new Point(22, 518);
+            lblLetterTag5.Name = "lblLetterTag5";
+            lblLetterTag5.Size = new Size(111, 20);
+            lblLetterTag5.TabIndex = 66;
+            lblLetterTag5.Text = "Letter Grade:";
+            lblLetterTag5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtGrade11B5
+            // 
+            txtGrade11B5.Location = new Point(247, 471);
+            txtGrade11B5.Name = "txtGrade11B5";
+            txtGrade11B5.Size = new Size(100, 23);
+            txtGrade11B5.TabIndex = 46;
+            // 
+            // lblPercentTag5
+            // 
+            lblPercentTag5.AutoSize = true;
+            lblPercentTag5.BackColor = Color.FromArgb(255, 128, 128);
+            lblPercentTag5.BorderStyle = BorderStyle.FixedSingle;
+            lblPercentTag5.Font = new Font("Verdana", 11.25F);
+            lblPercentTag5.ForeColor = SystemColors.WindowText;
+            lblPercentTag5.Location = new Point(22, 497);
+            lblPercentTag5.Name = "lblPercentTag5";
+            lblPercentTag5.Size = new Size(100, 20);
+            lblPercentTag5.TabIndex = 65;
+            lblPercentTag5.Text = "Percentage:";
+            lblPercentTag5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(22, 79);
+            textBox4.Name = "textBox4";
+            textBox4.PlaceholderText = "Enter Course Code...";
+            textBox4.Size = new Size(121, 23);
+            textBox4.TabIndex = 1;
+            // 
+            // lblResult5
+            // 
+            lblResult5.AutoSize = true;
+            lblResult5.BackColor = SystemColors.ActiveCaption;
+            lblResult5.BorderStyle = BorderStyle.FixedSingle;
+            lblResult5.Font = new Font("Verdana", 11.25F);
+            lblResult5.ForeColor = SystemColors.WindowText;
+            lblResult5.Location = new Point(141, 497);
+            lblResult5.Name = "lblResult5";
+            lblResult5.Size = new Size(2, 20);
+            lblResult5.TabIndex = 64;
+            lblResult5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtGrade10B5
+            // 
+            txtGrade10B5.Location = new Point(247, 442);
+            txtGrade10B5.Name = "txtGrade10B5";
+            txtGrade10B5.Size = new Size(100, 23);
+            txtGrade10B5.TabIndex = 45;
+            // 
+            // btn_g5Calculate
+            // 
+            btn_g5Calculate.BackColor = SystemColors.Window;
+            btn_g5Calculate.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_g5Calculate.Location = new Point(246, 518);
+            btn_g5Calculate.Name = "btn_g5Calculate";
+            btn_g5Calculate.Size = new Size(99, 31);
+            btn_g5Calculate.TabIndex = 63;
+            btn_g5Calculate.Text = "Calculate";
+            btn_g5Calculate.UseVisualStyleBackColor = false;
+            // 
+            // txtItem0B5
+            // 
+            txtItem0B5.Location = new Point(22, 135);
+            txtItem0B5.Name = "txtItem0B5";
+            txtItem0B5.Size = new Size(111, 23);
+            txtItem0B5.TabIndex = 2;
+            // 
+            // txtGrade9B5
+            // 
+            txtGrade9B5.Location = new Point(247, 413);
+            txtGrade9B5.Name = "txtGrade9B5";
+            txtGrade9B5.Size = new Size(100, 23);
+            txtGrade9B5.TabIndex = 44;
+            // 
+            // txt_Weight0B5
+            // 
+            txt_Weight0B5.Location = new Point(141, 133);
+            txt_Weight0B5.Name = "txt_Weight0B5";
+            txt_Weight0B5.Size = new Size(100, 23);
+            txt_Weight0B5.TabIndex = 3;
+            // 
+            // txtGrade8B5
+            // 
+            txtGrade8B5.Location = new Point(247, 384);
+            txtGrade8B5.Name = "txtGrade8B5";
+            txtGrade8B5.Size = new Size(100, 23);
+            txtGrade8B5.TabIndex = 43;
+            // 
+            // txtGrade0B5
+            // 
+            txtGrade0B5.Location = new Point(246, 134);
+            txtGrade0B5.Name = "txtGrade0B5";
+            txtGrade0B5.Size = new Size(100, 23);
+            txtGrade0B5.TabIndex = 4;
+            // 
+            // txtGrade7B5
+            // 
+            txtGrade7B5.Location = new Point(247, 337);
+            txtGrade7B5.Name = "txtGrade7B5";
+            txtGrade7B5.Size = new Size(100, 23);
+            txtGrade7B5.TabIndex = 42;
+            // 
+            // txtGrade6B5
+            // 
+            txtGrade6B5.Location = new Point(247, 308);
+            txtGrade6B5.Name = "txtGrade6B5";
+            txtGrade6B5.Size = new Size(100, 23);
+            txtGrade6B5.TabIndex = 41;
+            // 
+            // txtGrade5B5
+            // 
+            txtGrade5B5.Location = new Point(247, 279);
+            txtGrade5B5.Name = "txtGrade5B5";
+            txtGrade5B5.Size = new Size(100, 23);
+            txtGrade5B5.TabIndex = 40;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Font = new Font("Verdana", 11.25F);
+            label20.Location = new Point(22, 117);
+            label20.Name = "label20";
+            label20.Size = new Size(43, 18);
+            label20.TabIndex = 7;
+            label20.Text = "Item";
+            label20.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtGrade4B5
+            // 
+            txtGrade4B5.Location = new Point(247, 250);
+            txtGrade4B5.Name = "txtGrade4B5";
+            txtGrade4B5.Size = new Size(100, 23);
+            txtGrade4B5.TabIndex = 39;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Font = new Font("Verdana", 11.25F);
+            label21.Location = new Point(141, 117);
+            label21.Name = "label21";
+            label21.Size = new Size(88, 18);
+            label21.TabIndex = 8;
+            label21.Text = "Weight(%)";
+            label21.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtGrade3B5
+            // 
+            txtGrade3B5.Location = new Point(247, 221);
+            txtGrade3B5.Name = "txtGrade3B5";
+            txtGrade3B5.Size = new Size(100, 23);
+            txtGrade3B5.TabIndex = 38;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Verdana", 11.25F);
+            label22.Location = new Point(246, 117);
+            label22.Name = "label22";
+            label22.Size = new Size(83, 18);
+            label22.TabIndex = 9;
+            label22.Text = "Grade(%)";
+            label22.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // txtGrade2B5
+            // 
+            txtGrade2B5.Location = new Point(247, 192);
+            txtGrade2B5.Name = "txtGrade2B5";
+            txtGrade2B5.Size = new Size(100, 23);
+            txtGrade2B5.TabIndex = 37;
+            // 
+            // txtGrade1B5
+            // 
+            txtGrade1B5.Location = new Point(247, 163);
+            txtGrade1B5.Name = "txtGrade1B5";
+            txtGrade1B5.Size = new Size(100, 23);
+            txtGrade1B5.TabIndex = 36;
+            // 
+            // txtItem2B5
+            // 
+            txtItem2B5.Location = new Point(22, 193);
+            txtItem2B5.Name = "txtItem2B5";
+            txtItem2B5.Size = new Size(111, 23);
+            txtItem2B5.TabIndex = 14;
+            // 
+            // txtItem3B5
+            // 
+            txtItem3B5.Location = new Point(22, 222);
+            txtItem3B5.Name = "txtItem3B5";
+            txtItem3B5.Size = new Size(111, 23);
+            txtItem3B5.TabIndex = 15;
+            // 
+            // txt_Weight11B5
+            // 
+            txt_Weight11B5.Location = new Point(141, 470);
+            txt_Weight11B5.Name = "txt_Weight11B5";
+            txt_Weight11B5.Size = new Size(100, 23);
+            txt_Weight11B5.TabIndex = 34;
+            // 
+            // txtItem4B5
+            // 
+            txtItem4B5.Location = new Point(22, 251);
+            txtItem4B5.Name = "txtItem4B5";
+            txtItem4B5.Size = new Size(111, 23);
+            txtItem4B5.TabIndex = 16;
+            // 
+            // txt_Weight10B5
+            // 
+            txt_Weight10B5.Location = new Point(141, 441);
+            txt_Weight10B5.Name = "txt_Weight10B5";
+            txt_Weight10B5.Size = new Size(100, 23);
+            txt_Weight10B5.TabIndex = 33;
+            // 
+            // txtItem5B5
+            // 
+            txtItem5B5.Location = new Point(22, 280);
+            txtItem5B5.Name = "txtItem5B5";
+            txtItem5B5.Size = new Size(111, 23);
+            txtItem5B5.TabIndex = 17;
+            // 
+            // txt_Weight9B5
+            // 
+            txt_Weight9B5.Location = new Point(141, 412);
+            txt_Weight9B5.Name = "txt_Weight9B5";
+            txt_Weight9B5.Size = new Size(100, 23);
+            txt_Weight9B5.TabIndex = 32;
+            // 
+            // txtItem6B5
+            // 
+            txtItem6B5.Location = new Point(22, 309);
+            txtItem6B5.Name = "txtItem6B5";
+            txtItem6B5.Size = new Size(111, 23);
+            txtItem6B5.TabIndex = 18;
+            // 
+            // txt_Weight8B5
+            // 
+            txt_Weight8B5.Location = new Point(141, 383);
+            txt_Weight8B5.Name = "txt_Weight8B5";
+            txt_Weight8B5.Size = new Size(100, 23);
+            txt_Weight8B5.TabIndex = 31;
+            // 
+            // txtItem7B5
+            // 
+            txtItem7B5.Location = new Point(22, 338);
+            txtItem7B5.Name = "txtItem7B5";
+            txtItem7B5.Size = new Size(111, 23);
+            txtItem7B5.TabIndex = 19;
+            // 
+            // txt_Weight7B5
+            // 
+            txt_Weight7B5.Location = new Point(141, 336);
+            txt_Weight7B5.Name = "txt_Weight7B5";
+            txt_Weight7B5.Size = new Size(100, 23);
+            txt_Weight7B5.TabIndex = 30;
+            // 
+            // txtItem8B5
+            // 
+            txtItem8B5.Location = new Point(22, 385);
+            txtItem8B5.Name = "txtItem8B5";
+            txtItem8B5.Size = new Size(111, 23);
+            txtItem8B5.TabIndex = 20;
+            // 
+            // txt_Weight6B5
+            // 
+            txt_Weight6B5.Location = new Point(141, 307);
+            txt_Weight6B5.Name = "txt_Weight6B5";
+            txt_Weight6B5.Size = new Size(100, 23);
+            txt_Weight6B5.TabIndex = 29;
+            // 
+            // txtItem9B5
+            // 
+            txtItem9B5.Location = new Point(22, 414);
+            txtItem9B5.Name = "txtItem9B5";
+            txtItem9B5.Size = new Size(111, 23);
+            txtItem9B5.TabIndex = 21;
+            // 
+            // txt_Weight5B5
+            // 
+            txt_Weight5B5.Location = new Point(141, 278);
+            txt_Weight5B5.Name = "txt_Weight5B5";
+            txt_Weight5B5.Size = new Size(100, 23);
+            txt_Weight5B5.TabIndex = 28;
+            // 
+            // txtItem10B5
+            // 
+            txtItem10B5.Location = new Point(22, 443);
+            txtItem10B5.Name = "txtItem10B5";
+            txtItem10B5.Size = new Size(111, 23);
+            txtItem10B5.TabIndex = 22;
+            // 
+            // txt_Weight4B5
+            // 
+            txt_Weight4B5.Location = new Point(141, 249);
+            txt_Weight4B5.Name = "txt_Weight4B5";
+            txt_Weight4B5.Size = new Size(100, 23);
+            txt_Weight4B5.TabIndex = 27;
+            // 
+            // txtItem11B5
+            // 
+            txtItem11B5.Location = new Point(22, 472);
+            txtItem11B5.Name = "txtItem11B5";
+            txtItem11B5.Size = new Size(111, 23);
+            txtItem11B5.TabIndex = 23;
+            // 
+            // txt_Weight3B5
+            // 
+            txt_Weight3B5.Location = new Point(141, 220);
+            txt_Weight3B5.Name = "txt_Weight3B5";
+            txt_Weight3B5.Size = new Size(100, 23);
+            txt_Weight3B5.TabIndex = 26;
+            // 
+            // txt_Weight1B5
+            // 
+            txt_Weight1B5.Location = new Point(141, 162);
+            txt_Weight1B5.Name = "txt_Weight1B5";
+            txt_Weight1B5.Size = new Size(100, 23);
+            txt_Weight1B5.TabIndex = 24;
+            // 
+            // txt_Weight2B5
+            // 
+            txt_Weight2B5.Location = new Point(141, 191);
+            txt_Weight2B5.Name = "txt_Weight2B5";
+            txt_Weight2B5.Size = new Size(100, 23);
+            txt_Weight2B5.TabIndex = 25;
+            // 
+            // gBox_En5
+            // 
+            gBox_En5.BackColor = Color.FromArgb(255, 128, 128);
+            gBox_En5.Controls.Add(radioButton1);
+            gBox_En5.Controls.Add(radioButton2);
+            gBox_En5.Location = new Point(1543, 111);
+            gBox_En5.Name = "gBox_En5";
+            gBox_En5.Size = new Size(155, 32);
+            gBox_En5.TabIndex = 54;
+            gBox_En5.TabStop = false;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Checked = true;
+            radioButton1.Location = new Point(6, 7);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(67, 19);
+            radioButton1.TabIndex = 5;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Enabled";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(79, 7);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(70, 19);
+            radioButton2.TabIndex = 6;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Disabled";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
             // GPA_Calculator
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bg;
-            ClientSize = new Size(1924, 819);
+            ClientSize = new Size(1924, 1061);
+            Controls.Add(gBox_En5);
+            Controls.Add(gBox5);
             Controls.Add(gBox_En4);
             Controls.Add(gBox4);
             Controls.Add(gBox_En3);
@@ -2007,6 +2922,7 @@ namespace Scheduler
             Controls.Add(gbox_En1);
             Controls.Add(gBoxMain);
             Controls.Add(gBox1);
+            MaximumSize = new Size(2400, 1140);
             Name = "GPA_Calculator";
             Text = "GPA Calculator";
             Load += GPA_Calculator_Load;
@@ -2028,7 +2944,31 @@ namespace Scheduler
             gBox4.PerformLayout();
             gBox_En4.ResumeLayout(false);
             gBox_En4.PerformLayout();
+            gBox5.ResumeLayout(false);
+            gBox5.PerformLayout();
+            gBox_En5.ResumeLayout(false);
+            gBox_En5.PerformLayout();
             ResumeLayout(false);
+        }
+
+        private void txtGrade8B1_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void txtGrade9B1_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void txtGrade10B1_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void txtGrade11B1_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void GPA_Calculator_Load(object sender, EventArgs e)
@@ -2209,7 +3149,7 @@ namespace Scheduler
         private RadioButton rbtn_Disabled3;
         private GroupBox gBox4;
         private Label label9;
-        private TextBox txtItem1B5;
+        private TextBox txtItem1B4;
         private TextBox txt_CourseNameB4;
         private TextBox txtGrade11B4;
         private TextBox txt_CourseCodeB4;
@@ -2260,5 +3200,79 @@ namespace Scheduler
         private Label lblLetterTag1;
         private Label lblGPA1;
         private Label lblGPATag1;
+        private Label lblGPA2;
+        private Label lblGPATag2;
+        private Label lblLetterGrade2;
+        private Label lblLetterTag2;
+        private Label lblPercentTag2;
+        private Label lblResult2;
+        private Button btn_g2Calculate;
+        private Label lblGPA3;
+        private Label lblGPATag3;
+        private Label lblLetterGrade3;
+        private Label lblLetterTag3;
+        private Label lblPercentTag3;
+        private Label lblResult3;
+        private Button btn_g3Calculate;
+        private Label lblGPA4;
+        private Label lblGPATag4;
+        private Label lblLetterGrade4;
+        private Label lblLetterTag4;
+        private Label lblPercentTag4;
+        private Label lblResult4;
+        private Button btn_g4Calculate;
+        private GroupBox gBox5;
+        private Label lblGPA5;
+        private Label label14;
+        private Label lblGPATag5;
+        private TextBox txtItem1B5;
+        private Label lblLetterGrade5;
+        private TextBox textBox2;
+        private Label lblLetterTag5;
+        private TextBox txtGrade11B5;
+        private Label lblPercentTag5;
+        private TextBox textBox4;
+        private Label lblResult5;
+        private TextBox txtGrade10B5;
+        private Button btn_g5Calculate;
+        private TextBox txtItem0B5;
+        private TextBox txtGrade9B5;
+        private TextBox txt_Weight0B5;
+        private TextBox txtGrade8B5;
+        private TextBox txtGrade0B5;
+        private TextBox txtGrade7B5;
+        private TextBox txtGrade6B5;
+        private TextBox txtGrade5B5;
+        private Label label20;
+        private TextBox txtGrade4B5;
+        private Label label21;
+        private TextBox txtGrade3B5;
+        private Label label22;
+        private TextBox txtGrade2B5;
+        private TextBox txtGrade1B5;
+        private TextBox txtItem2B5;
+        private TextBox txtItem3B5;
+        private TextBox txt_Weight11B5;
+        private TextBox txtItem4B5;
+        private TextBox txt_Weight10B5;
+        private TextBox txtItem5B5;
+        private TextBox txt_Weight9B5;
+        private TextBox txtItem6B5;
+        private TextBox txt_Weight8B5;
+        private TextBox txtItem7B5;
+        private TextBox txt_Weight7B5;
+        private TextBox txtItem8B5;
+        private TextBox txt_Weight6B5;
+        private TextBox txtItem9B5;
+        private TextBox txt_Weight5B5;
+        private TextBox txtItem10B5;
+        private TextBox txt_Weight4B5;
+        private TextBox txtItem11B5;
+        private TextBox txt_Weight3B5;
+        private TextBox txt_Weight1B5;
+        private TextBox txt_Weight2B5;
+        private GroupBox gBox_En5;
+        private RadioButton radioButton1;
+        private RadioButton radioButton2;
     }
 }

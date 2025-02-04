@@ -29,8 +29,8 @@ namespace Scheduler
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {   
-            GPA_Calculator Calculator = new GPA_Calculator(); 
+        {
+            GPA_Calculator Calculator = new GPA_Calculator();
             this.Hide();
             Calculator.Show();
         }
@@ -38,6 +38,11 @@ namespace Scheduler
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Start_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }

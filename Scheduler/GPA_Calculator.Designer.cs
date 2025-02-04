@@ -34,7 +34,7 @@ namespace Scheduler
             txtItem0B1 = new TextBox();
             txt_Weight0B1 = new TextBox();
             txtGrade0B1 = new TextBox();
-            rbtn_En = new RadioButton();
+            rbtn_En1 = new RadioButton();
             rbtn_Disabled = new RadioButton();
             lblItem = new Label();
             lbl_Weight = new Label();
@@ -75,8 +75,12 @@ namespace Scheduler
             txtGrade2B1 = new TextBox();
             txtGrade1B1 = new TextBox();
             gBox1 = new GroupBox();
+            lblLab1 = new Label();
+            label25 = new Label();
+            lblTheory1 = new Label();
             lblGPA1 = new Label();
             lblGPATag1 = new Label();
+            label26 = new Label();
             lblLetterGrade1 = new Label();
             lblLetterTag1 = new Label();
             lblPercentTag1 = new Label();
@@ -87,6 +91,10 @@ namespace Scheduler
             gBoxMain = new GroupBox();
             gbox_En1 = new GroupBox();
             gBox2 = new GroupBox();
+            lblLab2 = new Label();
+            lblTheory2 = new Label();
+            label15 = new Label();
+            label13 = new Label();
             lblGPA2 = new Label();
             lbl_Labs2 = new Label();
             lblGPATag2 = new Label();
@@ -140,7 +148,11 @@ namespace Scheduler
             rbtn_En2 = new RadioButton();
             rbtn_Disabled2 = new RadioButton();
             gBox3 = new GroupBox();
+            lblLab3 = new Label();
+            label16 = new Label();
+            lblTheory3 = new Label();
             lblGPA3 = new Label();
+            label17 = new Label();
             lblGPATag3 = new Label();
             lblLetterGrade3 = new Label();
             lblLetterTag3 = new Label();
@@ -193,7 +205,11 @@ namespace Scheduler
             rbtn_En3 = new RadioButton();
             rbtn_Disabled3 = new RadioButton();
             gBox4 = new GroupBox();
+            lblLab4 = new Label();
+            label18 = new Label();
+            lblTheory4 = new Label();
             lblGPA4 = new Label();
+            label19 = new Label();
             label9 = new Label();
             lblGPATag4 = new Label();
             txtItem1B4 = new TextBox();
@@ -246,6 +262,10 @@ namespace Scheduler
             rbtn_En4 = new RadioButton();
             rbtn_Disabled4 = new RadioButton();
             gBox5 = new GroupBox();
+            lblLab5 = new Label();
+            label23 = new Label();
+            lblTheory5 = new Label();
+            label24 = new Label();
             lblGPA5 = new Label();
             label14 = new Label();
             lblGPATag5 = new Label();
@@ -296,28 +316,12 @@ namespace Scheduler
             txt_Weight1B5 = new TextBox();
             txt_Weight2B5 = new TextBox();
             gBox_En5 = new GroupBox();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            label13 = new Label();
-            label15 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            label19 = new Label();
-            label23 = new Label();
-            label24 = new Label();
-            label25 = new Label();
-            label26 = new Label();
-            lblLab1 = new Label();
-            lblTheory1 = new Label();
-            lblLab2 = new Label();
-            lblTheory2 = new Label();
-            lblLab3 = new Label();
-            lblTheory3 = new Label();
-            lblLab4 = new Label();
-            lblTheory4 = new Label();
-            lblLab5 = new Label();
-            lblTheory5 = new Label();
+            rbtn_En5 = new RadioButton();
+            rbtn_Disabled5 = new RadioButton();
+            lblTitle = new Label();
+            LblTGPATag = new Label();
+            LblTGPA = new Label();
+            pbHelp = new PictureBox();
             gBox1.SuspendLayout();
             gBoxMain.SuspendLayout();
             gbox_En1.SuspendLayout();
@@ -329,6 +333,7 @@ namespace Scheduler
             gBox_En4.SuspendLayout();
             gBox5.SuspendLayout();
             gBox_En5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbHelp).BeginInit();
             SuspendLayout();
             // 
             // txt_CourseNameB1
@@ -375,18 +380,18 @@ namespace Scheduler
             txtGrade0B1.TabIndex = 4;
             txtGrade0B1.TextChanged += textBox1_TextChanged_2;
             // 
-            // rbtn_En
+            // rbtn_En1
             // 
-            rbtn_En.AutoSize = true;
-            rbtn_En.Checked = true;
-            rbtn_En.Location = new Point(6, 7);
-            rbtn_En.Name = "rbtn_En";
-            rbtn_En.Size = new Size(67, 19);
-            rbtn_En.TabIndex = 5;
-            rbtn_En.TabStop = true;
-            rbtn_En.Text = "Enabled";
-            rbtn_En.UseVisualStyleBackColor = true;
-            rbtn_En.CheckedChanged += rbtn_En_CheckedChanged;
+            rbtn_En1.AutoSize = true;
+            rbtn_En1.Checked = true;
+            rbtn_En1.Location = new Point(6, 7);
+            rbtn_En1.Name = "rbtn_En1";
+            rbtn_En1.Size = new Size(67, 19);
+            rbtn_En1.TabIndex = 5;
+            rbtn_En1.TabStop = true;
+            rbtn_En1.Text = "Enabled";
+            rbtn_En1.UseVisualStyleBackColor = true;
+            rbtn_En1.CheckedChanged += rbtn_En_CheckedChanged;
             // 
             // rbtn_Disabled
             // 
@@ -421,7 +426,6 @@ namespace Scheduler
             lbl_Weight.TabIndex = 8;
             lbl_Weight.Text = "Weight(%)";
             lbl_Weight.TextAlign = ContentAlignment.MiddleCenter;
-            lbl_Weight.Click += lbl_Weight_Click;
             // 
             // lblGrade
             // 
@@ -438,7 +442,7 @@ namespace Scheduler
             // 
             rbtn_Single.AutoSize = true;
             rbtn_Single.Checked = true;
-            rbtn_Single.Location = new Point(438, 19);
+            rbtn_Single.Location = new Point(430, 20);
             rbtn_Single.Name = "rbtn_Single";
             rbtn_Single.Size = new Size(97, 19);
             rbtn_Single.TabIndex = 10;
@@ -450,7 +454,7 @@ namespace Scheduler
             // rBtn_Multi
             // 
             rBtn_Multi.AutoSize = true;
-            rBtn_Multi.Location = new Point(553, 19);
+            rBtn_Multi.Location = new Point(543, 21);
             rBtn_Multi.Name = "rBtn_Multi";
             rBtn_Multi.RightToLeft = RightToLeft.No;
             rBtn_Multi.Size = new Size(142, 19);
@@ -587,7 +591,6 @@ namespace Scheduler
             txt_Weight7B1.Name = "txt_Weight7B1";
             txt_Weight7B1.Size = new Size(100, 22);
             txt_Weight7B1.TabIndex = 30;
-            txt_Weight7B1.TextChanged += txt_Weight7B1_TextChanged;
             // 
             // txt_Weight6B1
             // 
@@ -732,7 +735,8 @@ namespace Scheduler
             // 
             // gBox1
             // 
-            gBox1.BackColor = SystemColors.ActiveCaption;
+            gBox1.BackColor = Color.FromArgb(255, 200, 87);
+            gBox1.BackgroundImageLayout = ImageLayout.None;
             gBox1.Controls.Add(lblLab1);
             gBox1.Controls.Add(label25);
             gBox1.Controls.Add(lblTheory1);
@@ -786,17 +790,59 @@ namespace Scheduler
             gBox1.Controls.Add(txt_Weight3B1);
             gBox1.Controls.Add(txt_Weight1B1);
             gBox1.Controls.Add(txt_Weight2B1);
-            gBox1.Location = new Point(18, 149);
+            gBox1.FlatStyle = FlatStyle.System;
+            gBox1.Location = new Point(12, 149);
+            gBox1.Margin = new Padding(0);
             gBox1.Name = "gBox1";
-            gBox1.Size = new Size(369, 613);
+            gBox1.Size = new Size(375, 613);
             gBox1.TabIndex = 48;
             gBox1.TabStop = false;
             gBox1.Enter += gBox1_Enter;
             // 
+            // lblLab1
+            // 
+            lblLab1.AutoSize = true;
+            lblLab1.BackColor = Color.FromArgb(255, 200, 87);
+            lblLab1.BorderStyle = BorderStyle.FixedSingle;
+            lblLab1.Font = new Font("Verdana", 11.25F);
+            lblLab1.ForeColor = SystemColors.WindowText;
+            lblLab1.Location = new Point(141, 537);
+            lblLab1.Name = "lblLab1";
+            lblLab1.Size = new Size(2, 20);
+            lblLab1.TabIndex = 72;
+            lblLab1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.BackColor = Color.FromArgb(255, 200, 87);
+            label25.BorderStyle = BorderStyle.FixedSingle;
+            label25.Font = new Font("Verdana", 11.25F);
+            label25.ForeColor = SystemColors.WindowText;
+            label25.Location = new Point(22, 537);
+            label25.Name = "label25";
+            label25.Size = new Size(51, 20);
+            label25.TabIndex = 73;
+            label25.Text = "Labs:";
+            label25.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblTheory1
+            // 
+            lblTheory1.AutoSize = true;
+            lblTheory1.BackColor = Color.FromArgb(255, 200, 87);
+            lblTheory1.BorderStyle = BorderStyle.FixedSingle;
+            lblTheory1.Font = new Font("Verdana", 11.25F);
+            lblTheory1.ForeColor = SystemColors.WindowText;
+            lblTheory1.Location = new Point(141, 517);
+            lblTheory1.Name = "lblTheory1";
+            lblTheory1.Size = new Size(2, 20);
+            lblTheory1.TabIndex = 71;
+            lblTheory1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // lblGPA1
             // 
             lblGPA1.AutoSize = true;
-            lblGPA1.BackColor = SystemColors.ActiveCaption;
+            lblGPA1.BackColor = Color.FromArgb(255, 200, 87);
             lblGPA1.BorderStyle = BorderStyle.FixedSingle;
             lblGPA1.Font = new Font("Verdana", 11.25F);
             lblGPA1.ForeColor = SystemColors.WindowText;
@@ -809,7 +855,7 @@ namespace Scheduler
             // lblGPATag1
             // 
             lblGPATag1.AutoSize = true;
-            lblGPATag1.BackColor = SystemColors.ActiveCaption;
+            lblGPATag1.BackColor = Color.FromArgb(255, 200, 87);
             lblGPATag1.BorderStyle = BorderStyle.FixedSingle;
             lblGPATag1.Font = new Font("Verdana", 11.25F);
             lblGPATag1.ForeColor = SystemColors.WindowText;
@@ -820,10 +866,24 @@ namespace Scheduler
             lblGPATag1.Text = "GPA:";
             lblGPATag1.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.BackColor = Color.FromArgb(255, 200, 87);
+            label26.BorderStyle = BorderStyle.FixedSingle;
+            label26.Font = new Font("Verdana", 11.25F);
+            label26.ForeColor = SystemColors.WindowText;
+            label26.Location = new Point(21, 517);
+            label26.Name = "label26";
+            label26.Size = new Size(69, 20);
+            label26.TabIndex = 72;
+            label26.Text = "Theory:";
+            label26.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // lblLetterGrade1
             // 
             lblLetterGrade1.AutoSize = true;
-            lblLetterGrade1.BackColor = SystemColors.ActiveCaption;
+            lblLetterGrade1.BackColor = Color.FromArgb(255, 200, 87);
             lblLetterGrade1.BorderStyle = BorderStyle.FixedSingle;
             lblLetterGrade1.Font = new Font("Verdana", 11.25F);
             lblLetterGrade1.ForeColor = SystemColors.WindowText;
@@ -836,7 +896,7 @@ namespace Scheduler
             // lblLetterTag1
             // 
             lblLetterTag1.AutoSize = true;
-            lblLetterTag1.BackColor = SystemColors.ActiveCaption;
+            lblLetterTag1.BackColor = Color.FromArgb(255, 200, 87);
             lblLetterTag1.BorderStyle = BorderStyle.FixedSingle;
             lblLetterTag1.Font = new Font("Verdana", 11.25F);
             lblLetterTag1.ForeColor = SystemColors.WindowText;
@@ -850,7 +910,7 @@ namespace Scheduler
             // lblPercentTag1
             // 
             lblPercentTag1.AutoSize = true;
-            lblPercentTag1.BackColor = SystemColors.ActiveCaption;
+            lblPercentTag1.BackColor = Color.FromArgb(255, 200, 87);
             lblPercentTag1.BorderStyle = BorderStyle.FixedSingle;
             lblPercentTag1.Font = new Font("Verdana", 11.25F);
             lblPercentTag1.ForeColor = SystemColors.WindowText;
@@ -864,7 +924,7 @@ namespace Scheduler
             // lblResult1
             // 
             lblResult1.AutoSize = true;
-            lblResult1.BackColor = SystemColors.ActiveCaption;
+            lblResult1.BackColor = Color.FromArgb(255, 200, 87);
             lblResult1.BorderStyle = BorderStyle.FixedSingle;
             lblResult1.Font = new Font("Verdana", 11.25F);
             lblResult1.ForeColor = SystemColors.WindowText;
@@ -884,7 +944,7 @@ namespace Scheduler
             btn_g1Calculate.TabIndex = 48;
             btn_g1Calculate.Text = "Calculate";
             btn_g1Calculate.UseVisualStyleBackColor = false;
-            btn_g1Calculate.Click += btn_g1Calculate_Click;
+            btn_g1Calculate.Click += calculateCard;
             // 
             // lbl_Lab1
             // 
@@ -896,7 +956,6 @@ namespace Scheduler
             lbl_Lab1.TabIndex = 47;
             lbl_Lab1.Text = "Labs";
             lbl_Lab1.TextAlign = ContentAlignment.MiddleCenter;
-            lbl_Lab1.Click += label5_Click;
             // 
             // label1
             // 
@@ -912,11 +971,12 @@ namespace Scheduler
             // 
             // gBoxMain
             // 
-            gBoxMain.BackColor = Color.PaleGreen;
+            gBoxMain.BackColor = Color.Transparent;
             gBoxMain.Controls.Add(rbtn_Single);
             gBoxMain.Controls.Add(label1);
             gBoxMain.Controls.Add(rBtn_Multi);
-            gBoxMain.Location = new Point(39, 12);
+            gBoxMain.ForeColor = Color.White;
+            gBoxMain.Location = new Point(12, 765);
             gBoxMain.Name = "gBoxMain";
             gBoxMain.Size = new Size(713, 56);
             gBoxMain.TabIndex = 49;
@@ -925,10 +985,11 @@ namespace Scheduler
             // 
             // gbox_En1
             // 
-            gbox_En1.BackColor = SystemColors.ActiveCaption;
-            gbox_En1.Controls.Add(rbtn_En);
+            gbox_En1.BackColor = Color.FromArgb(255, 200, 87);
+            gbox_En1.BackgroundImageLayout = ImageLayout.None;
+            gbox_En1.Controls.Add(rbtn_En1);
             gbox_En1.Controls.Add(rbtn_Disabled);
-            gbox_En1.Location = new Point(18, 111);
+            gbox_En1.Location = new Point(12, 111);
             gbox_En1.Name = "gbox_En1";
             gbox_En1.Size = new Size(155, 32);
             gbox_En1.TabIndex = 50;
@@ -936,7 +997,7 @@ namespace Scheduler
             // 
             // gBox2
             // 
-            gBox2.BackColor = Color.Tan;
+            gBox2.BackColor = Color.FromArgb(219, 58, 52);
             gBox2.Controls.Add(lblLab2);
             gBox2.Controls.Add(lblTheory2);
             gBox2.Controls.Add(label15);
@@ -990,16 +1051,72 @@ namespace Scheduler
             gBox2.Controls.Add(txt_Weight3B2);
             gBox2.Controls.Add(txt_Weight1B2);
             gBox2.Controls.Add(txt_Weight2B2);
+            gBox2.FlatStyle = FlatStyle.System;
             gBox2.Location = new Point(393, 149);
+            gBox2.Margin = new Padding(0);
             gBox2.Name = "gBox2";
             gBox2.Size = new Size(382, 613);
             gBox2.TabIndex = 49;
             gBox2.TabStop = false;
             // 
+            // lblLab2
+            // 
+            lblLab2.AutoSize = true;
+            lblLab2.BackColor = Color.FromArgb(219, 58, 52);
+            lblLab2.BorderStyle = BorderStyle.FixedSingle;
+            lblLab2.Font = new Font("Verdana", 11.25F);
+            lblLab2.ForeColor = SystemColors.WindowText;
+            lblLab2.Location = new Point(142, 537);
+            lblLab2.Name = "lblLab2";
+            lblLab2.Size = new Size(2, 20);
+            lblLab2.TabIndex = 75;
+            lblLab2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblTheory2
+            // 
+            lblTheory2.AutoSize = true;
+            lblTheory2.BackColor = Color.FromArgb(219, 58, 52);
+            lblTheory2.BorderStyle = BorderStyle.FixedSingle;
+            lblTheory2.Font = new Font("Verdana", 11.25F);
+            lblTheory2.ForeColor = SystemColors.WindowText;
+            lblTheory2.Location = new Point(142, 517);
+            lblTheory2.Name = "lblTheory2";
+            lblTheory2.Size = new Size(2, 20);
+            lblTheory2.TabIndex = 74;
+            lblTheory2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.BackColor = Color.FromArgb(219, 58, 52);
+            label15.BorderStyle = BorderStyle.FixedSingle;
+            label15.Font = new Font("Verdana", 11.25F);
+            label15.ForeColor = SystemColors.WindowText;
+            label15.Location = new Point(23, 537);
+            label15.Name = "label15";
+            label15.Size = new Size(51, 20);
+            label15.TabIndex = 64;
+            label15.Text = "Labs:";
+            label15.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.BackColor = Color.FromArgb(219, 58, 52);
+            label13.BorderStyle = BorderStyle.FixedSingle;
+            label13.Font = new Font("Verdana", 11.25F);
+            label13.ForeColor = SystemColors.WindowText;
+            label13.Location = new Point(22, 517);
+            label13.Name = "label13";
+            label13.Size = new Size(69, 20);
+            label13.TabIndex = 63;
+            label13.Text = "Theory:";
+            label13.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // lblGPA2
             // 
             lblGPA2.AutoSize = true;
-            lblGPA2.BackColor = SystemColors.ActiveCaption;
+            lblGPA2.BackColor = Color.FromArgb(219, 58, 52);
             lblGPA2.BorderStyle = BorderStyle.FixedSingle;
             lblGPA2.Font = new Font("Verdana", 11.25F);
             lblGPA2.ForeColor = SystemColors.WindowText;
@@ -1023,7 +1140,7 @@ namespace Scheduler
             // lblGPATag2
             // 
             lblGPATag2.AutoSize = true;
-            lblGPATag2.BackColor = Color.Tan;
+            lblGPATag2.BackColor = Color.FromArgb(219, 58, 52);
             lblGPATag2.BorderStyle = BorderStyle.FixedSingle;
             lblGPATag2.Font = new Font("Verdana", 11.25F);
             lblGPATag2.ForeColor = SystemColors.WindowText;
@@ -1044,7 +1161,7 @@ namespace Scheduler
             // lblLetterGrade2
             // 
             lblLetterGrade2.AutoSize = true;
-            lblLetterGrade2.BackColor = SystemColors.ActiveCaption;
+            lblLetterGrade2.BackColor = Color.FromArgb(219, 58, 52);
             lblLetterGrade2.BorderStyle = BorderStyle.FixedSingle;
             lblLetterGrade2.Font = new Font("Verdana", 11.25F);
             lblLetterGrade2.ForeColor = SystemColors.WindowText;
@@ -1066,7 +1183,7 @@ namespace Scheduler
             // lblLetterTag2
             // 
             lblLetterTag2.AutoSize = true;
-            lblLetterTag2.BackColor = Color.Tan;
+            lblLetterTag2.BackColor = Color.FromArgb(219, 58, 52);
             lblLetterTag2.BorderStyle = BorderStyle.FixedSingle;
             lblLetterTag2.Font = new Font("Verdana", 11.25F);
             lblLetterTag2.ForeColor = SystemColors.WindowText;
@@ -1087,7 +1204,7 @@ namespace Scheduler
             // lblPercentTag2
             // 
             lblPercentTag2.AutoSize = true;
-            lblPercentTag2.BackColor = Color.Tan;
+            lblPercentTag2.BackColor = Color.FromArgb(219, 58, 52);
             lblPercentTag2.BorderStyle = BorderStyle.FixedSingle;
             lblPercentTag2.Font = new Font("Verdana", 11.25F);
             lblPercentTag2.ForeColor = SystemColors.WindowText;
@@ -1109,7 +1226,7 @@ namespace Scheduler
             // lblResult2
             // 
             lblResult2.AutoSize = true;
-            lblResult2.BackColor = SystemColors.ActiveCaption;
+            lblResult2.BackColor = Color.FromArgb(219, 58, 52);
             lblResult2.BorderStyle = BorderStyle.FixedSingle;
             lblResult2.Font = new Font("Verdana", 11.25F);
             lblResult2.ForeColor = SystemColors.WindowText;
@@ -1136,7 +1253,7 @@ namespace Scheduler
             btn_g2Calculate.TabIndex = 56;
             btn_g2Calculate.Text = "Calculate";
             btn_g2Calculate.UseVisualStyleBackColor = false;
-            btn_g2Calculate.Click += btn_g2Calculate_Click;
+            btn_g2Calculate.Click += calculateCard;
             // 
             // txtItem0B2
             // 
@@ -1404,7 +1521,7 @@ namespace Scheduler
             // 
             // gBox_En2
             // 
-            gBox_En2.BackColor = Color.Tan;
+            gBox_En2.BackColor = Color.FromArgb(219, 58, 52);
             gBox_En2.Controls.Add(rbtn_En2);
             gBox_En2.Controls.Add(rbtn_Disabled2);
             gBox_En2.Location = new Point(393, 111);
@@ -1416,6 +1533,7 @@ namespace Scheduler
             // rbtn_En2
             // 
             rbtn_En2.AutoSize = true;
+            rbtn_En2.BackColor = Color.FromArgb(219, 58, 52);
             rbtn_En2.Checked = true;
             rbtn_En2.Location = new Point(6, 7);
             rbtn_En2.Name = "rbtn_En2";
@@ -1423,7 +1541,7 @@ namespace Scheduler
             rbtn_En2.TabIndex = 5;
             rbtn_En2.TabStop = true;
             rbtn_En2.Text = "Enabled";
-            rbtn_En2.UseVisualStyleBackColor = true;
+            rbtn_En2.UseVisualStyleBackColor = false;
             rbtn_En2.CheckedChanged += rbtn_En2_CheckedChanged;
             // 
             // rbtn_Disabled2
@@ -1440,7 +1558,7 @@ namespace Scheduler
             // 
             // gBox3
             // 
-            gBox3.BackColor = Color.LightGreen;
+            gBox3.BackColor = Color.FromArgb(8, 76, 97);
             gBox3.Controls.Add(lblLab3);
             gBox3.Controls.Add(label16);
             gBox3.Controls.Add(lblTheory3);
@@ -1494,16 +1612,58 @@ namespace Scheduler
             gBox3.Controls.Add(txt_Weight3B3);
             gBox3.Controls.Add(txt_Weight1B3);
             gBox3.Controls.Add(txt_Weight2B3);
+            gBox3.FlatStyle = FlatStyle.System;
             gBox3.Location = new Point(781, 149);
+            gBox3.Margin = new Padding(0);
             gBox3.Name = "gBox3";
             gBox3.Size = new Size(374, 613);
             gBox3.TabIndex = 50;
             gBox3.TabStop = false;
             // 
+            // lblLab3
+            // 
+            lblLab3.AutoSize = true;
+            lblLab3.BackColor = Color.Transparent;
+            lblLab3.BorderStyle = BorderStyle.FixedSingle;
+            lblLab3.Font = new Font("Verdana", 11.25F);
+            lblLab3.ForeColor = SystemColors.WindowText;
+            lblLab3.Location = new Point(141, 537);
+            lblLab3.Name = "lblLab3";
+            lblLab3.Size = new Size(2, 20);
+            lblLab3.TabIndex = 74;
+            lblLab3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.BackColor = Color.FromArgb(8, 76, 97);
+            label16.BorderStyle = BorderStyle.FixedSingle;
+            label16.Font = new Font("Verdana", 11.25F);
+            label16.ForeColor = SystemColors.WindowText;
+            label16.Location = new Point(23, 537);
+            label16.Name = "label16";
+            label16.Size = new Size(51, 20);
+            label16.TabIndex = 66;
+            label16.Text = "Labs:";
+            label16.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblTheory3
+            // 
+            lblTheory3.AutoSize = true;
+            lblTheory3.BackColor = Color.FromArgb(8, 76, 97);
+            lblTheory3.BorderStyle = BorderStyle.FixedSingle;
+            lblTheory3.Font = new Font("Verdana", 11.25F);
+            lblTheory3.ForeColor = SystemColors.WindowText;
+            lblTheory3.Location = new Point(141, 517);
+            lblTheory3.Name = "lblTheory3";
+            lblTheory3.Size = new Size(2, 20);
+            lblTheory3.TabIndex = 73;
+            lblTheory3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // lblGPA3
             // 
             lblGPA3.AutoSize = true;
-            lblGPA3.BackColor = SystemColors.ActiveCaption;
+            lblGPA3.BackColor = Color.FromArgb(8, 76, 97);
             lblGPA3.BorderStyle = BorderStyle.FixedSingle;
             lblGPA3.Font = new Font("Verdana", 11.25F);
             lblGPA3.ForeColor = SystemColors.WindowText;
@@ -1513,10 +1673,24 @@ namespace Scheduler
             lblGPA3.TabIndex = 62;
             lblGPA3.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.BackColor = Color.FromArgb(8, 76, 97);
+            label17.BorderStyle = BorderStyle.FixedSingle;
+            label17.Font = new Font("Verdana", 11.25F);
+            label17.ForeColor = SystemColors.WindowText;
+            label17.Location = new Point(22, 517);
+            label17.Name = "label17";
+            label17.Size = new Size(69, 20);
+            label17.TabIndex = 65;
+            label17.Text = "Theory:";
+            label17.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // lblGPATag3
             // 
             lblGPATag3.AutoSize = true;
-            lblGPATag3.BackColor = Color.LightGreen;
+            lblGPATag3.BackColor = Color.FromArgb(8, 76, 97);
             lblGPATag3.BorderStyle = BorderStyle.FixedSingle;
             lblGPATag3.Font = new Font("Verdana", 11.25F);
             lblGPATag3.ForeColor = SystemColors.WindowText;
@@ -1530,7 +1704,7 @@ namespace Scheduler
             // lblLetterGrade3
             // 
             lblLetterGrade3.AutoSize = true;
-            lblLetterGrade3.BackColor = SystemColors.ActiveCaption;
+            lblLetterGrade3.BackColor = Color.FromArgb(8, 76, 97);
             lblLetterGrade3.BorderStyle = BorderStyle.FixedSingle;
             lblLetterGrade3.Font = new Font("Verdana", 11.25F);
             lblLetterGrade3.ForeColor = SystemColors.WindowText;
@@ -1543,7 +1717,7 @@ namespace Scheduler
             // lblLetterTag3
             // 
             lblLetterTag3.AutoSize = true;
-            lblLetterTag3.BackColor = Color.LightGreen;
+            lblLetterTag3.BackColor = Color.FromArgb(8, 76, 97);
             lblLetterTag3.BorderStyle = BorderStyle.FixedSingle;
             lblLetterTag3.Font = new Font("Verdana", 11.25F);
             lblLetterTag3.ForeColor = SystemColors.WindowText;
@@ -1557,7 +1731,7 @@ namespace Scheduler
             // lblPercentTag3
             // 
             lblPercentTag3.AutoSize = true;
-            lblPercentTag3.BackColor = Color.LightGreen;
+            lblPercentTag3.BackColor = Color.FromArgb(8, 76, 97);
             lblPercentTag3.BorderStyle = BorderStyle.FixedSingle;
             lblPercentTag3.Font = new Font("Verdana", 11.25F);
             lblPercentTag3.ForeColor = SystemColors.WindowText;
@@ -1571,7 +1745,7 @@ namespace Scheduler
             // lblResult3
             // 
             lblResult3.AutoSize = true;
-            lblResult3.BackColor = SystemColors.ActiveCaption;
+            lblResult3.BackColor = Color.FromArgb(8, 76, 97);
             lblResult3.BorderStyle = BorderStyle.FixedSingle;
             lblResult3.Font = new Font("Verdana", 11.25F);
             lblResult3.ForeColor = SystemColors.WindowText;
@@ -1591,7 +1765,7 @@ namespace Scheduler
             btn_g3Calculate.TabIndex = 56;
             btn_g3Calculate.Text = "Calculate";
             btn_g3Calculate.UseVisualStyleBackColor = false;
-            btn_g3Calculate.Click += btn_g3Calculate_Click;
+            btn_g3Calculate.Click += calculateCard;
             // 
             // label5
             // 
@@ -1908,7 +2082,7 @@ namespace Scheduler
             // 
             // gBox_En3
             // 
-            gBox_En3.BackColor = Color.LightGreen;
+            gBox_En3.BackColor = Color.FromArgb(8, 76, 97);
             gBox_En3.Controls.Add(rbtn_En3);
             gBox_En3.Controls.Add(rbtn_Disabled3);
             gBox_En3.Location = new Point(781, 111);
@@ -1998,16 +2172,58 @@ namespace Scheduler
             gBox4.Controls.Add(txt_Weight3B4);
             gBox4.Controls.Add(txt_Weight1B4);
             gBox4.Controls.Add(txt_Weight2B4);
+            gBox4.FlatStyle = FlatStyle.System;
             gBox4.Location = new Point(1161, 149);
+            gBox4.Margin = new Padding(0);
             gBox4.Name = "gBox4";
             gBox4.Size = new Size(376, 613);
             gBox4.TabIndex = 51;
             gBox4.TabStop = false;
             // 
+            // lblLab4
+            // 
+            lblLab4.AutoSize = true;
+            lblLab4.BackColor = Color.Transparent;
+            lblLab4.BorderStyle = BorderStyle.FixedSingle;
+            lblLab4.Font = new Font("Verdana", 11.25F);
+            lblLab4.ForeColor = SystemColors.WindowText;
+            lblLab4.Location = new Point(141, 537);
+            lblLab4.Name = "lblLab4";
+            lblLab4.Size = new Size(2, 20);
+            lblLab4.TabIndex = 74;
+            lblLab4.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.BackColor = Color.MediumPurple;
+            label18.BorderStyle = BorderStyle.FixedSingle;
+            label18.Font = new Font("Verdana", 11.25F);
+            label18.ForeColor = SystemColors.WindowText;
+            label18.Location = new Point(23, 538);
+            label18.Name = "label18";
+            label18.Size = new Size(51, 20);
+            label18.TabIndex = 68;
+            label18.Text = "Labs:";
+            label18.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblTheory4
+            // 
+            lblTheory4.AutoSize = true;
+            lblTheory4.BackColor = Color.Transparent;
+            lblTheory4.BorderStyle = BorderStyle.FixedSingle;
+            lblTheory4.Font = new Font("Verdana", 11.25F);
+            lblTheory4.ForeColor = SystemColors.WindowText;
+            lblTheory4.Location = new Point(141, 517);
+            lblTheory4.Name = "lblTheory4";
+            lblTheory4.Size = new Size(2, 20);
+            lblTheory4.TabIndex = 73;
+            lblTheory4.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // lblGPA4
             // 
             lblGPA4.AutoSize = true;
-            lblGPA4.BackColor = SystemColors.ActiveCaption;
+            lblGPA4.BackColor = Color.Transparent;
             lblGPA4.BorderStyle = BorderStyle.FixedSingle;
             lblGPA4.Font = new Font("Verdana", 11.25F);
             lblGPA4.ForeColor = SystemColors.WindowText;
@@ -2016,6 +2232,20 @@ namespace Scheduler
             lblGPA4.Size = new Size(2, 20);
             lblGPA4.TabIndex = 69;
             lblGPA4.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.BackColor = Color.MediumPurple;
+            label19.BorderStyle = BorderStyle.FixedSingle;
+            label19.Font = new Font("Verdana", 11.25F);
+            label19.ForeColor = SystemColors.WindowText;
+            label19.Location = new Point(22, 518);
+            label19.Name = "label19";
+            label19.Size = new Size(69, 20);
+            label19.TabIndex = 67;
+            label19.Text = "Theory:";
+            label19.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
@@ -2052,7 +2282,7 @@ namespace Scheduler
             // lblLetterGrade4
             // 
             lblLetterGrade4.AutoSize = true;
-            lblLetterGrade4.BackColor = SystemColors.ActiveCaption;
+            lblLetterGrade4.BackColor = Color.Transparent;
             lblLetterGrade4.BorderStyle = BorderStyle.FixedSingle;
             lblLetterGrade4.Font = new Font("Verdana", 11.25F);
             lblLetterGrade4.ForeColor = SystemColors.WindowText;
@@ -2117,7 +2347,7 @@ namespace Scheduler
             // lblResult4
             // 
             lblResult4.AutoSize = true;
-            lblResult4.BackColor = SystemColors.ActiveCaption;
+            lblResult4.BackColor = Color.Transparent;
             lblResult4.BorderStyle = BorderStyle.FixedSingle;
             lblResult4.Font = new Font("Verdana", 11.25F);
             lblResult4.ForeColor = SystemColors.WindowText;
@@ -2144,7 +2374,7 @@ namespace Scheduler
             btn_g4Calculate.TabIndex = 63;
             btn_g4Calculate.Text = "Calculate";
             btn_g4Calculate.UseVisualStyleBackColor = false;
-            btn_g4Calculate.Click += btn_g4Calculate_Click;
+            btn_g4Calculate.Click += calculateCard;
             // 
             // txtItem0B4
             // 
@@ -2230,7 +2460,6 @@ namespace Scheduler
             label11.TabIndex = 8;
             label11.Text = "Weight(%)";
             label11.TextAlign = ContentAlignment.MiddleCenter;
-            label11.Click += label11_Click;
             // 
             // txtGrade3B4
             // 
@@ -2449,7 +2678,7 @@ namespace Scheduler
             // 
             // gBox5
             // 
-            gBox5.BackColor = Color.FromArgb(255, 128, 128);
+            gBox5.BackColor = Color.FromArgb(61, 220, 151);
             gBox5.Controls.Add(lblLab5);
             gBox5.Controls.Add(label23);
             gBox5.Controls.Add(lblTheory5);
@@ -2503,16 +2732,72 @@ namespace Scheduler
             gBox5.Controls.Add(txt_Weight3B5);
             gBox5.Controls.Add(txt_Weight1B5);
             gBox5.Controls.Add(txt_Weight2B5);
+            gBox5.FlatStyle = FlatStyle.System;
             gBox5.Location = new Point(1543, 149);
+            gBox5.Margin = new Padding(0);
             gBox5.Name = "gBox5";
             gBox5.Size = new Size(369, 613);
             gBox5.TabIndex = 70;
             gBox5.TabStop = false;
             // 
+            // lblLab5
+            // 
+            lblLab5.AutoSize = true;
+            lblLab5.BackColor = Color.FromArgb(61, 220, 151);
+            lblLab5.BorderStyle = BorderStyle.FixedSingle;
+            lblLab5.Font = new Font("Verdana", 11.25F);
+            lblLab5.ForeColor = SystemColors.WindowText;
+            lblLab5.Location = new Point(141, 537);
+            lblLab5.Name = "lblLab5";
+            lblLab5.Size = new Size(2, 20);
+            lblLab5.TabIndex = 74;
+            lblLab5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.BackColor = Color.FromArgb(61, 220, 151);
+            label23.BorderStyle = BorderStyle.FixedSingle;
+            label23.Font = new Font("Verdana", 11.25F);
+            label23.ForeColor = SystemColors.WindowText;
+            label23.Location = new Point(22, 537);
+            label23.Name = "label23";
+            label23.Size = new Size(51, 20);
+            label23.TabIndex = 71;
+            label23.Text = "Labs:";
+            label23.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblTheory5
+            // 
+            lblTheory5.AutoSize = true;
+            lblTheory5.BackColor = Color.FromArgb(61, 220, 151);
+            lblTheory5.BorderStyle = BorderStyle.FixedSingle;
+            lblTheory5.Font = new Font("Verdana", 11.25F);
+            lblTheory5.ForeColor = SystemColors.WindowText;
+            lblTheory5.Location = new Point(141, 517);
+            lblTheory5.Name = "lblTheory5";
+            lblTheory5.Size = new Size(2, 20);
+            lblTheory5.TabIndex = 73;
+            lblTheory5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.BackColor = Color.FromArgb(61, 220, 151);
+            label24.BorderStyle = BorderStyle.FixedSingle;
+            label24.Font = new Font("Verdana", 11.25F);
+            label24.ForeColor = SystemColors.WindowText;
+            label24.Location = new Point(21, 517);
+            label24.Name = "label24";
+            label24.Size = new Size(69, 20);
+            label24.TabIndex = 70;
+            label24.Text = "Theory:";
+            label24.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // lblGPA5
             // 
             lblGPA5.AutoSize = true;
-            lblGPA5.BackColor = SystemColors.ActiveCaption;
+            lblGPA5.BackColor = Color.FromArgb(61, 220, 151);
             lblGPA5.BorderStyle = BorderStyle.FixedSingle;
             lblGPA5.Font = new Font("Verdana", 11.25F);
             lblGPA5.ForeColor = SystemColors.WindowText;
@@ -2536,7 +2821,7 @@ namespace Scheduler
             // lblGPATag5
             // 
             lblGPATag5.AutoSize = true;
-            lblGPATag5.BackColor = Color.FromArgb(255, 128, 128);
+            lblGPATag5.BackColor = Color.FromArgb(61, 220, 151);
             lblGPATag5.BorderStyle = BorderStyle.FixedSingle;
             lblGPATag5.Font = new Font("Verdana", 11.25F);
             lblGPATag5.ForeColor = SystemColors.WindowText;
@@ -2557,7 +2842,7 @@ namespace Scheduler
             // lblLetterGrade5
             // 
             lblLetterGrade5.AutoSize = true;
-            lblLetterGrade5.BackColor = SystemColors.ActiveCaption;
+            lblLetterGrade5.BackColor = Color.FromArgb(61, 220, 151);
             lblLetterGrade5.BorderStyle = BorderStyle.FixedSingle;
             lblLetterGrade5.Font = new Font("Verdana", 11.25F);
             lblLetterGrade5.ForeColor = SystemColors.WindowText;
@@ -2579,7 +2864,7 @@ namespace Scheduler
             // lblLetterTag5
             // 
             lblLetterTag5.AutoSize = true;
-            lblLetterTag5.BackColor = Color.FromArgb(255, 128, 128);
+            lblLetterTag5.BackColor = Color.FromArgb(61, 220, 151);
             lblLetterTag5.BorderStyle = BorderStyle.FixedSingle;
             lblLetterTag5.Font = new Font("Verdana", 11.25F);
             lblLetterTag5.ForeColor = SystemColors.WindowText;
@@ -2600,7 +2885,7 @@ namespace Scheduler
             // lblPercentTag5
             // 
             lblPercentTag5.AutoSize = true;
-            lblPercentTag5.BackColor = Color.FromArgb(255, 128, 128);
+            lblPercentTag5.BackColor = Color.FromArgb(61, 220, 151);
             lblPercentTag5.BorderStyle = BorderStyle.FixedSingle;
             lblPercentTag5.Font = new Font("Verdana", 11.25F);
             lblPercentTag5.ForeColor = SystemColors.WindowText;
@@ -2622,7 +2907,7 @@ namespace Scheduler
             // lblResult5
             // 
             lblResult5.AutoSize = true;
-            lblResult5.BackColor = SystemColors.ActiveCaption;
+            lblResult5.BackColor = Color.FromArgb(61, 220, 151);
             lblResult5.BorderStyle = BorderStyle.FixedSingle;
             lblResult5.Font = new Font("Verdana", 11.25F);
             lblResult5.ForeColor = SystemColors.WindowText;
@@ -2649,7 +2934,7 @@ namespace Scheduler
             btn_g5Calculate.TabIndex = 63;
             btn_g5Calculate.Text = "Calculate";
             btn_g5Calculate.UseVisualStyleBackColor = false;
-            btn_g5Calculate.Click += btn_g5Calculate_Click;
+            btn_g5Calculate.Click += calculateCard;
             // 
             // txtItem0B5
             // 
@@ -2917,314 +3202,98 @@ namespace Scheduler
             // 
             // gBox_En5
             // 
-            gBox_En5.BackColor = Color.FromArgb(255, 128, 128);
-            gBox_En5.Controls.Add(radioButton1);
-            gBox_En5.Controls.Add(radioButton2);
+            gBox_En5.BackColor = Color.FromArgb(61, 220, 151);
+            gBox_En5.Controls.Add(rbtn_En5);
+            gBox_En5.Controls.Add(rbtn_Disabled5);
             gBox_En5.Location = new Point(1543, 111);
             gBox_En5.Name = "gBox_En5";
             gBox_En5.Size = new Size(155, 32);
             gBox_En5.TabIndex = 54;
             gBox_En5.TabStop = false;
             // 
-            // radioButton1
+            // rbtn_En5
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Checked = true;
-            radioButton1.Location = new Point(6, 7);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(67, 19);
-            radioButton1.TabIndex = 5;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Enabled";
-            radioButton1.UseVisualStyleBackColor = true;
+            rbtn_En5.AutoSize = true;
+            rbtn_En5.Checked = true;
+            rbtn_En5.Location = new Point(6, 7);
+            rbtn_En5.Name = "rbtn_En5";
+            rbtn_En5.Size = new Size(67, 19);
+            rbtn_En5.TabIndex = 5;
+            rbtn_En5.TabStop = true;
+            rbtn_En5.Text = "Enabled";
+            rbtn_En5.UseVisualStyleBackColor = true;
+            rbtn_En5.CheckedChanged += rbtn_En5_CheckedChanged;
             // 
-            // radioButton2
+            // rbtn_Disabled5
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(79, 7);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(70, 19);
-            radioButton2.TabIndex = 6;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Disabled";
-            radioButton2.UseVisualStyleBackColor = true;
+            rbtn_Disabled5.AutoSize = true;
+            rbtn_Disabled5.Location = new Point(79, 7);
+            rbtn_Disabled5.Name = "rbtn_Disabled5";
+            rbtn_Disabled5.Size = new Size(70, 19);
+            rbtn_Disabled5.TabIndex = 6;
+            rbtn_Disabled5.TabStop = true;
+            rbtn_Disabled5.Text = "Disabled";
+            rbtn_Disabled5.UseVisualStyleBackColor = true;
+            rbtn_Disabled5.CheckedChanged += rbtn_Disabled5_CheckedChanged;
             // 
-            // label13
+            // lblTitle
             // 
-            label13.AutoSize = true;
-            label13.BackColor = Color.Tan;
-            label13.BorderStyle = BorderStyle.FixedSingle;
-            label13.Font = new Font("Verdana", 11.25F);
-            label13.ForeColor = SystemColors.WindowText;
-            label13.Location = new Point(22, 517);
-            label13.Name = "label13";
-            label13.Size = new Size(69, 20);
-            label13.TabIndex = 63;
-            label13.Text = "Theory:";
-            label13.TextAlign = ContentAlignment.MiddleCenter;
+            lblTitle.AutoSize = true;
+            lblTitle.BackColor = Color.FromArgb(0, 15, 255, 255);
+            lblTitle.Font = new Font("Verdana", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.White;
+            lblTitle.Location = new Point(571, 32);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(775, 59);
+            lblTitle.TabIndex = 71;
+            lblTitle.Text = "Welcome to the GPA Calculator";
+            lblTitle.Click += lblTitle_Click;
             // 
-            // label15
+            // LblTGPATag
             // 
-            label15.AutoSize = true;
-            label15.BackColor = Color.Tan;
-            label15.BorderStyle = BorderStyle.FixedSingle;
-            label15.Font = new Font("Verdana", 11.25F);
-            label15.ForeColor = SystemColors.WindowText;
-            label15.Location = new Point(23, 537);
-            label15.Name = "label15";
-            label15.Size = new Size(51, 20);
-            label15.TabIndex = 64;
-            label15.Text = "Labs:";
-            label15.TextAlign = ContentAlignment.MiddleCenter;
+            LblTGPATag.AutoSize = true;
+            LblTGPATag.BackColor = Color.FromArgb(0, 15, 255, 255);
+            LblTGPATag.Font = new Font("Verdana", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblTGPATag.ForeColor = Color.White;
+            LblTGPATag.Location = new Point(732, 779);
+            LblTGPATag.Name = "LblTGPATag";
+            LblTGPATag.Size = new Size(204, 35);
+            LblTGPATag.TabIndex = 72;
+            LblTGPATag.Text = "Current GPA:";
             // 
-            // label16
+            // LblTGPA
             // 
-            label16.AutoSize = true;
-            label16.BackColor = Color.LightGreen;
-            label16.BorderStyle = BorderStyle.FixedSingle;
-            label16.Font = new Font("Verdana", 11.25F);
-            label16.ForeColor = SystemColors.WindowText;
-            label16.Location = new Point(23, 537);
-            label16.Name = "label16";
-            label16.Size = new Size(51, 20);
-            label16.TabIndex = 66;
-            label16.Text = "Labs:";
-            label16.TextAlign = ContentAlignment.MiddleCenter;
+            LblTGPA.AutoSize = true;
+            LblTGPA.BackColor = Color.FromArgb(0, 15, 255, 255);
+            LblTGPA.Font = new Font("Verdana", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblTGPA.ForeColor = Color.White;
+            LblTGPA.Location = new Point(933, 781);
+            LblTGPA.Name = "LblTGPA";
+            LblTGPA.Size = new Size(65, 32);
+            LblTGPA.TabIndex = 73;
+            LblTGPA.Text = "___";
             // 
-            // label17
+            // pbHelp
             // 
-            label17.AutoSize = true;
-            label17.BackColor = Color.LightGreen;
-            label17.BorderStyle = BorderStyle.FixedSingle;
-            label17.Font = new Font("Verdana", 11.25F);
-            label17.ForeColor = SystemColors.WindowText;
-            label17.Location = new Point(22, 517);
-            label17.Name = "label17";
-            label17.Size = new Size(69, 20);
-            label17.TabIndex = 65;
-            label17.Text = "Theory:";
-            label17.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.BackColor = Color.MediumPurple;
-            label18.BorderStyle = BorderStyle.FixedSingle;
-            label18.Font = new Font("Verdana", 11.25F);
-            label18.ForeColor = SystemColors.WindowText;
-            label18.Location = new Point(23, 538);
-            label18.Name = "label18";
-            label18.Size = new Size(51, 20);
-            label18.TabIndex = 68;
-            label18.Text = "Labs:";
-            label18.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.BackColor = Color.MediumPurple;
-            label19.BorderStyle = BorderStyle.FixedSingle;
-            label19.Font = new Font("Verdana", 11.25F);
-            label19.ForeColor = SystemColors.WindowText;
-            label19.Location = new Point(22, 518);
-            label19.Name = "label19";
-            label19.Size = new Size(69, 20);
-            label19.TabIndex = 67;
-            label19.Text = "Theory:";
-            label19.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.BackColor = Color.FromArgb(255, 128, 128);
-            label23.BorderStyle = BorderStyle.FixedSingle;
-            label23.Font = new Font("Verdana", 11.25F);
-            label23.ForeColor = SystemColors.WindowText;
-            label23.Location = new Point(22, 537);
-            label23.Name = "label23";
-            label23.Size = new Size(51, 20);
-            label23.TabIndex = 71;
-            label23.Text = "Labs:";
-            label23.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.BackColor = Color.FromArgb(255, 128, 128);
-            label24.BorderStyle = BorderStyle.FixedSingle;
-            label24.Font = new Font("Verdana", 11.25F);
-            label24.ForeColor = SystemColors.WindowText;
-            label24.Location = new Point(21, 517);
-            label24.Name = "label24";
-            label24.Size = new Size(69, 20);
-            label24.TabIndex = 70;
-            label24.Text = "Theory:";
-            label24.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.BackColor = SystemColors.ActiveCaption;
-            label25.BorderStyle = BorderStyle.FixedSingle;
-            label25.Font = new Font("Verdana", 11.25F);
-            label25.ForeColor = SystemColors.WindowText;
-            label25.Location = new Point(22, 537);
-            label25.Name = "label25";
-            label25.Size = new Size(51, 20);
-            label25.TabIndex = 73;
-            label25.Text = "Labs:";
-            label25.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.BackColor = SystemColors.ActiveCaption;
-            label26.BorderStyle = BorderStyle.FixedSingle;
-            label26.Font = new Font("Verdana", 11.25F);
-            label26.ForeColor = SystemColors.WindowText;
-            label26.Location = new Point(21, 517);
-            label26.Name = "label26";
-            label26.Size = new Size(69, 20);
-            label26.TabIndex = 72;
-            label26.Text = "Theory:";
-            label26.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblLab1
-            // 
-            lblLab1.AutoSize = true;
-            lblLab1.BackColor = SystemColors.ActiveCaption;
-            lblLab1.BorderStyle = BorderStyle.FixedSingle;
-            lblLab1.Font = new Font("Verdana", 11.25F);
-            lblLab1.ForeColor = SystemColors.WindowText;
-            lblLab1.Location = new Point(141, 537);
-            lblLab1.Name = "lblLab1";
-            lblLab1.Size = new Size(2, 20);
-            lblLab1.TabIndex = 72;
-            lblLab1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTheory1
-            // 
-            lblTheory1.AutoSize = true;
-            lblTheory1.BackColor = SystemColors.ActiveCaption;
-            lblTheory1.BorderStyle = BorderStyle.FixedSingle;
-            lblTheory1.Font = new Font("Verdana", 11.25F);
-            lblTheory1.ForeColor = SystemColors.WindowText;
-            lblTheory1.Location = new Point(141, 517);
-            lblTheory1.Name = "lblTheory1";
-            lblTheory1.Size = new Size(2, 20);
-            lblTheory1.TabIndex = 71;
-            lblTheory1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblLab2
-            // 
-            lblLab2.AutoSize = true;
-            lblLab2.BackColor = SystemColors.ActiveCaption;
-            lblLab2.BorderStyle = BorderStyle.FixedSingle;
-            lblLab2.Font = new Font("Verdana", 11.25F);
-            lblLab2.ForeColor = SystemColors.WindowText;
-            lblLab2.Location = new Point(142, 537);
-            lblLab2.Name = "lblLab2";
-            lblLab2.Size = new Size(2, 20);
-            lblLab2.TabIndex = 75;
-            lblLab2.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTheory2
-            // 
-            lblTheory2.AutoSize = true;
-            lblTheory2.BackColor = SystemColors.ActiveCaption;
-            lblTheory2.BorderStyle = BorderStyle.FixedSingle;
-            lblTheory2.Font = new Font("Verdana", 11.25F);
-            lblTheory2.ForeColor = SystemColors.WindowText;
-            lblTheory2.Location = new Point(142, 517);
-            lblTheory2.Name = "lblTheory2";
-            lblTheory2.Size = new Size(2, 20);
-            lblTheory2.TabIndex = 74;
-            lblTheory2.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblLab3
-            // 
-            lblLab3.AutoSize = true;
-            lblLab3.BackColor = SystemColors.ActiveCaption;
-            lblLab3.BorderStyle = BorderStyle.FixedSingle;
-            lblLab3.Font = new Font("Verdana", 11.25F);
-            lblLab3.ForeColor = SystemColors.WindowText;
-            lblLab3.Location = new Point(141, 537);
-            lblLab3.Name = "lblLab3";
-            lblLab3.Size = new Size(2, 20);
-            lblLab3.TabIndex = 74;
-            lblLab3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTheory3
-            // 
-            lblTheory3.AutoSize = true;
-            lblTheory3.BackColor = SystemColors.ActiveCaption;
-            lblTheory3.BorderStyle = BorderStyle.FixedSingle;
-            lblTheory3.Font = new Font("Verdana", 11.25F);
-            lblTheory3.ForeColor = SystemColors.WindowText;
-            lblTheory3.Location = new Point(141, 517);
-            lblTheory3.Name = "lblTheory3";
-            lblTheory3.Size = new Size(2, 20);
-            lblTheory3.TabIndex = 73;
-            lblTheory3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblLab4
-            // 
-            lblLab4.AutoSize = true;
-            lblLab4.BackColor = SystemColors.ActiveCaption;
-            lblLab4.BorderStyle = BorderStyle.FixedSingle;
-            lblLab4.Font = new Font("Verdana", 11.25F);
-            lblLab4.ForeColor = SystemColors.WindowText;
-            lblLab4.Location = new Point(141, 537);
-            lblLab4.Name = "lblLab4";
-            lblLab4.Size = new Size(2, 20);
-            lblLab4.TabIndex = 74;
-            lblLab4.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTheory4
-            // 
-            lblTheory4.AutoSize = true;
-            lblTheory4.BackColor = SystemColors.ActiveCaption;
-            lblTheory4.BorderStyle = BorderStyle.FixedSingle;
-            lblTheory4.Font = new Font("Verdana", 11.25F);
-            lblTheory4.ForeColor = SystemColors.WindowText;
-            lblTheory4.Location = new Point(141, 517);
-            lblTheory4.Name = "lblTheory4";
-            lblTheory4.Size = new Size(2, 20);
-            lblTheory4.TabIndex = 73;
-            lblTheory4.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblLab5
-            // 
-            lblLab5.AutoSize = true;
-            lblLab5.BackColor = SystemColors.ActiveCaption;
-            lblLab5.BorderStyle = BorderStyle.FixedSingle;
-            lblLab5.Font = new Font("Verdana", 11.25F);
-            lblLab5.ForeColor = SystemColors.WindowText;
-            lblLab5.Location = new Point(141, 537);
-            lblLab5.Name = "lblLab5";
-            lblLab5.Size = new Size(2, 20);
-            lblLab5.TabIndex = 74;
-            lblLab5.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTheory5
-            // 
-            lblTheory5.AutoSize = true;
-            lblTheory5.BackColor = SystemColors.ActiveCaption;
-            lblTheory5.BorderStyle = BorderStyle.FixedSingle;
-            lblTheory5.Font = new Font("Verdana", 11.25F);
-            lblTheory5.ForeColor = SystemColors.WindowText;
-            lblTheory5.Location = new Point(141, 517);
-            lblTheory5.Name = "lblTheory5";
-            lblTheory5.Size = new Size(2, 20);
-            lblTheory5.TabIndex = 73;
-            lblTheory5.TextAlign = ContentAlignment.MiddleCenter;
+            pbHelp.Image = Properties.Resources.Help;
+            pbHelp.Location = new Point(12, 947);
+            pbHelp.Name = "pbHelp";
+            pbHelp.Size = new Size(49, 48);
+            pbHelp.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbHelp.TabIndex = 74;
+            pbHelp.TabStop = false;
+            pbHelp.Click += pbHelp_Click;
             // 
             // GPA_Calculator
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.bg;
-            ClientSize = new Size(1924, 1061);
+            BackColor = Color.FromArgb(50, 48, 49);
+            ClientSize = new Size(1924, 1019);
+            Controls.Add(pbHelp);
+            Controls.Add(LblTGPA);
+            Controls.Add(LblTGPATag);
+            Controls.Add(lblTitle);
             Controls.Add(gBox_En5);
             Controls.Add(gBox5);
             Controls.Add(gBox_En4);
@@ -3262,7 +3331,18 @@ namespace Scheduler
             gBox5.PerformLayout();
             gBox_En5.ResumeLayout(false);
             gBox_En5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbHelp).EndInit();
             ResumeLayout(false);
+            PerformLayout();
+        }
+
+        private void calculateTGPA(object sender, EventArgs e)
+        {
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void txtGrade8B1_TextChanged(object sender, EventArgs e)
@@ -3287,6 +3367,7 @@ namespace Scheduler
 
         private void GPA_Calculator_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -3324,7 +3405,7 @@ namespace Scheduler
         private TextBox txtItem0B1;
         private TextBox txt_Weight0B1;
         private TextBox txtGrade0B1;
-        private RadioButton rbtn_En;
+        private RadioButton rbtn_En1;
         private RadioButton rbtn_Disabled;
         private Label lblItem;
         private Label lbl_Weight;
@@ -3586,8 +3667,8 @@ namespace Scheduler
         private TextBox txt_Weight1B5;
         private TextBox txt_Weight2B5;
         private GroupBox gBox_En5;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private RadioButton rbtn_En5;
+        private RadioButton rbtn_Disabled5;
         private Label label15;
         private Label label13;
         private Label label16;
@@ -3608,5 +3689,10 @@ namespace Scheduler
         private Label lblTheory4;
         private Label lblLab5;
         private Label lblTheory5;
+        private Label lblTitle;
+        private Label LblTGPATag;
+        private Label LblTGPA;
+        private Button btnTGPA;
+        private PictureBox pbHelp;
     }
 }

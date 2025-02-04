@@ -50,7 +50,7 @@ namespace Scheduler
             lbl_MenuTitle.BackColor = Color.Transparent;
             lbl_MenuTitle.Font = new Font("Verdana", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_MenuTitle.ForeColor = Color.WhiteSmoke;
-            lbl_MenuTitle.Location = new Point(45, 144);
+            lbl_MenuTitle.Location = new Point(622, 457);
             lbl_MenuTitle.Name = "lbl_MenuTitle";
             lbl_MenuTitle.Size = new Size(743, 59);
             lbl_MenuTitle.TabIndex = 0;
@@ -62,7 +62,7 @@ namespace Scheduler
             btn_Scheduler.BackColor = Color.WhiteSmoke;
             btn_Scheduler.FlatStyle = FlatStyle.Popup;
             btn_Scheduler.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_Scheduler.Location = new Point(148, 266);
+            btn_Scheduler.Location = new Point(760, 542);
             btn_Scheduler.Name = "btn_Scheduler";
             btn_Scheduler.Size = new Size(120, 35);
             btn_Scheduler.TabIndex = 1;
@@ -75,7 +75,7 @@ namespace Scheduler
             btn_GPA.BackColor = Color.WhiteSmoke;
             btn_GPA.FlatStyle = FlatStyle.Popup;
             btn_GPA.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_GPA.Location = new Point(539, 266);
+            btn_GPA.Location = new Point(1066, 542);
             btn_GPA.Name = "btn_GPA";
             btn_GPA.Size = new Size(144, 35);
             btn_GPA.TabIndex = 2;
@@ -87,15 +87,15 @@ namespace Scheduler
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.InactiveCaption;
-            BackgroundImage = Properties.Resources.bg;
+            BackColor = Color.FromArgb(50, 48, 49);
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(865, 446);
+            ClientSize = new Size(1924, 1061);
             Controls.Add(btn_GPA);
             Controls.Add(btn_Scheduler);
             Controls.Add(lbl_MenuTitle);
             Name = "Start";
             Text = "Menu";
+            Load += Start_Load;
             ResumeLayout(false);
             PerformLayout();
         }

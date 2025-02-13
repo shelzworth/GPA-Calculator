@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GPA_Calculator;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,10 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Windows.Forms;
+
 
 namespace Scheduler
 {
-    public partial class GPA_Calculator : Form
+    public partial class Calculator : Form
     {
         double TheorytotalPossible, LabstotalPossible, TGPA;
         double[] totals = { 0.0, 0.0, 0.0, 0.0, 0.0 };
@@ -21,7 +25,7 @@ namespace Scheduler
         string GPA;
 
 
-        public GPA_Calculator()
+        public Calculator()
         {
             InitializeComponent();
             rbtn_Disabled.Checked = true;
@@ -51,6 +55,7 @@ namespace Scheduler
             rbtn_Disabled3.Checked = true; rbtn_En3.Checked = true;
             rbtn_Disabled4.Checked = true; rbtn_En4.Checked = true;
             rbtn_Disabled5.Checked = true; rbtn_En5.Checked = true;
+            Thread.Sleep(500);
             calculateTGPA();
         }
 
@@ -70,27 +75,32 @@ namespace Scheduler
             gBox3.Enabled = true; gBox_En3.Enabled = true; rbtn_En3.Checked = true;
             gBox4.Enabled = true; gBox_En4.Enabled = true; rbtn_En4.Checked = true;
             gBox5.Enabled = true; gBox_En5.Enabled = true; rbtn_En5.Checked = true;
+            Thread.Sleep(500);
             calculateTGPA();
         }
 
         private void rbtn_En3_CheckedChanged(object sender, EventArgs e)
         {
             gBox3.Enabled = true; calculateTGPA();
+            Thread.Sleep(500);
         }
 
         private void rbtn_Disabled3_CheckedChanged(object sender, EventArgs e)
         {
             gBox3.Enabled = false; calculateTGPA();
+            Thread.Sleep(500);
         }
 
         private void rbtn_En4_CheckedChanged(object sender, EventArgs e)
         {
             gBox4.Enabled = true; calculateTGPA();
+            Thread.Sleep(500);
         }
 
         private void rbtn_Disabled4_CheckedChanged(object sender, EventArgs e)
         {
             gBox4.Enabled = false; calculateTGPA();
+            Thread.Sleep(500);
         }
         private void calculateCard(object sender, EventArgs e)
         {
@@ -257,10 +267,116 @@ namespace Scheduler
         {
             gBox5.Enabled = true;
         }
-
         private void pbHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This application was developed by Sheldon Cerejo.");
+
         }
+        private void label27_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btn_Scheduler_Click(object sender, EventArgs e)
+        {
+            Schedule schedule = new Schedule();
+            this.Hide();
+            schedule.Show();
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            bool atLeastOneEnabled = false;
+
+            for (int i = 0; i < 5; i++)
+            {
+                int subjectNumber = i + 1;
+                GroupBox courseCard = this.Controls.Find("gBox" + subjectNumber, true).FirstOrDefault() as GroupBox;
+
+                if (courseCard != null && courseCard.Enabled)
+                {
+                    atLeastOneEnabled = true;
+                    TextBox courseCodeTextBox = this.Controls.Find("txt_CourseCodeB" + subjectNumber, true).FirstOrDefault() as TextBox;
+                    TextBox courseNameTextBox = this.Controls.Find("txt_CourseNameB" + subjectNumber, true).FirstOrDefault() as TextBox;
+
+                    if (courseCodeTextBox == null || string.IsNullOrWhiteSpace(courseCodeTextBox.Text))
+                    {
+                        MessageBox.Show($"Please ensure that the course code field for Subject {subjectNumber} is filled out before exporting.",
+                                        "Missing Course Code",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    if (courseNameTextBox == null || string.IsNullOrWhiteSpace(courseNameTextBox.Text))
+                    {
+                        MessageBox.Show($"Please ensure that the course name field for Subject {subjectNumber} is filled out before exporting.",
+                                        "Missing Course Name",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning);
+                        return;
+                    }
+                }
+            }
+
+            if (!atLeastOneEnabled)
+            {
+                MessageBox.Show("There are no enabled course cards to export.",
+                                "Export Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+
+            StringBuilder exportText = new StringBuilder();
+            exportText.AppendLine("GPA Calculator Data Export");
+            exportText.AppendLine("---------------------------------------");
+
+
+            for (int i = 0; i < 5; i++)
+            {
+                int subjectNumber = i + 1;
+                GroupBox courseCard = this.Controls.Find("gBox" + subjectNumber, true).FirstOrDefault() as GroupBox;
+
+                if (courseCard != null && courseCard.Enabled)
+                {
+                    TextBox courseCodeTextBox = this.Controls.Find("txt_CourseCodeB" + (i + 1), true).FirstOrDefault() as TextBox;
+                    Label resultLabel = this.Controls.Find("lblResult" + subjectNumber, true).FirstOrDefault() as Label;
+                    Label theoryLabel = this.Controls.Find("lblTheory" + subjectNumber, true).FirstOrDefault() as Label;
+                    Label labLabel = this.Controls.Find("lblLab" + subjectNumber, true).FirstOrDefault() as Label;
+                    Label letterGradeLabel = this.Controls.Find("lblLetterGrade" + subjectNumber, true).FirstOrDefault() as Label;
+                    Label GPALabel = this.Controls.Find("lblGPA" + subjectNumber, true).FirstOrDefault() as Label;
+
+                    exportText.AppendLine($"Subject: {courseCodeTextBox?.Text}");
+                    exportText.AppendLine($"   Total Grade: {(resultLabel != null ? resultLabel.Text : "N/A")}");
+                    exportText.AppendLine($"   Theory Score: {(theoryLabel != null ? theoryLabel.Text : "N/A")}");
+                    exportText.AppendLine($"   Lab Score: {(labLabel != null ? labLabel.Text : "N/A")}");
+                    exportText.AppendLine($"   Letter Grade: {(letterGradeLabel != null ? letterGradeLabel.Text : "N/A")}");
+                    exportText.AppendLine($"   GPA: {(GPALabel != null ? GPALabel.Text : "N/A")}");
+                    exportText.AppendLine();
+                }
+            }
+
+            exportText.AppendLine("Overall TGPA: " + LblTGPA.Text);
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Text File|*.txt",
+                Title = "Save GPA Data",
+                FileName = "GPA_Data.txt"
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    File.WriteAllText(saveFileDialog.FileName, exportText.ToString());
+                    MessageBox.Show("Data exported successfully!", "Export Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred while exporting data:\n" + ex.Message, "Export Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
     }
 }

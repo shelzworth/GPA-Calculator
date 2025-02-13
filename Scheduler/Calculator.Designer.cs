@@ -1,7 +1,7 @@
 ﻿
 namespace Scheduler
 {
-    partial class GPA_Calculator
+    partial class Calculator
     {
         /// <summary>
         /// Required designer variable.
@@ -271,11 +271,11 @@ namespace Scheduler
             lblGPATag5 = new Label();
             txtItem1B5 = new TextBox();
             lblLetterGrade5 = new Label();
-            textBox2 = new TextBox();
+            txt_CourseNameB5 = new TextBox();
             lblLetterTag5 = new Label();
             txtGrade11B5 = new TextBox();
             lblPercentTag5 = new Label();
-            textBox4 = new TextBox();
+            txt_CourseCodeB5 = new TextBox();
             lblResult5 = new Label();
             txtGrade10B5 = new TextBox();
             btn_g5Calculate = new Button();
@@ -321,7 +321,11 @@ namespace Scheduler
             lblTitle = new Label();
             LblTGPATag = new Label();
             LblTGPA = new Label();
-            pbHelp = new PictureBox();
+            label27 = new Label();
+            btn_Scheduler = new Button();
+            LblTCGPATag = new Label();
+            LblCGPA = new Label();
+            btnExport = new Button();
             gBox1.SuspendLayout();
             gBoxMain.SuspendLayout();
             gbox_En1.SuspendLayout();
@@ -333,7 +337,6 @@ namespace Scheduler
             gBox_En4.SuspendLayout();
             gBox5.SuspendLayout();
             gBox_En5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbHelp).BeginInit();
             SuspendLayout();
             // 
             // txt_CourseNameB1
@@ -2688,11 +2691,11 @@ namespace Scheduler
             gBox5.Controls.Add(lblGPATag5);
             gBox5.Controls.Add(txtItem1B5);
             gBox5.Controls.Add(lblLetterGrade5);
-            gBox5.Controls.Add(textBox2);
+            gBox5.Controls.Add(txt_CourseNameB5);
             gBox5.Controls.Add(lblLetterTag5);
             gBox5.Controls.Add(txtGrade11B5);
             gBox5.Controls.Add(lblPercentTag5);
-            gBox5.Controls.Add(textBox4);
+            gBox5.Controls.Add(txt_CourseCodeB5);
             gBox5.Controls.Add(lblResult5);
             gBox5.Controls.Add(txtGrade10B5);
             gBox5.Controls.Add(btn_g5Calculate);
@@ -2852,14 +2855,14 @@ namespace Scheduler
             lblLetterGrade5.TabIndex = 67;
             lblLetterGrade5.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // txt_CourseNameB5
             // 
-            textBox2.Font = new Font("Verdana", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(22, 32);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Enter Course Name...";
-            textBox2.Size = new Size(246, 33);
-            textBox2.TabIndex = 0;
+            txt_CourseNameB5.Font = new Font("Verdana", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txt_CourseNameB5.Location = new Point(22, 32);
+            txt_CourseNameB5.Name = "txt_CourseNameB5";
+            txt_CourseNameB5.PlaceholderText = "Enter Course Name...";
+            txt_CourseNameB5.Size = new Size(246, 33);
+            txt_CourseNameB5.TabIndex = 0;
             // 
             // lblLetterTag5
             // 
@@ -2896,13 +2899,13 @@ namespace Scheduler
             lblPercentTag5.Text = "Percentage:";
             lblPercentTag5.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox4
+            // txt_CourseCodeB5
             // 
-            textBox4.Location = new Point(22, 79);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "Enter Course Code...";
-            textBox4.Size = new Size(121, 23);
-            textBox4.TabIndex = 1;
+            txt_CourseCodeB5.Location = new Point(22, 79);
+            txt_CourseCodeB5.Name = "txt_CourseCodeB5";
+            txt_CourseCodeB5.PlaceholderText = "Enter Course Code...";
+            txt_CourseCodeB5.Size = new Size(121, 23);
+            txt_CourseCodeB5.TabIndex = 1;
             // 
             // lblResult5
             // 
@@ -3269,20 +3272,70 @@ namespace Scheduler
             LblTGPA.ForeColor = Color.White;
             LblTGPA.Location = new Point(933, 781);
             LblTGPA.Name = "LblTGPA";
-            LblTGPA.Size = new Size(65, 32);
+            LblTGPA.Size = new Size(99, 32);
             LblTGPA.TabIndex = 73;
-            LblTGPA.Text = "___";
+            LblTGPA.Text = "_____";
             // 
-            // pbHelp
+            // label27
             // 
-            pbHelp.Image = Properties.Resources.Help;
-            pbHelp.Location = new Point(12, 947);
-            pbHelp.Name = "pbHelp";
-            pbHelp.Size = new Size(49, 48);
-            pbHelp.SizeMode = PictureBoxSizeMode.StretchImage;
-            pbHelp.TabIndex = 74;
-            pbHelp.TabStop = false;
-            pbHelp.Click += pbHelp_Click;
+            label27.AutoSize = true;
+            label27.BackColor = Color.FromArgb(0, 15, 255, 255);
+            label27.Font = new Font("Verdana", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label27.ForeColor = Color.White;
+            label27.Location = new Point(12, 839);
+            label27.Name = "label27";
+            label27.Size = new Size(852, 35);
+            label27.TabIndex = 74;
+            label27.Text = "Want to plan out your semester? or Calculate your CGPA?";
+            label27.Click += label27_Click;
+            // 
+            // btn_Scheduler
+            // 
+            btn_Scheduler.BackColor = SystemColors.Window;
+            btn_Scheduler.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_Scheduler.Location = new Point(870, 839);
+            btn_Scheduler.Name = "btn_Scheduler";
+            btn_Scheduler.Size = new Size(138, 35);
+            btn_Scheduler.TabIndex = 75;
+            btn_Scheduler.Text = "Scheduler";
+            btn_Scheduler.UseVisualStyleBackColor = false;
+            btn_Scheduler.Click += btn_Scheduler_Click;
+            // 
+            // LblTCGPATag
+            // 
+            LblTCGPATag.AutoSize = true;
+            LblTCGPATag.BackColor = Color.FromArgb(0, 15, 255, 255);
+            LblTCGPATag.Font = new Font("Verdana", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblTCGPATag.ForeColor = Color.White;
+            LblTCGPATag.Location = new Point(1027, 779);
+            LblTCGPATag.Name = "LblTCGPATag";
+            LblTCGPATag.Size = new Size(260, 35);
+            LblTCGPATag.TabIndex = 76;
+            LblTCGPATag.Text = "Cumulative GPA:";
+            // 
+            // LblCGPA
+            // 
+            LblCGPA.AutoSize = true;
+            LblCGPA.BackColor = Color.FromArgb(0, 15, 255, 255);
+            LblCGPA.Font = new Font("Verdana", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblCGPA.ForeColor = Color.White;
+            LblCGPA.Location = new Point(1282, 782);
+            LblCGPA.Name = "LblCGPA";
+            LblCGPA.Size = new Size(99, 32);
+            LblCGPA.TabIndex = 77;
+            LblCGPA.Text = "_____";
+            // 
+            // btnExport
+            // 
+            btnExport.BackColor = SystemColors.Window;
+            btnExport.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnExport.Location = new Point(1704, 774);
+            btnExport.Name = "btnExport";
+            btnExport.Size = new Size(208, 35);
+            btnExport.TabIndex = 78;
+            btnExport.Text = "Export as Text File";
+            btnExport.UseVisualStyleBackColor = false;
+            btnExport.Click += btnExport_Click;
             // 
             // GPA_Calculator
             // 
@@ -3290,7 +3343,11 @@ namespace Scheduler
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 48, 49);
             ClientSize = new Size(1924, 1019);
-            Controls.Add(pbHelp);
+            Controls.Add(btnExport);
+            Controls.Add(LblCGPA);
+            Controls.Add(LblTCGPATag);
+            Controls.Add(btn_Scheduler);
+            Controls.Add(label27);
             Controls.Add(LblTGPA);
             Controls.Add(LblTGPATag);
             Controls.Add(lblTitle);
@@ -3308,6 +3365,7 @@ namespace Scheduler
             MaximumSize = new Size(2400, 1140);
             Name = "GPA_Calculator";
             Text = "GPA Calculator";
+            WindowState = FormWindowState.Maximized;
             Load += GPA_Calculator_Load;
             gBox1.ResumeLayout(false);
             gBox1.PerformLayout();
@@ -3331,7 +3389,6 @@ namespace Scheduler
             gBox5.PerformLayout();
             gBox_En5.ResumeLayout(false);
             gBox_En5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pbHelp).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -3622,11 +3679,11 @@ namespace Scheduler
         private Label lblGPATag5;
         private TextBox txtItem1B5;
         private Label lblLetterGrade5;
-        private TextBox textBox2;
+        private TextBox txt_CourseNameB5;
         private Label lblLetterTag5;
         private TextBox txtGrade11B5;
         private Label lblPercentTag5;
-        private TextBox textBox4;
+        private TextBox txt_CourseCodeB5;
         private Label lblResult5;
         private TextBox txtGrade10B5;
         private Button btn_g5Calculate;
@@ -3691,8 +3748,11 @@ namespace Scheduler
         private Label lblTheory5;
         private Label lblTitle;
         private Label LblTGPATag;
-        private Label LblTGPA;
-        private Button btnTGPA;
-        private PictureBox pbHelp;
+        private Label LblTGPA; private Button btnTGPA;
+        private Label label27;
+        private Button btn_Scheduler;
+        private Label LblTCGPATag;
+        private Label LblCGPA;
+        private Button btnExport;
     }
 }

@@ -40,8 +40,8 @@ namespace Scheduler
         private void InitializeComponent()
         {
             lbl_MenuTitle = new Label();
-            btn_Scheduler = new Button();
             btn_GPA = new Button();
+            btnSchedulerMenu = new Button();
             SuspendLayout();
             // 
             // lbl_MenuTitle
@@ -50,38 +50,38 @@ namespace Scheduler
             lbl_MenuTitle.BackColor = Color.Transparent;
             lbl_MenuTitle.Font = new Font("Verdana", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_MenuTitle.ForeColor = Color.WhiteSmoke;
-            lbl_MenuTitle.Location = new Point(622, 457);
+            lbl_MenuTitle.Location = new Point(615, 440);
             lbl_MenuTitle.Name = "lbl_MenuTitle";
             lbl_MenuTitle.Size = new Size(743, 59);
             lbl_MenuTitle.TabIndex = 0;
             lbl_MenuTitle.Text = "Scheduler and GPA Calculator";
             lbl_MenuTitle.Click += label1_Click;
             // 
-            // btn_Scheduler
-            // 
-            btn_Scheduler.BackColor = Color.WhiteSmoke;
-            btn_Scheduler.FlatStyle = FlatStyle.Popup;
-            btn_Scheduler.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_Scheduler.Location = new Point(760, 542);
-            btn_Scheduler.Name = "btn_Scheduler";
-            btn_Scheduler.Size = new Size(120, 35);
-            btn_Scheduler.TabIndex = 1;
-            btn_Scheduler.Text = "Scheduler";
-            btn_Scheduler.UseVisualStyleBackColor = false;
-            btn_Scheduler.Click += button1_Click;
-            // 
             // btn_GPA
             // 
             btn_GPA.BackColor = Color.WhiteSmoke;
             btn_GPA.FlatStyle = FlatStyle.Popup;
             btn_GPA.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_GPA.Location = new Point(1066, 542);
+            btn_GPA.Location = new Point(1062, 539);
             btn_GPA.Name = "btn_GPA";
             btn_GPA.Size = new Size(144, 35);
             btn_GPA.TabIndex = 2;
             btn_GPA.Text = "GPA Calculator";
             btn_GPA.UseVisualStyleBackColor = false;
             btn_GPA.Click += button2_Click;
+            // 
+            // btnSchedulerMenu
+            // 
+            btnSchedulerMenu.BackColor = Color.WhiteSmoke;
+            btnSchedulerMenu.FlatStyle = FlatStyle.Popup;
+            btnSchedulerMenu.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSchedulerMenu.Location = new Point(768, 539);
+            btnSchedulerMenu.Name = "btnSchedulerMenu";
+            btnSchedulerMenu.Size = new Size(144, 35);
+            btnSchedulerMenu.TabIndex = 3;
+            btnSchedulerMenu.Text = "Scheduler";
+            btnSchedulerMenu.UseVisualStyleBackColor = false;
+            btnSchedulerMenu.Click += button1_Click_1;
             // 
             // Start
             // 
@@ -90,8 +90,8 @@ namespace Scheduler
             BackColor = Color.FromArgb(50, 48, 49);
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1924, 1061);
+            Controls.Add(btnSchedulerMenu);
             Controls.Add(btn_GPA);
-            Controls.Add(btn_Scheduler);
             Controls.Add(lbl_MenuTitle);
             Name = "Start";
             Text = "Menu";
@@ -100,10 +100,20 @@ namespace Scheduler
             PerformLayout();
         }
 
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private Label lbl_MenuTitle;
-        private Button btn_Scheduler;
         private Button btn_GPA;
+        private Button btnSchedulerMenu;
     }
 }

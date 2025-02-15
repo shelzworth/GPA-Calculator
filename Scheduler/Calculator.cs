@@ -20,6 +20,7 @@ namespace Scheduler
         double[] totals = { 0.0, 0.0, 0.0, 0.0, 0.0 };
         double[] Theory = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
         double[] Labs = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+        string[] CourseCodes = { "", "" , "", "", ""};
 
         string letterGrade;
         string GPA;
@@ -55,7 +56,6 @@ namespace Scheduler
             rbtn_Disabled3.Checked = true; rbtn_En3.Checked = true;
             rbtn_Disabled4.Checked = true; rbtn_En4.Checked = true;
             rbtn_Disabled5.Checked = true; rbtn_En5.Checked = true;
-            Thread.Sleep(500);
             calculateTGPA();
         }
 
@@ -75,32 +75,27 @@ namespace Scheduler
             gBox3.Enabled = true; gBox_En3.Enabled = true; rbtn_En3.Checked = true;
             gBox4.Enabled = true; gBox_En4.Enabled = true; rbtn_En4.Checked = true;
             gBox5.Enabled = true; gBox_En5.Enabled = true; rbtn_En5.Checked = true;
-            Thread.Sleep(500);
             calculateTGPA();
         }
 
         private void rbtn_En3_CheckedChanged(object sender, EventArgs e)
         {
             gBox3.Enabled = true; calculateTGPA();
-            Thread.Sleep(500);
         }
 
         private void rbtn_Disabled3_CheckedChanged(object sender, EventArgs e)
         {
             gBox3.Enabled = false; calculateTGPA();
-            Thread.Sleep(500);
         }
 
         private void rbtn_En4_CheckedChanged(object sender, EventArgs e)
         {
             gBox4.Enabled = true; calculateTGPA();
-            Thread.Sleep(500);
         }
 
         private void rbtn_Disabled4_CheckedChanged(object sender, EventArgs e)
         {
             gBox4.Enabled = false; calculateTGPA();
-            Thread.Sleep(500);
         }
         private void calculateCard(object sender, EventArgs e)
         {
@@ -278,6 +273,7 @@ namespace Scheduler
         private void btn_Scheduler_Click(object sender, EventArgs e)
         {
             Schedule schedule = new Schedule();
+            schedule.LoadTotals(totals);
             this.Hide();
             schedule.Show();
         }

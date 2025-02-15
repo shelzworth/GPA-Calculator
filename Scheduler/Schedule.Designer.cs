@@ -155,7 +155,6 @@
             // 
             // CBox10Y1
             // 
-            CBox10Y1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox10Y1.FormattingEnabled = true;
             CBox10Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
             CBox10Y1.Location = new Point(155, 302);
@@ -165,7 +164,6 @@
             // 
             // CBox9Y1
             // 
-            CBox9Y1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox9Y1.FormattingEnabled = true;
             CBox9Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
             CBox9Y1.Location = new Point(155, 273);
@@ -175,7 +173,6 @@
             // 
             // CBox8Y1
             // 
-            CBox8Y1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox8Y1.FormattingEnabled = true;
             CBox8Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
             CBox8Y1.Location = new Point(155, 244);
@@ -185,7 +182,6 @@
             // 
             // CBox7Y1
             // 
-            CBox7Y1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox7Y1.FormattingEnabled = true;
             CBox7Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
             CBox7Y1.Location = new Point(155, 215);
@@ -195,7 +191,6 @@
             // 
             // CBox6Y1
             // 
-            CBox6Y1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox6Y1.FormattingEnabled = true;
             CBox6Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
             CBox6Y1.Location = new Point(155, 186);
@@ -205,7 +200,6 @@
             // 
             // CBox5Y1
             // 
-            CBox5Y1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox5Y1.FormattingEnabled = true;
             CBox5Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
             CBox5Y1.Location = new Point(155, 138);
@@ -215,7 +209,6 @@
             // 
             // CBox4Y1
             // 
-            CBox4Y1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox4Y1.FormattingEnabled = true;
             CBox4Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
             CBox4Y1.Location = new Point(155, 109);
@@ -225,7 +218,6 @@
             // 
             // CBox3Y1
             // 
-            CBox3Y1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox3Y1.FormattingEnabled = true;
             CBox3Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
             CBox3Y1.Location = new Point(155, 80);
@@ -235,7 +227,6 @@
             // 
             // CBox2Y1
             // 
-            CBox2Y1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox2Y1.FormattingEnabled = true;
             CBox2Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
             CBox2Y1.Location = new Point(155, 51);
@@ -245,7 +236,6 @@
             // 
             // CBox1Y1
             // 
-            CBox1Y1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox1Y1.FormattingEnabled = true;
             CBox1Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
             CBox1Y1.Location = new Point(155, 22);

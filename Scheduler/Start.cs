@@ -13,11 +13,17 @@ using GPA_Calculator;
 
 namespace Scheduler
 {
+    
     public partial class Start : Form
     {
+        public Calculator calculator = new Calculator();
+
+        public Schedule schedule;
+
         public Start()
         {
             InitializeComponent();
+            schedule = new Schedule(calculator);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -32,9 +38,8 @@ namespace Scheduler
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Calculator Calculator = new Calculator();
+            calculator.Show();
             this.Hide();
-            Calculator.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,9 +54,8 @@ namespace Scheduler
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Schedule schedule = new Schedule();
-            this.Hide();
             schedule.Show();
+            this.Hide();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿namespace GPA_Calculator
+﻿
+namespace GPA_Calculator
 {
     partial class Schedule
     {
@@ -18,16 +19,16 @@
         {
             lblScheduleTitle = new Label();
             gBoxY1 = new GroupBox();
-            CBox10Y1 = new ComboBox();
-            CBox9Y1 = new ComboBox();
-            CBox8Y1 = new ComboBox();
-            CBox7Y1 = new ComboBox();
-            CBox6Y1 = new ComboBox();
-            CBox5Y1 = new ComboBox();
-            CBox4Y1 = new ComboBox();
-            CBox3Y1 = new ComboBox();
-            CBox2Y1 = new ComboBox();
-            CBox1Y1 = new ComboBox();
+            CBox5S2 = new ComboBox();
+            CBox4S2 = new ComboBox();
+            CBox3S2 = new ComboBox();
+            CBox2S2 = new ComboBox();
+            CBox1S2 = new ComboBox();
+            CBox5S1 = new ComboBox();
+            CBox4S1 = new ComboBox();
+            CBox3S1 = new ComboBox();
+            CBox2S1 = new ComboBox();
+            CBox1S1 = new ComboBox();
             TB10 = new TextBox();
             TB9 = new TextBox();
             TB8 = new TextBox();
@@ -39,20 +40,20 @@
             TB2 = new TextBox();
             TB1 = new TextBox();
             gBoxY2 = new GroupBox();
-            CBox10Y2 = new ComboBox();
-            CBox9Y2 = new ComboBox();
-            CBox8Y2 = new ComboBox();
-            CBox7Y2 = new ComboBox();
-            CBox6Y2 = new ComboBox();
-            CBox5Y2 = new ComboBox();
+            CBox5S4 = new ComboBox();
+            CBox4S4 = new ComboBox();
+            CBox3S4 = new ComboBox();
+            CBox2S4 = new ComboBox();
+            CBox1S4 = new ComboBox();
+            CBox5S3 = new ComboBox();
             textBox15 = new TextBox();
-            CBox4Y2 = new ComboBox();
+            CBox4S3 = new ComboBox();
             textBox20 = new TextBox();
-            CBox3Y2 = new ComboBox();
+            CBox3S3 = new ComboBox();
             textBox19 = new TextBox();
-            CBox2Y2 = new ComboBox();
+            CBox2S3 = new ComboBox();
             textBox18 = new TextBox();
-            CBox1Y2 = new ComboBox();
+            CBox1S3 = new ComboBox();
             textBox17 = new TextBox();
             textBox16 = new TextBox();
             textBox14 = new TextBox();
@@ -60,20 +61,20 @@
             textBox12 = new TextBox();
             textBox11 = new TextBox();
             gBoxY3 = new GroupBox();
-            CBox10Y3 = new ComboBox();
-            CBox9Y3 = new ComboBox();
-            CBox8Y3 = new ComboBox();
-            CBox7Y3 = new ComboBox();
-            CBox6Y3 = new ComboBox();
-            CBox5Y3 = new ComboBox();
+            CBox5S6 = new ComboBox();
+            CBox4S6 = new ComboBox();
+            CBox3S6 = new ComboBox();
+            CBox2S6 = new ComboBox();
+            CBox1S6 = new ComboBox();
+            CBox5S5 = new ComboBox();
             textBox26 = new TextBox();
-            CBox4Y3 = new ComboBox();
+            CBox4S5 = new ComboBox();
             textBox30 = new TextBox();
-            CBox3Y3 = new ComboBox();
+            CBox3S5 = new ComboBox();
             textBox29 = new TextBox();
-            CBox2Y3 = new ComboBox();
+            CBox2S5 = new ComboBox();
             textBox28 = new TextBox();
-            CBox1Y3 = new ComboBox();
+            CBox1S5 = new ComboBox();
             textBox27 = new TextBox();
             textBox25 = new TextBox();
             textBox24 = new TextBox();
@@ -81,20 +82,20 @@
             textBox22 = new TextBox();
             textBox21 = new TextBox();
             gBoxY4 = new GroupBox();
-            CBox10Y4 = new ComboBox();
-            CBox9Y4 = new ComboBox();
-            CBox8Y4 = new ComboBox();
-            CBox7Y4 = new ComboBox();
-            CBox6Y4 = new ComboBox();
-            CBox5Y4 = new ComboBox();
+            CBox5S8 = new ComboBox();
+            CBox4S8 = new ComboBox();
+            CBox3S8 = new ComboBox();
+            CBox2S8 = new ComboBox();
+            CBox1S8 = new ComboBox();
+            CBox5S7 = new ComboBox();
             textBox36 = new TextBox();
-            CBox4Y4 = new ComboBox();
+            CBox4S7 = new ComboBox();
             textBox40 = new TextBox();
-            CBox3Y4 = new ComboBox();
+            CBox3S7 = new ComboBox();
             textBox39 = new TextBox();
-            CBox2Y4 = new ComboBox();
+            CBox2S7 = new ComboBox();
             textBox38 = new TextBox();
-            CBox1Y4 = new ComboBox();
+            CBox1S7 = new ComboBox();
             textBox37 = new TextBox();
             textBox35 = new TextBox();
             textBox34 = new TextBox();
@@ -106,6 +107,8 @@
             lblY3 = new Label();
             lblY4 = new Label();
             btn_Calculator = new Button();
+            btnSaveSem = new Button();
+            lblSuccess = new Label();
             gBoxY1.SuspendLayout();
             gBoxY2.SuspendLayout();
             gBoxY3.SuspendLayout();
@@ -127,16 +130,16 @@
             // gBoxY1
             // 
             gBoxY1.BackColor = Color.DarkSalmon;
-            gBoxY1.Controls.Add(CBox10Y1);
-            gBoxY1.Controls.Add(CBox9Y1);
-            gBoxY1.Controls.Add(CBox8Y1);
-            gBoxY1.Controls.Add(CBox7Y1);
-            gBoxY1.Controls.Add(CBox6Y1);
-            gBoxY1.Controls.Add(CBox5Y1);
-            gBoxY1.Controls.Add(CBox4Y1);
-            gBoxY1.Controls.Add(CBox3Y1);
-            gBoxY1.Controls.Add(CBox2Y1);
-            gBoxY1.Controls.Add(CBox1Y1);
+            gBoxY1.Controls.Add(CBox5S2);
+            gBoxY1.Controls.Add(CBox4S2);
+            gBoxY1.Controls.Add(CBox3S2);
+            gBoxY1.Controls.Add(CBox2S2);
+            gBoxY1.Controls.Add(CBox1S2);
+            gBoxY1.Controls.Add(CBox5S1);
+            gBoxY1.Controls.Add(CBox4S1);
+            gBoxY1.Controls.Add(CBox3S1);
+            gBoxY1.Controls.Add(CBox2S1);
+            gBoxY1.Controls.Add(CBox1S1);
             gBoxY1.Controls.Add(TB10);
             gBoxY1.Controls.Add(TB9);
             gBoxY1.Controls.Add(TB8);
@@ -153,95 +156,105 @@
             gBoxY1.TabIndex = 73;
             gBoxY1.TabStop = false;
             // 
-            // CBox10Y1
+            // CBox5S2
             // 
-            CBox10Y1.FormattingEnabled = true;
-            CBox10Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox10Y1.Location = new Point(155, 302);
-            CBox10Y1.Name = "CBox10Y1";
-            CBox10Y1.Size = new Size(93, 23);
-            CBox10Y1.TabIndex = 98;
+            CBox5S2.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox5S2.FormattingEnabled = true;
+            CBox5S2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox5S2.Location = new Point(155, 302);
+            CBox5S2.Name = "CBox5S2";
+            CBox5S2.Size = new Size(93, 23);
+            CBox5S2.TabIndex = 98;
             // 
-            // CBox9Y1
+            // CBox4S2
             // 
-            CBox9Y1.FormattingEnabled = true;
-            CBox9Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox9Y1.Location = new Point(155, 273);
-            CBox9Y1.Name = "CBox9Y1";
-            CBox9Y1.Size = new Size(93, 23);
-            CBox9Y1.TabIndex = 97;
+            CBox4S2.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox4S2.FormattingEnabled = true;
+            CBox4S2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox4S2.Location = new Point(155, 273);
+            CBox4S2.Name = "CBox4S2";
+            CBox4S2.Size = new Size(93, 23);
+            CBox4S2.TabIndex = 97;
             // 
-            // CBox8Y1
+            // CBox3S2
             // 
-            CBox8Y1.FormattingEnabled = true;
-            CBox8Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox8Y1.Location = new Point(155, 244);
-            CBox8Y1.Name = "CBox8Y1";
-            CBox8Y1.Size = new Size(93, 23);
-            CBox8Y1.TabIndex = 96;
+            CBox3S2.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox3S2.FormattingEnabled = true;
+            CBox3S2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox3S2.Location = new Point(155, 244);
+            CBox3S2.Name = "CBox3S2";
+            CBox3S2.Size = new Size(93, 23);
+            CBox3S2.TabIndex = 96;
             // 
-            // CBox7Y1
+            // CBox2S2
             // 
-            CBox7Y1.FormattingEnabled = true;
-            CBox7Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox7Y1.Location = new Point(155, 215);
-            CBox7Y1.Name = "CBox7Y1";
-            CBox7Y1.Size = new Size(93, 23);
-            CBox7Y1.TabIndex = 95;
+            CBox2S2.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox2S2.FormattingEnabled = true;
+            CBox2S2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox2S2.Location = new Point(155, 215);
+            CBox2S2.Name = "CBox2S2";
+            CBox2S2.Size = new Size(93, 23);
+            CBox2S2.TabIndex = 95;
             // 
-            // CBox6Y1
+            // CBox1S2
             // 
-            CBox6Y1.FormattingEnabled = true;
-            CBox6Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox6Y1.Location = new Point(155, 186);
-            CBox6Y1.Name = "CBox6Y1";
-            CBox6Y1.Size = new Size(93, 23);
-            CBox6Y1.TabIndex = 94;
+            CBox1S2.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox1S2.FormattingEnabled = true;
+            CBox1S2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox1S2.Location = new Point(155, 186);
+            CBox1S2.Name = "CBox1S2";
+            CBox1S2.Size = new Size(93, 23);
+            CBox1S2.TabIndex = 94;
             // 
-            // CBox5Y1
+            // CBox5S1
             // 
-            CBox5Y1.FormattingEnabled = true;
-            CBox5Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox5Y1.Location = new Point(155, 138);
-            CBox5Y1.Name = "CBox5Y1";
-            CBox5Y1.Size = new Size(93, 23);
-            CBox5Y1.TabIndex = 93;
+            CBox5S1.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox5S1.FormattingEnabled = true;
+            CBox5S1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox5S1.Location = new Point(155, 138);
+            CBox5S1.Name = "CBox5S1";
+            CBox5S1.Size = new Size(93, 23);
+            CBox5S1.TabIndex = 93;
             // 
-            // CBox4Y1
+            // CBox4S1
             // 
-            CBox4Y1.FormattingEnabled = true;
-            CBox4Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox4Y1.Location = new Point(155, 109);
-            CBox4Y1.Name = "CBox4Y1";
-            CBox4Y1.Size = new Size(93, 23);
-            CBox4Y1.TabIndex = 92;
+            CBox4S1.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox4S1.FormattingEnabled = true;
+            CBox4S1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox4S1.Location = new Point(155, 109);
+            CBox4S1.Name = "CBox4S1";
+            CBox4S1.Size = new Size(93, 23);
+            CBox4S1.TabIndex = 92;
             // 
-            // CBox3Y1
+            // CBox3S1
             // 
-            CBox3Y1.FormattingEnabled = true;
-            CBox3Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox3Y1.Location = new Point(155, 80);
-            CBox3Y1.Name = "CBox3Y1";
-            CBox3Y1.Size = new Size(93, 23);
-            CBox3Y1.TabIndex = 91;
+            CBox3S1.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox3S1.FormattingEnabled = true;
+            CBox3S1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox3S1.Location = new Point(155, 80);
+            CBox3S1.Name = "CBox3S1";
+            CBox3S1.Size = new Size(93, 23);
+            CBox3S1.TabIndex = 91;
             // 
-            // CBox2Y1
+            // CBox2S1
             // 
-            CBox2Y1.FormattingEnabled = true;
-            CBox2Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox2Y1.Location = new Point(155, 51);
-            CBox2Y1.Name = "CBox2Y1";
-            CBox2Y1.Size = new Size(93, 23);
-            CBox2Y1.TabIndex = 90;
+            CBox2S1.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox2S1.FormattingEnabled = true;
+            CBox2S1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox2S1.Location = new Point(155, 51);
+            CBox2S1.Name = "CBox2S1";
+            CBox2S1.Size = new Size(93, 23);
+            CBox2S1.TabIndex = 90;
             // 
-            // CBox1Y1
+            // CBox1S1
             // 
-            CBox1Y1.FormattingEnabled = true;
-            CBox1Y1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox1Y1.Location = new Point(155, 22);
-            CBox1Y1.Name = "CBox1Y1";
-            CBox1Y1.Size = new Size(93, 23);
-            CBox1Y1.TabIndex = 80;
+            CBox1S1.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox1S1.FormattingEnabled = true;
+            CBox1S1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox1S1.Location = new Point(155, 22);
+            CBox1S1.Name = "CBox1S1";
+            CBox1S1.Size = new Size(93, 23);
+            CBox1S1.TabIndex = 80;
             // 
             // TB10
             // 
@@ -316,20 +329,20 @@
             // gBoxY2
             // 
             gBoxY2.BackColor = Color.Moccasin;
-            gBoxY2.Controls.Add(CBox10Y2);
-            gBoxY2.Controls.Add(CBox9Y2);
-            gBoxY2.Controls.Add(CBox8Y2);
-            gBoxY2.Controls.Add(CBox7Y2);
-            gBoxY2.Controls.Add(CBox6Y2);
-            gBoxY2.Controls.Add(CBox5Y2);
+            gBoxY2.Controls.Add(CBox5S4);
+            gBoxY2.Controls.Add(CBox4S4);
+            gBoxY2.Controls.Add(CBox3S4);
+            gBoxY2.Controls.Add(CBox2S4);
+            gBoxY2.Controls.Add(CBox1S4);
+            gBoxY2.Controls.Add(CBox5S3);
             gBoxY2.Controls.Add(textBox15);
-            gBoxY2.Controls.Add(CBox4Y2);
+            gBoxY2.Controls.Add(CBox4S3);
             gBoxY2.Controls.Add(textBox20);
-            gBoxY2.Controls.Add(CBox3Y2);
+            gBoxY2.Controls.Add(CBox3S3);
             gBoxY2.Controls.Add(textBox19);
-            gBoxY2.Controls.Add(CBox2Y2);
+            gBoxY2.Controls.Add(CBox2S3);
             gBoxY2.Controls.Add(textBox18);
-            gBoxY2.Controls.Add(CBox1Y2);
+            gBoxY2.Controls.Add(CBox1S3);
             gBoxY2.Controls.Add(textBox17);
             gBoxY2.Controls.Add(textBox16);
             gBoxY2.Controls.Add(textBox14);
@@ -342,65 +355,65 @@
             gBoxY2.TabIndex = 74;
             gBoxY2.TabStop = false;
             // 
-            // CBox10Y2
+            // CBox5S4
             // 
-            CBox10Y2.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox10Y2.FormattingEnabled = true;
-            CBox10Y2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox10Y2.Location = new Point(158, 302);
-            CBox10Y2.Name = "CBox10Y2";
-            CBox10Y2.Size = new Size(93, 23);
-            CBox10Y2.TabIndex = 114;
+            CBox5S4.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox5S4.FormattingEnabled = true;
+            CBox5S4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox5S4.Location = new Point(158, 302);
+            CBox5S4.Name = "CBox5S4";
+            CBox5S4.Size = new Size(93, 23);
+            CBox5S4.TabIndex = 114;
             // 
-            // CBox9Y2
+            // CBox4S4
             // 
-            CBox9Y2.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox9Y2.FormattingEnabled = true;
-            CBox9Y2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox9Y2.Location = new Point(158, 273);
-            CBox9Y2.Name = "CBox9Y2";
-            CBox9Y2.Size = new Size(93, 23);
-            CBox9Y2.TabIndex = 113;
+            CBox4S4.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox4S4.FormattingEnabled = true;
+            CBox4S4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox4S4.Location = new Point(158, 273);
+            CBox4S4.Name = "CBox4S4";
+            CBox4S4.Size = new Size(93, 23);
+            CBox4S4.TabIndex = 113;
             // 
-            // CBox8Y2
+            // CBox3S4
             // 
-            CBox8Y2.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox8Y2.FormattingEnabled = true;
-            CBox8Y2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox8Y2.Location = new Point(158, 244);
-            CBox8Y2.Name = "CBox8Y2";
-            CBox8Y2.Size = new Size(93, 23);
-            CBox8Y2.TabIndex = 112;
+            CBox3S4.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox3S4.FormattingEnabled = true;
+            CBox3S4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox3S4.Location = new Point(158, 244);
+            CBox3S4.Name = "CBox3S4";
+            CBox3S4.Size = new Size(93, 23);
+            CBox3S4.TabIndex = 112;
             // 
-            // CBox7Y2
+            // CBox2S4
             // 
-            CBox7Y2.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox7Y2.FormattingEnabled = true;
-            CBox7Y2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox7Y2.Location = new Point(158, 215);
-            CBox7Y2.Name = "CBox7Y2";
-            CBox7Y2.Size = new Size(93, 23);
-            CBox7Y2.TabIndex = 111;
+            CBox2S4.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox2S4.FormattingEnabled = true;
+            CBox2S4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox2S4.Location = new Point(158, 215);
+            CBox2S4.Name = "CBox2S4";
+            CBox2S4.Size = new Size(93, 23);
+            CBox2S4.TabIndex = 111;
             // 
-            // CBox6Y2
+            // CBox1S4
             // 
-            CBox6Y2.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox6Y2.FormattingEnabled = true;
-            CBox6Y2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox6Y2.Location = new Point(158, 186);
-            CBox6Y2.Name = "CBox6Y2";
-            CBox6Y2.Size = new Size(93, 23);
-            CBox6Y2.TabIndex = 110;
+            CBox1S4.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox1S4.FormattingEnabled = true;
+            CBox1S4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox1S4.Location = new Point(158, 186);
+            CBox1S4.Name = "CBox1S4";
+            CBox1S4.Size = new Size(93, 23);
+            CBox1S4.TabIndex = 110;
             // 
-            // CBox5Y2
+            // CBox5S3
             // 
-            CBox5Y2.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox5Y2.FormattingEnabled = true;
-            CBox5Y2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox5Y2.Location = new Point(158, 138);
-            CBox5Y2.Name = "CBox5Y2";
-            CBox5Y2.Size = new Size(93, 23);
-            CBox5Y2.TabIndex = 103;
+            CBox5S3.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox5S3.FormattingEnabled = true;
+            CBox5S3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox5S3.Location = new Point(158, 138);
+            CBox5S3.Name = "CBox5S3";
+            CBox5S3.Size = new Size(93, 23);
+            CBox5S3.TabIndex = 103;
             // 
             // textBox15
             // 
@@ -409,15 +422,15 @@
             textBox15.Size = new Size(143, 23);
             textBox15.TabIndex = 105;
             // 
-            // CBox4Y2
+            // CBox4S3
             // 
-            CBox4Y2.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox4Y2.FormattingEnabled = true;
-            CBox4Y2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox4Y2.Location = new Point(158, 109);
-            CBox4Y2.Name = "CBox4Y2";
-            CBox4Y2.Size = new Size(93, 23);
-            CBox4Y2.TabIndex = 102;
+            CBox4S3.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox4S3.FormattingEnabled = true;
+            CBox4S3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox4S3.Location = new Point(158, 109);
+            CBox4S3.Name = "CBox4S3";
+            CBox4S3.Size = new Size(93, 23);
+            CBox4S3.TabIndex = 102;
             // 
             // textBox20
             // 
@@ -426,15 +439,15 @@
             textBox20.Size = new Size(143, 23);
             textBox20.TabIndex = 99;
             // 
-            // CBox3Y2
+            // CBox3S3
             // 
-            CBox3Y2.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox3Y2.FormattingEnabled = true;
-            CBox3Y2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox3Y2.Location = new Point(158, 80);
-            CBox3Y2.Name = "CBox3Y2";
-            CBox3Y2.Size = new Size(93, 23);
-            CBox3Y2.TabIndex = 101;
+            CBox3S3.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox3S3.FormattingEnabled = true;
+            CBox3S3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox3S3.Location = new Point(158, 80);
+            CBox3S3.Name = "CBox3S3";
+            CBox3S3.Size = new Size(93, 23);
+            CBox3S3.TabIndex = 101;
             // 
             // textBox19
             // 
@@ -443,15 +456,15 @@
             textBox19.Size = new Size(143, 23);
             textBox19.TabIndex = 101;
             // 
-            // CBox2Y2
+            // CBox2S3
             // 
-            CBox2Y2.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox2Y2.FormattingEnabled = true;
-            CBox2Y2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox2Y2.Location = new Point(158, 51);
-            CBox2Y2.Name = "CBox2Y2";
-            CBox2Y2.Size = new Size(93, 23);
-            CBox2Y2.TabIndex = 100;
+            CBox2S3.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox2S3.FormattingEnabled = true;
+            CBox2S3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox2S3.Location = new Point(158, 51);
+            CBox2S3.Name = "CBox2S3";
+            CBox2S3.Size = new Size(93, 23);
+            CBox2S3.TabIndex = 100;
             // 
             // textBox18
             // 
@@ -460,15 +473,15 @@
             textBox18.Size = new Size(143, 23);
             textBox18.TabIndex = 102;
             // 
-            // CBox1Y2
+            // CBox1S3
             // 
-            CBox1Y2.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox1Y2.FormattingEnabled = true;
-            CBox1Y2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox1Y2.Location = new Point(158, 22);
-            CBox1Y2.Name = "CBox1Y2";
-            CBox1Y2.Size = new Size(93, 23);
-            CBox1Y2.TabIndex = 99;
+            CBox1S3.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox1S3.FormattingEnabled = true;
+            CBox1S3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox1S3.Location = new Point(158, 22);
+            CBox1S3.Name = "CBox1S3";
+            CBox1S3.Size = new Size(93, 23);
+            CBox1S3.TabIndex = 99;
             // 
             // textBox17
             // 
@@ -515,20 +528,20 @@
             // gBoxY3
             // 
             gBoxY3.BackColor = Color.LightBlue;
-            gBoxY3.Controls.Add(CBox10Y3);
-            gBoxY3.Controls.Add(CBox9Y3);
-            gBoxY3.Controls.Add(CBox8Y3);
-            gBoxY3.Controls.Add(CBox7Y3);
-            gBoxY3.Controls.Add(CBox6Y3);
-            gBoxY3.Controls.Add(CBox5Y3);
+            gBoxY3.Controls.Add(CBox5S6);
+            gBoxY3.Controls.Add(CBox4S6);
+            gBoxY3.Controls.Add(CBox3S6);
+            gBoxY3.Controls.Add(CBox2S6);
+            gBoxY3.Controls.Add(CBox1S6);
+            gBoxY3.Controls.Add(CBox5S5);
             gBoxY3.Controls.Add(textBox26);
-            gBoxY3.Controls.Add(CBox4Y3);
+            gBoxY3.Controls.Add(CBox4S5);
             gBoxY3.Controls.Add(textBox30);
-            gBoxY3.Controls.Add(CBox3Y3);
+            gBoxY3.Controls.Add(CBox3S5);
             gBoxY3.Controls.Add(textBox29);
-            gBoxY3.Controls.Add(CBox2Y3);
+            gBoxY3.Controls.Add(CBox2S5);
             gBoxY3.Controls.Add(textBox28);
-            gBoxY3.Controls.Add(CBox1Y3);
+            gBoxY3.Controls.Add(CBox1S5);
             gBoxY3.Controls.Add(textBox27);
             gBoxY3.Controls.Add(textBox25);
             gBoxY3.Controls.Add(textBox24);
@@ -541,65 +554,65 @@
             gBoxY3.TabIndex = 75;
             gBoxY3.TabStop = false;
             // 
-            // CBox10Y3
+            // CBox5S6
             // 
-            CBox10Y3.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox10Y3.FormattingEnabled = true;
-            CBox10Y3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox10Y3.Location = new Point(155, 302);
-            CBox10Y3.Name = "CBox10Y3";
-            CBox10Y3.Size = new Size(93, 23);
-            CBox10Y3.TabIndex = 124;
+            CBox5S6.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox5S6.FormattingEnabled = true;
+            CBox5S6.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox5S6.Location = new Point(155, 302);
+            CBox5S6.Name = "CBox5S6";
+            CBox5S6.Size = new Size(93, 23);
+            CBox5S6.TabIndex = 124;
             // 
-            // CBox9Y3
+            // CBox4S6
             // 
-            CBox9Y3.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox9Y3.FormattingEnabled = true;
-            CBox9Y3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox9Y3.Location = new Point(155, 273);
-            CBox9Y3.Name = "CBox9Y3";
-            CBox9Y3.Size = new Size(93, 23);
-            CBox9Y3.TabIndex = 123;
+            CBox4S6.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox4S6.FormattingEnabled = true;
+            CBox4S6.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox4S6.Location = new Point(155, 273);
+            CBox4S6.Name = "CBox4S6";
+            CBox4S6.Size = new Size(93, 23);
+            CBox4S6.TabIndex = 123;
             // 
-            // CBox8Y3
+            // CBox3S6
             // 
-            CBox8Y3.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox8Y3.FormattingEnabled = true;
-            CBox8Y3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox8Y3.Location = new Point(155, 244);
-            CBox8Y3.Name = "CBox8Y3";
-            CBox8Y3.Size = new Size(93, 23);
-            CBox8Y3.TabIndex = 122;
+            CBox3S6.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox3S6.FormattingEnabled = true;
+            CBox3S6.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox3S6.Location = new Point(155, 244);
+            CBox3S6.Name = "CBox3S6";
+            CBox3S6.Size = new Size(93, 23);
+            CBox3S6.TabIndex = 122;
             // 
-            // CBox7Y3
+            // CBox2S6
             // 
-            CBox7Y3.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox7Y3.FormattingEnabled = true;
-            CBox7Y3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox7Y3.Location = new Point(155, 215);
-            CBox7Y3.Name = "CBox7Y3";
-            CBox7Y3.Size = new Size(93, 23);
-            CBox7Y3.TabIndex = 121;
+            CBox2S6.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox2S6.FormattingEnabled = true;
+            CBox2S6.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox2S6.Location = new Point(155, 215);
+            CBox2S6.Name = "CBox2S6";
+            CBox2S6.Size = new Size(93, 23);
+            CBox2S6.TabIndex = 121;
             // 
-            // CBox6Y3
+            // CBox1S6
             // 
-            CBox6Y3.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox6Y3.FormattingEnabled = true;
-            CBox6Y3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox6Y3.Location = new Point(155, 186);
-            CBox6Y3.Name = "CBox6Y3";
-            CBox6Y3.Size = new Size(93, 23);
-            CBox6Y3.TabIndex = 120;
+            CBox1S6.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox1S6.FormattingEnabled = true;
+            CBox1S6.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox1S6.Location = new Point(155, 186);
+            CBox1S6.Name = "CBox1S6";
+            CBox1S6.Size = new Size(93, 23);
+            CBox1S6.TabIndex = 120;
             // 
-            // CBox5Y3
+            // CBox5S5
             // 
-            CBox5Y3.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox5Y3.FormattingEnabled = true;
-            CBox5Y3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox5Y3.Location = new Point(155, 138);
-            CBox5Y3.Name = "CBox5Y3";
-            CBox5Y3.Size = new Size(93, 23);
-            CBox5Y3.TabIndex = 119;
+            CBox5S5.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox5S5.FormattingEnabled = true;
+            CBox5S5.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox5S5.Location = new Point(155, 138);
+            CBox5S5.Name = "CBox5S5";
+            CBox5S5.Size = new Size(93, 23);
+            CBox5S5.TabIndex = 119;
             // 
             // textBox26
             // 
@@ -608,15 +621,15 @@
             textBox26.Size = new Size(143, 23);
             textBox26.TabIndex = 104;
             // 
-            // CBox4Y3
+            // CBox4S5
             // 
-            CBox4Y3.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox4Y3.FormattingEnabled = true;
-            CBox4Y3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox4Y3.Location = new Point(155, 109);
-            CBox4Y3.Name = "CBox4Y3";
-            CBox4Y3.Size = new Size(93, 23);
-            CBox4Y3.TabIndex = 118;
+            CBox4S5.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox4S5.FormattingEnabled = true;
+            CBox4S5.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox4S5.Location = new Point(155, 109);
+            CBox4S5.Name = "CBox4S5";
+            CBox4S5.Size = new Size(93, 23);
+            CBox4S5.TabIndex = 118;
             // 
             // textBox30
             // 
@@ -625,15 +638,15 @@
             textBox30.Size = new Size(143, 23);
             textBox30.TabIndex = 99;
             // 
-            // CBox3Y3
+            // CBox3S5
             // 
-            CBox3Y3.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox3Y3.FormattingEnabled = true;
-            CBox3Y3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox3Y3.Location = new Point(155, 80);
-            CBox3Y3.Name = "CBox3Y3";
-            CBox3Y3.Size = new Size(93, 23);
-            CBox3Y3.TabIndex = 117;
+            CBox3S5.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox3S5.FormattingEnabled = true;
+            CBox3S5.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox3S5.Location = new Point(155, 80);
+            CBox3S5.Name = "CBox3S5";
+            CBox3S5.Size = new Size(93, 23);
+            CBox3S5.TabIndex = 117;
             // 
             // textBox29
             // 
@@ -642,15 +655,15 @@
             textBox29.Size = new Size(143, 23);
             textBox29.TabIndex = 101;
             // 
-            // CBox2Y3
+            // CBox2S5
             // 
-            CBox2Y3.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox2Y3.FormattingEnabled = true;
-            CBox2Y3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox2Y3.Location = new Point(155, 51);
-            CBox2Y3.Name = "CBox2Y3";
-            CBox2Y3.Size = new Size(93, 23);
-            CBox2Y3.TabIndex = 116;
+            CBox2S5.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox2S5.FormattingEnabled = true;
+            CBox2S5.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox2S5.Location = new Point(155, 51);
+            CBox2S5.Name = "CBox2S5";
+            CBox2S5.Size = new Size(93, 23);
+            CBox2S5.TabIndex = 116;
             // 
             // textBox28
             // 
@@ -659,15 +672,15 @@
             textBox28.Size = new Size(143, 23);
             textBox28.TabIndex = 102;
             // 
-            // CBox1Y3
+            // CBox1S5
             // 
-            CBox1Y3.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox1Y3.FormattingEnabled = true;
-            CBox1Y3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox1Y3.Location = new Point(155, 22);
-            CBox1Y3.Name = "CBox1Y3";
-            CBox1Y3.Size = new Size(93, 23);
-            CBox1Y3.TabIndex = 115;
+            CBox1S5.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox1S5.FormattingEnabled = true;
+            CBox1S5.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox1S5.Location = new Point(155, 22);
+            CBox1S5.Name = "CBox1S5";
+            CBox1S5.Size = new Size(93, 23);
+            CBox1S5.TabIndex = 115;
             // 
             // textBox27
             // 
@@ -714,20 +727,20 @@
             // gBoxY4
             // 
             gBoxY4.BackColor = Color.Thistle;
-            gBoxY4.Controls.Add(CBox10Y4);
-            gBoxY4.Controls.Add(CBox9Y4);
-            gBoxY4.Controls.Add(CBox8Y4);
-            gBoxY4.Controls.Add(CBox7Y4);
-            gBoxY4.Controls.Add(CBox6Y4);
-            gBoxY4.Controls.Add(CBox5Y4);
+            gBoxY4.Controls.Add(CBox5S8);
+            gBoxY4.Controls.Add(CBox4S8);
+            gBoxY4.Controls.Add(CBox3S8);
+            gBoxY4.Controls.Add(CBox2S8);
+            gBoxY4.Controls.Add(CBox1S8);
+            gBoxY4.Controls.Add(CBox5S7);
             gBoxY4.Controls.Add(textBox36);
-            gBoxY4.Controls.Add(CBox4Y4);
+            gBoxY4.Controls.Add(CBox4S7);
             gBoxY4.Controls.Add(textBox40);
-            gBoxY4.Controls.Add(CBox3Y4);
+            gBoxY4.Controls.Add(CBox3S7);
             gBoxY4.Controls.Add(textBox39);
-            gBoxY4.Controls.Add(CBox2Y4);
+            gBoxY4.Controls.Add(CBox2S7);
             gBoxY4.Controls.Add(textBox38);
-            gBoxY4.Controls.Add(CBox1Y4);
+            gBoxY4.Controls.Add(CBox1S7);
             gBoxY4.Controls.Add(textBox37);
             gBoxY4.Controls.Add(textBox35);
             gBoxY4.Controls.Add(textBox34);
@@ -741,65 +754,65 @@
             gBoxY4.TabStop = false;
             gBoxY4.Enter += groupBox3_Enter;
             // 
-            // CBox10Y4
+            // CBox5S8
             // 
-            CBox10Y4.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox10Y4.FormattingEnabled = true;
-            CBox10Y4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox10Y4.Location = new Point(155, 302);
-            CBox10Y4.Name = "CBox10Y4";
-            CBox10Y4.Size = new Size(93, 23);
-            CBox10Y4.TabIndex = 134;
+            CBox5S8.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox5S8.FormattingEnabled = true;
+            CBox5S8.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox5S8.Location = new Point(155, 302);
+            CBox5S8.Name = "CBox5S8";
+            CBox5S8.Size = new Size(93, 23);
+            CBox5S8.TabIndex = 134;
             // 
-            // CBox9Y4
+            // CBox4S8
             // 
-            CBox9Y4.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox9Y4.FormattingEnabled = true;
-            CBox9Y4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox9Y4.Location = new Point(155, 273);
-            CBox9Y4.Name = "CBox9Y4";
-            CBox9Y4.Size = new Size(93, 23);
-            CBox9Y4.TabIndex = 133;
+            CBox4S8.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox4S8.FormattingEnabled = true;
+            CBox4S8.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox4S8.Location = new Point(155, 273);
+            CBox4S8.Name = "CBox4S8";
+            CBox4S8.Size = new Size(93, 23);
+            CBox4S8.TabIndex = 133;
             // 
-            // CBox8Y4
+            // CBox3S8
             // 
-            CBox8Y4.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox8Y4.FormattingEnabled = true;
-            CBox8Y4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox8Y4.Location = new Point(155, 244);
-            CBox8Y4.Name = "CBox8Y4";
-            CBox8Y4.Size = new Size(93, 23);
-            CBox8Y4.TabIndex = 132;
+            CBox3S8.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox3S8.FormattingEnabled = true;
+            CBox3S8.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox3S8.Location = new Point(155, 244);
+            CBox3S8.Name = "CBox3S8";
+            CBox3S8.Size = new Size(93, 23);
+            CBox3S8.TabIndex = 132;
             // 
-            // CBox7Y4
+            // CBox2S8
             // 
-            CBox7Y4.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox7Y4.FormattingEnabled = true;
-            CBox7Y4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox7Y4.Location = new Point(155, 215);
-            CBox7Y4.Name = "CBox7Y4";
-            CBox7Y4.Size = new Size(93, 23);
-            CBox7Y4.TabIndex = 131;
+            CBox2S8.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox2S8.FormattingEnabled = true;
+            CBox2S8.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox2S8.Location = new Point(155, 215);
+            CBox2S8.Name = "CBox2S8";
+            CBox2S8.Size = new Size(93, 23);
+            CBox2S8.TabIndex = 131;
             // 
-            // CBox6Y4
+            // CBox1S8
             // 
-            CBox6Y4.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox6Y4.FormattingEnabled = true;
-            CBox6Y4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox6Y4.Location = new Point(155, 186);
-            CBox6Y4.Name = "CBox6Y4";
-            CBox6Y4.Size = new Size(93, 23);
-            CBox6Y4.TabIndex = 130;
+            CBox1S8.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox1S8.FormattingEnabled = true;
+            CBox1S8.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox1S8.Location = new Point(155, 186);
+            CBox1S8.Name = "CBox1S8";
+            CBox1S8.Size = new Size(93, 23);
+            CBox1S8.TabIndex = 130;
             // 
-            // CBox5Y4
+            // CBox5S7
             // 
-            CBox5Y4.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox5Y4.FormattingEnabled = true;
-            CBox5Y4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox5Y4.Location = new Point(155, 138);
-            CBox5Y4.Name = "CBox5Y4";
-            CBox5Y4.Size = new Size(93, 23);
-            CBox5Y4.TabIndex = 129;
+            CBox5S7.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox5S7.FormattingEnabled = true;
+            CBox5S7.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox5S7.Location = new Point(155, 138);
+            CBox5S7.Name = "CBox5S7";
+            CBox5S7.Size = new Size(93, 23);
+            CBox5S7.TabIndex = 129;
             // 
             // textBox36
             // 
@@ -808,15 +821,15 @@
             textBox36.Size = new Size(143, 23);
             textBox36.TabIndex = 104;
             // 
-            // CBox4Y4
+            // CBox4S7
             // 
-            CBox4Y4.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox4Y4.FormattingEnabled = true;
-            CBox4Y4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox4Y4.Location = new Point(155, 109);
-            CBox4Y4.Name = "CBox4Y4";
-            CBox4Y4.Size = new Size(93, 23);
-            CBox4Y4.TabIndex = 128;
+            CBox4S7.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox4S7.FormattingEnabled = true;
+            CBox4S7.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox4S7.Location = new Point(155, 109);
+            CBox4S7.Name = "CBox4S7";
+            CBox4S7.Size = new Size(93, 23);
+            CBox4S7.TabIndex = 128;
             // 
             // textBox40
             // 
@@ -825,15 +838,15 @@
             textBox40.Size = new Size(143, 23);
             textBox40.TabIndex = 99;
             // 
-            // CBox3Y4
+            // CBox3S7
             // 
-            CBox3Y4.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox3Y4.FormattingEnabled = true;
-            CBox3Y4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox3Y4.Location = new Point(155, 80);
-            CBox3Y4.Name = "CBox3Y4";
-            CBox3Y4.Size = new Size(93, 23);
-            CBox3Y4.TabIndex = 127;
+            CBox3S7.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox3S7.FormattingEnabled = true;
+            CBox3S7.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox3S7.Location = new Point(155, 80);
+            CBox3S7.Name = "CBox3S7";
+            CBox3S7.Size = new Size(93, 23);
+            CBox3S7.TabIndex = 127;
             // 
             // textBox39
             // 
@@ -842,15 +855,15 @@
             textBox39.Size = new Size(143, 23);
             textBox39.TabIndex = 101;
             // 
-            // CBox2Y4
+            // CBox2S7
             // 
-            CBox2Y4.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox2Y4.FormattingEnabled = true;
-            CBox2Y4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox2Y4.Location = new Point(155, 51);
-            CBox2Y4.Name = "CBox2Y4";
-            CBox2Y4.Size = new Size(93, 23);
-            CBox2Y4.TabIndex = 126;
+            CBox2S7.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox2S7.FormattingEnabled = true;
+            CBox2S7.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox2S7.Location = new Point(155, 51);
+            CBox2S7.Name = "CBox2S7";
+            CBox2S7.Size = new Size(93, 23);
+            CBox2S7.TabIndex = 126;
             // 
             // textBox38
             // 
@@ -859,15 +872,15 @@
             textBox38.Size = new Size(143, 23);
             textBox38.TabIndex = 102;
             // 
-            // CBox1Y4
+            // CBox1S7
             // 
-            CBox1Y4.DropDownStyle = ComboBoxStyle.DropDownList;
-            CBox1Y4.FormattingEnabled = true;
-            CBox1Y4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox1Y4.Location = new Point(155, 22);
-            CBox1Y4.Name = "CBox1Y4";
-            CBox1Y4.Size = new Size(93, 23);
-            CBox1Y4.TabIndex = 125;
+            CBox1S7.DropDownStyle = ComboBoxStyle.DropDownList;
+            CBox1S7.FormattingEnabled = true;
+            CBox1S7.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
+            CBox1S7.Location = new Point(155, 22);
+            CBox1S7.Name = "CBox1S7";
+            CBox1S7.Size = new Size(93, 23);
+            CBox1S7.TabIndex = 125;
             // 
             // textBox37
             // 
@@ -959,13 +972,38 @@
             // 
             btn_Calculator.BackColor = SystemColors.Window;
             btn_Calculator.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_Calculator.Location = new Point(12, 454);
+            btn_Calculator.Location = new Point(801, 474);
             btn_Calculator.Name = "btn_Calculator";
-            btn_Calculator.Size = new Size(251, 35);
+            btn_Calculator.Size = new Size(257, 35);
             btn_Calculator.TabIndex = 91;
             btn_Calculator.Text = "Back to GPA Calculator";
             btn_Calculator.UseVisualStyleBackColor = false;
             btn_Calculator.Click += btn_Calculator_Click;
+            // 
+            // btnSaveSem
+            // 
+            btnSaveSem.BackColor = Color.FromArgb(128, 255, 128);
+            btnSaveSem.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSaveSem.Location = new Point(801, 515);
+            btnSaveSem.Name = "btnSaveSem";
+            btnSaveSem.Size = new Size(257, 35);
+            btnSaveSem.TabIndex = 92;
+            btnSaveSem.Text = "Save Semester";
+            btnSaveSem.UseVisualStyleBackColor = false;
+            btnSaveSem.Click += btnSaveSem_Click;
+            // 
+            // lblSuccess
+            // 
+            lblSuccess.AutoSize = true;
+            lblSuccess.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblSuccess.ForeColor = Color.Lime;
+            lblSuccess.Location = new Point(433, 442);
+            lblSuccess.Name = "lblSuccess";
+            lblSuccess.Size = new Size(251, 18);
+            lblSuccess.TabIndex = 93;
+            lblSuccess.Text = "Semester Saved Successfully!";
+            lblSuccess.Visible = false;
+            lblSuccess.Click += lblSuccess_Click;
             // 
             // Schedule
             // 
@@ -973,6 +1011,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 48, 49);
             ClientSize = new Size(1924, 1019);
+            Controls.Add(lblSuccess);
+            Controls.Add(btnSaveSem);
             Controls.Add(btn_Calculator);
             Controls.Add(lblY4);
             Controls.Add(lblY3);
@@ -999,6 +1039,11 @@
             PerformLayout();
         }
 
+        private void lblSuccess_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private Label lblScheduleTitle;
@@ -1020,7 +1065,7 @@
         private TextBox TB3;
         private TextBox TB2;
         private TextBox TB1;
-        private ComboBox CBox1Y1;
+        private ComboBox CBox1S1;
         private TextBox textBox15;
         private TextBox textBox20;
         private TextBox textBox19;
@@ -1051,45 +1096,47 @@
         private TextBox textBox33;
         private TextBox textBox32;
         private TextBox textBox31;
-        private ComboBox CBox10Y1;
-        private ComboBox CBox9Y1;
-        private ComboBox CBox8Y1;
-        private ComboBox CBox7Y1;
-        private ComboBox CBox6Y1;
-        private ComboBox CBox5Y1;
-        private ComboBox CBox4Y1;
-        private ComboBox CBox3Y1;
-        private ComboBox CBox2Y1;
-        private ComboBox CBox10Y2;
-        private ComboBox CBox9Y2;
-        private ComboBox CBox8Y2;
-        private ComboBox CBox7Y2;
-        private ComboBox CBox6Y2;
-        private ComboBox CBox5Y2;
-        private ComboBox CBox4Y2;
-        private ComboBox CBox3Y2;
-        private ComboBox CBox2Y2;
-        private ComboBox CBox1Y2;
-        private ComboBox CBox10Y3;
-        private ComboBox CBox9Y3;
-        private ComboBox CBox8Y3;
-        private ComboBox CBox7Y3;
-        private ComboBox CBox6Y3;
-        private ComboBox CBox5Y3;
-        private ComboBox CBox4Y3;
-        private ComboBox CBox3Y3;
-        private ComboBox CBox2Y3;
-        private ComboBox CBox1Y3;
-        private ComboBox CBox10Y4;
-        private ComboBox CBox9Y4;
-        private ComboBox CBox8Y4;
-        private ComboBox CBox7Y4;
-        private ComboBox CBox6Y4;
-        private ComboBox CBox5Y4;
-        private ComboBox CBox4Y4;
-        private ComboBox CBox3Y4;
-        private ComboBox CBox2Y4;
-        private ComboBox CBox1Y4;
+        private ComboBox CBox5S2;
+        private ComboBox CBox4S2;
+        private ComboBox CBox3S2;
+        private ComboBox CBox2S2;
+        private ComboBox CBox1S2;
+        private ComboBox CBox5S1;
+        private ComboBox CBox4S1;
+        private ComboBox CBox3S1;
+        private ComboBox CBox2S1;
+        private ComboBox CBox5S4;
+        private ComboBox CBox4S4;
+        private ComboBox CBox3S4;
+        private ComboBox CBox2S4;
+        private ComboBox CBox1S4;
+        private ComboBox CBox5S3;
+        private ComboBox CBox4S3;
+        private ComboBox CBox3S3;
+        private ComboBox CBox2S3;
+        private ComboBox CBox1S3;
+        private ComboBox CBox5S6;
+        private ComboBox CBox4S6;
+        private ComboBox CBox3S6;
+        private ComboBox CBox2S6;
+        private ComboBox CBox1S6;
+        private ComboBox CBox5S5;
+        private ComboBox CBox4S5;
+        private ComboBox CBox3S5;
+        private ComboBox CBox2S5;
+        private ComboBox CBox1S5;
+        private ComboBox CBox5S8;
+        private ComboBox CBox4S8;
+        private ComboBox CBox3S8;
+        private ComboBox CBox2S8;
+        private ComboBox CBox1S8;
+        private ComboBox CBox5S7;
+        private ComboBox CBox4S7;
+        private ComboBox CBox3S7;
+        private ComboBox CBox2S7;
+        private ComboBox CBox1S7;
         private Button btn_Calculator;
+        private Button btnSaveSem;
+        private Label lblSuccess;
     }
 }

@@ -16,6 +16,7 @@ namespace Scheduler
 {
     public partial class Calculator : Form
     {
+        private Schedule scheduler; 
         double TheorytotalPossible, LabstotalPossible, TGPA;
         double[] totals = { 0.0, 0.0, 0.0, 0.0, 0.0 };
         double[] Theory = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
@@ -29,7 +30,7 @@ namespace Scheduler
         public Calculator()
         {
             InitializeComponent();
-            rbtn_Disabled.Checked = true;
+            rbtn_Disabled.Checked = false;
             rbtn_Disabled2.Checked = true;
             rbtn_Disabled3.Checked = true;
             rbtn_Disabled4.Checked = true;
@@ -272,10 +273,14 @@ namespace Scheduler
         }
         private void btn_Scheduler_Click(object sender, EventArgs e)
         {
-            Schedule schedule = new Schedule();
-            schedule.LoadTotals(totals);
+            calculateTGPA();
+            if (scheduler == null || scheduler.IsDisposed)
+            {
+                scheduler = new Schedule(this);
+            }
+            scheduler.LoadTotals(totals);
             this.Hide();
-            schedule.Show();
+            scheduler.Show();
         }
 
         private void btnExport_Click(object sender, EventArgs e)

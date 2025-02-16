@@ -378,6 +378,11 @@ namespace Scheduler
                 }
             }
         }
-
+        public void cgpaText(double cgpa)
+        {
+            LblTCGPATag.Visible = true;
+            LblCGPA.Visible = true;
+            LblCGPA.Text = cgpa.ToString("F2");
+        }
     }
 }

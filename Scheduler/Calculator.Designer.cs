@@ -3312,6 +3312,7 @@ namespace Scheduler
             LblTCGPATag.Size = new Size(260, 35);
             LblTCGPATag.TabIndex = 76;
             LblTCGPATag.Text = "Cumulative GPA:";
+            LblTCGPATag.Visible = false;
             // 
             // LblCGPA
             // 
@@ -3324,6 +3325,7 @@ namespace Scheduler
             LblCGPA.Size = new Size(99, 32);
             LblCGPA.TabIndex = 77;
             LblCGPA.Text = "_____";
+            LblCGPA.Visible = false;
             // 
             // btnExport
             // 
@@ -3337,7 +3339,7 @@ namespace Scheduler
             btnExport.UseVisualStyleBackColor = false;
             btnExport.Click += btnExport_Click;
             // 
-            // GPA_Calculator
+            // Calculator
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -3363,7 +3365,7 @@ namespace Scheduler
             Controls.Add(gBoxMain);
             Controls.Add(gBox1);
             MaximumSize = new Size(2400, 1140);
-            Name = "GPA_Calculator";
+            Name = "Calculator";
             Text = "GPA Calculator";
             WindowState = FormWindowState.Maximized;
             Load += GPA_Calculator_Load;

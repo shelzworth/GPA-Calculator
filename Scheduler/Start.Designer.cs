@@ -41,7 +41,6 @@ namespace Scheduler
         {
             lbl_MenuTitle = new Label();
             btn_GPA = new Button();
-            btnSchedulerMenu = new Button();
             SuspendLayout();
             // 
             // lbl_MenuTitle
@@ -62,26 +61,13 @@ namespace Scheduler
             btn_GPA.BackColor = Color.WhiteSmoke;
             btn_GPA.FlatStyle = FlatStyle.Popup;
             btn_GPA.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_GPA.Location = new Point(1062, 539);
+            btn_GPA.Location = new Point(914, 527);
             btn_GPA.Name = "btn_GPA";
             btn_GPA.Size = new Size(144, 35);
             btn_GPA.TabIndex = 2;
             btn_GPA.Text = "GPA Calculator";
             btn_GPA.UseVisualStyleBackColor = false;
             btn_GPA.Click += button2_Click;
-            // 
-            // btnSchedulerMenu
-            // 
-            btnSchedulerMenu.BackColor = Color.WhiteSmoke;
-            btnSchedulerMenu.FlatStyle = FlatStyle.Popup;
-            btnSchedulerMenu.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSchedulerMenu.Location = new Point(768, 539);
-            btnSchedulerMenu.Name = "btnSchedulerMenu";
-            btnSchedulerMenu.Size = new Size(144, 35);
-            btnSchedulerMenu.TabIndex = 3;
-            btnSchedulerMenu.Text = "Scheduler";
-            btnSchedulerMenu.UseVisualStyleBackColor = false;
-            btnSchedulerMenu.Click += button1_Click_1;
             // 
             // Start
             // 
@@ -90,7 +76,6 @@ namespace Scheduler
             BackColor = Color.FromArgb(50, 48, 49);
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1924, 1061);
-            Controls.Add(btnSchedulerMenu);
             Controls.Add(btn_GPA);
             Controls.Add(lbl_MenuTitle);
             Name = "Start";
@@ -114,6 +99,5 @@ namespace Scheduler
 
         private Label lbl_MenuTitle;
         private Button btn_GPA;
-        private Button btnSchedulerMenu;
     }
 }

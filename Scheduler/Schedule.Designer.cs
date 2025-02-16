@@ -109,6 +109,9 @@ namespace GPA_Calculator
             btn_Calculator = new Button();
             btnSaveSem = new Button();
             lblSuccess = new Label();
+            LblCGPA = new Label();
+            LblTCGPATag = new Label();
+            btnReset = new Button();
             gBoxY1.SuspendLayout();
             gBoxY2.SuspendLayout();
             gBoxY3.SuspendLayout();
@@ -121,7 +124,7 @@ namespace GPA_Calculator
             lblScheduleTitle.BackColor = Color.FromArgb(0, 15, 255, 255);
             lblScheduleTitle.Font = new Font("Verdana", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblScheduleTitle.ForeColor = Color.White;
-            lblScheduleTitle.Location = new Point(12, 9);
+            lblScheduleTitle.Location = new Point(38, 29);
             lblScheduleTitle.Name = "lblScheduleTitle";
             lblScheduleTitle.Size = new Size(777, 59);
             lblScheduleTitle.TabIndex = 72;
@@ -150,7 +153,7 @@ namespace GPA_Calculator
             gBoxY1.Controls.Add(TB3);
             gBoxY1.Controls.Add(TB2);
             gBoxY1.Controls.Add(TB1);
-            gBoxY1.Location = new Point(12, 101);
+            gBoxY1.Location = new Point(38, 121);
             gBoxY1.Name = "gBoxY1";
             gBoxY1.Size = new Size(257, 338);
             gBoxY1.TabIndex = 73;
@@ -349,7 +352,7 @@ namespace GPA_Calculator
             gBoxY2.Controls.Add(textBox13);
             gBoxY2.Controls.Add(textBox12);
             gBoxY2.Controls.Add(textBox11);
-            gBoxY2.Location = new Point(275, 101);
+            gBoxY2.Location = new Point(301, 121);
             gBoxY2.Name = "gBoxY2";
             gBoxY2.Size = new Size(257, 338);
             gBoxY2.TabIndex = 74;
@@ -548,7 +551,7 @@ namespace GPA_Calculator
             gBoxY3.Controls.Add(textBox23);
             gBoxY3.Controls.Add(textBox22);
             gBoxY3.Controls.Add(textBox21);
-            gBoxY3.Location = new Point(538, 101);
+            gBoxY3.Location = new Point(564, 121);
             gBoxY3.Name = "gBoxY3";
             gBoxY3.Size = new Size(257, 338);
             gBoxY3.TabIndex = 75;
@@ -747,12 +750,11 @@ namespace GPA_Calculator
             gBoxY4.Controls.Add(textBox33);
             gBoxY4.Controls.Add(textBox32);
             gBoxY4.Controls.Add(textBox31);
-            gBoxY4.Location = new Point(801, 101);
+            gBoxY4.Location = new Point(827, 121);
             gBoxY4.Name = "gBoxY4";
             gBoxY4.Size = new Size(257, 338);
             gBoxY4.TabIndex = 74;
             gBoxY4.TabStop = false;
-            gBoxY4.Enter += groupBox3_Enter;
             // 
             // CBox5S8
             // 
@@ -929,7 +931,7 @@ namespace GPA_Calculator
             lblY1.AutoSize = true;
             lblY1.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblY1.ForeColor = Color.White;
-            lblY1.Location = new Point(12, 80);
+            lblY1.Location = new Point(38, 100);
             lblY1.Name = "lblY1";
             lblY1.Size = new Size(154, 18);
             lblY1.TabIndex = 76;
@@ -940,7 +942,7 @@ namespace GPA_Calculator
             lblY2.AutoSize = true;
             lblY2.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblY2.ForeColor = Color.White;
-            lblY2.Location = new Point(275, 80);
+            lblY2.Location = new Point(301, 100);
             lblY2.Name = "lblY2";
             lblY2.Size = new Size(152, 18);
             lblY2.TabIndex = 77;
@@ -951,7 +953,7 @@ namespace GPA_Calculator
             lblY3.AutoSize = true;
             lblY3.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblY3.ForeColor = Color.White;
-            lblY3.Location = new Point(538, 80);
+            lblY3.Location = new Point(564, 100);
             lblY3.Name = "lblY3";
             lblY3.Size = new Size(167, 18);
             lblY3.TabIndex = 78;
@@ -962,7 +964,7 @@ namespace GPA_Calculator
             lblY4.AutoSize = true;
             lblY4.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblY4.ForeColor = Color.White;
-            lblY4.Location = new Point(801, 80);
+            lblY4.Location = new Point(827, 100);
             lblY4.Name = "lblY4";
             lblY4.Size = new Size(156, 18);
             lblY4.TabIndex = 79;
@@ -972,7 +974,7 @@ namespace GPA_Calculator
             // 
             btn_Calculator.BackColor = SystemColors.Window;
             btn_Calculator.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_Calculator.Location = new Point(801, 474);
+            btn_Calculator.Location = new Point(827, 494);
             btn_Calculator.Name = "btn_Calculator";
             btn_Calculator.Size = new Size(257, 35);
             btn_Calculator.TabIndex = 91;
@@ -982,9 +984,9 @@ namespace GPA_Calculator
             // 
             // btnSaveSem
             // 
-            btnSaveSem.BackColor = Color.FromArgb(128, 255, 128);
+            btnSaveSem.BackColor = Color.Lime;
             btnSaveSem.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSaveSem.Location = new Point(801, 515);
+            btnSaveSem.Location = new Point(827, 535);
             btnSaveSem.Name = "btnSaveSem";
             btnSaveSem.Size = new Size(257, 35);
             btnSaveSem.TabIndex = 92;
@@ -997,7 +999,7 @@ namespace GPA_Calculator
             lblSuccess.AutoSize = true;
             lblSuccess.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblSuccess.ForeColor = Color.Lime;
-            lblSuccess.Location = new Point(433, 442);
+            lblSuccess.Location = new Point(459, 462);
             lblSuccess.Name = "lblSuccess";
             lblSuccess.Size = new Size(251, 18);
             lblSuccess.TabIndex = 93;
@@ -1005,12 +1007,51 @@ namespace GPA_Calculator
             lblSuccess.Visible = false;
             lblSuccess.Click += lblSuccess_Click;
             // 
+            // LblCGPA
+            // 
+            LblCGPA.AutoSize = true;
+            LblCGPA.BackColor = Color.FromArgb(0, 15, 255, 255);
+            LblCGPA.Font = new Font("Verdana", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblCGPA.ForeColor = Color.White;
+            LblCGPA.Location = new Point(293, 465);
+            LblCGPA.Name = "LblCGPA";
+            LblCGPA.Size = new Size(99, 32);
+            LblCGPA.TabIndex = 95;
+            LblCGPA.Text = "_____";
+            // 
+            // LblTCGPATag
+            // 
+            LblTCGPATag.AutoSize = true;
+            LblTCGPATag.BackColor = Color.FromArgb(0, 15, 255, 255);
+            LblTCGPATag.Font = new Font("Verdana", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblTCGPATag.ForeColor = Color.White;
+            LblTCGPATag.Location = new Point(38, 462);
+            LblTCGPATag.Name = "LblTCGPATag";
+            LblTCGPATag.Size = new Size(260, 35);
+            LblTCGPATag.TabIndex = 94;
+            LblTCGPATag.Text = "Cumulative GPA:";
+            // 
+            // btnReset
+            // 
+            btnReset.BackColor = Color.Red;
+            btnReset.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnReset.Location = new Point(44, 513);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(82, 35);
+            btnReset.TabIndex = 96;
+            btnReset.Text = "Reset";
+            btnReset.UseVisualStyleBackColor = false;
+            btnReset.Click += btnReset_Click;
+            // 
             // Schedule
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 48, 49);
-            ClientSize = new Size(1924, 1019);
+            ClientSize = new Size(1126, 594);
+            Controls.Add(btnReset);
+            Controls.Add(LblCGPA);
+            Controls.Add(LblTCGPATag);
             Controls.Add(lblSuccess);
             Controls.Add(btnSaveSem);
             Controls.Add(btn_Calculator);
@@ -1026,7 +1067,6 @@ namespace GPA_Calculator
             MaximumSize = new Size(2400, 1140);
             Name = "Schedule";
             Text = "Schedule";
-            WindowState = FormWindowState.Maximized;
             gBoxY1.ResumeLayout(false);
             gBoxY1.PerformLayout();
             gBoxY2.ResumeLayout(false);
@@ -1037,6 +1077,10 @@ namespace GPA_Calculator
             gBoxY4.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
         }
 
         private void lblSuccess_Click(object sender, EventArgs e)
@@ -1138,5 +1182,8 @@ namespace GPA_Calculator
         private Button btn_Calculator;
         private Button btnSaveSem;
         private Label lblSuccess;
+        private Label LblCGPA;
+        private Label LblTCGPATag;
+        private Button btnReset;
     }
 }

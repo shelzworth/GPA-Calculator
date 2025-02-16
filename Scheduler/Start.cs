@@ -51,11 +51,5 @@ namespace Scheduler
         {
             this.WindowState = FormWindowState.Maximized;
         }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            schedule.Show();
-            this.Hide();
-        }
     }
 }

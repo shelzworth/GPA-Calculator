@@ -29,16 +29,16 @@ namespace GPA_Calculator
             CBox3S1 = new ComboBox();
             CBox2S1 = new ComboBox();
             CBox1S1 = new ComboBox();
-            TB10 = new TextBox();
-            TB9 = new TextBox();
-            TB8 = new TextBox();
-            TB7 = new TextBox();
-            TB6 = new TextBox();
-            TB5 = new TextBox();
-            TB4 = new TextBox();
-            TB3 = new TextBox();
-            TB2 = new TextBox();
-            TB1 = new TextBox();
+            TB5S2 = new TextBox();
+            TB4S2 = new TextBox();
+            TB3S2 = new TextBox();
+            TB2S2 = new TextBox();
+            TB1S2 = new TextBox();
+            TB5S1 = new TextBox();
+            TB4S1 = new TextBox();
+            TB3S1 = new TextBox();
+            TB2S1 = new TextBox();
+            TB1S1 = new TextBox();
             gBoxY2 = new GroupBox();
             CBox5S4 = new ComboBox();
             CBox4S4 = new ComboBox();
@@ -46,20 +46,20 @@ namespace GPA_Calculator
             CBox2S4 = new ComboBox();
             CBox1S4 = new ComboBox();
             CBox5S3 = new ComboBox();
-            textBox15 = new TextBox();
+            TB1S4 = new TextBox();
             CBox4S3 = new ComboBox();
-            textBox20 = new TextBox();
+            TB1S3 = new TextBox();
             CBox3S3 = new ComboBox();
-            textBox19 = new TextBox();
+            TB2S3 = new TextBox();
             CBox2S3 = new ComboBox();
-            textBox18 = new TextBox();
+            TB3S3 = new TextBox();
             CBox1S3 = new ComboBox();
-            textBox17 = new TextBox();
-            textBox16 = new TextBox();
-            textBox14 = new TextBox();
-            textBox13 = new TextBox();
-            textBox12 = new TextBox();
-            textBox11 = new TextBox();
+            TB4S3 = new TextBox();
+            TB5S3 = new TextBox();
+            TB2S4 = new TextBox();
+            TB3S4 = new TextBox();
+            TB4S4 = new TextBox();
+            TB5S4 = new TextBox();
             gBoxY3 = new GroupBox();
             CBox5S6 = new ComboBox();
             CBox4S6 = new ComboBox();
@@ -67,20 +67,20 @@ namespace GPA_Calculator
             CBox2S6 = new ComboBox();
             CBox1S6 = new ComboBox();
             CBox5S5 = new ComboBox();
-            textBox26 = new TextBox();
+            TB5S5 = new TextBox();
             CBox4S5 = new ComboBox();
-            textBox30 = new TextBox();
+            TB1S5 = new TextBox();
             CBox3S5 = new ComboBox();
-            textBox29 = new TextBox();
+            TB2S5 = new TextBox();
             CBox2S5 = new ComboBox();
-            textBox28 = new TextBox();
+            TB3S5 = new TextBox();
             CBox1S5 = new ComboBox();
-            textBox27 = new TextBox();
-            textBox25 = new TextBox();
-            textBox24 = new TextBox();
-            textBox23 = new TextBox();
-            textBox22 = new TextBox();
-            textBox21 = new TextBox();
+            TB4S5 = new TextBox();
+            TB1S6 = new TextBox();
+            TB2S6 = new TextBox();
+            TB3S6 = new TextBox();
+            TB4S6 = new TextBox();
+            TB5S6 = new TextBox();
             gBoxY4 = new GroupBox();
             CBox5S8 = new ComboBox();
             CBox4S8 = new ComboBox();
@@ -88,20 +88,20 @@ namespace GPA_Calculator
             CBox2S8 = new ComboBox();
             CBox1S8 = new ComboBox();
             CBox5S7 = new ComboBox();
-            textBox36 = new TextBox();
+            TB5S7 = new TextBox();
             CBox4S7 = new ComboBox();
-            textBox40 = new TextBox();
+            TB1S7 = new TextBox();
             CBox3S7 = new ComboBox();
-            textBox39 = new TextBox();
+            TB2S7 = new TextBox();
             CBox2S7 = new ComboBox();
-            textBox38 = new TextBox();
+            TB3S7 = new TextBox();
             CBox1S7 = new ComboBox();
-            textBox37 = new TextBox();
-            textBox35 = new TextBox();
-            textBox34 = new TextBox();
-            textBox33 = new TextBox();
-            textBox32 = new TextBox();
-            textBox31 = new TextBox();
+            TB4S7 = new TextBox();
+            TB1S8 = new TextBox();
+            TB2S8 = new TextBox();
+            TB3S8 = new TextBox();
+            TB4S8 = new TextBox();
+            TB5S8 = new TextBox();
             lblY1 = new Label();
             lblY2 = new Label();
             lblY3 = new Label();
@@ -112,10 +112,25 @@ namespace GPA_Calculator
             LblCGPA = new Label();
             LblTCGPATag = new Label();
             btnReset = new Button();
+            gBoxS2 = new GroupBox();
+            gBoxS1 = new GroupBox();
+            gBoxS3 = new GroupBox();
+            gBoxS4 = new GroupBox();
+            gBoxS5 = new GroupBox();
+            gBoxS6 = new GroupBox();
+            gBoxS7 = new GroupBox();
+            gBoxS8 = new GroupBox();
             gBoxY1.SuspendLayout();
             gBoxY2.SuspendLayout();
-            gBoxY3.SuspendLayout();
             gBoxY4.SuspendLayout();
+            gBoxS2.SuspendLayout();
+            gBoxS1.SuspendLayout();
+            gBoxS3.SuspendLayout();
+            gBoxS4.SuspendLayout();
+            gBoxS5.SuspendLayout();
+            gBoxS6.SuspendLayout();
+            gBoxS7.SuspendLayout();
+            gBoxS8.SuspendLayout();
             SuspendLayout();
             // 
             // lblScheduleTitle
@@ -133,26 +148,7 @@ namespace GPA_Calculator
             // gBoxY1
             // 
             gBoxY1.BackColor = Color.DarkSalmon;
-            gBoxY1.Controls.Add(CBox5S2);
-            gBoxY1.Controls.Add(CBox4S2);
-            gBoxY1.Controls.Add(CBox3S2);
-            gBoxY1.Controls.Add(CBox2S2);
-            gBoxY1.Controls.Add(CBox1S2);
-            gBoxY1.Controls.Add(CBox5S1);
-            gBoxY1.Controls.Add(CBox4S1);
-            gBoxY1.Controls.Add(CBox3S1);
-            gBoxY1.Controls.Add(CBox2S1);
-            gBoxY1.Controls.Add(CBox1S1);
-            gBoxY1.Controls.Add(TB10);
-            gBoxY1.Controls.Add(TB9);
-            gBoxY1.Controls.Add(TB8);
-            gBoxY1.Controls.Add(TB7);
-            gBoxY1.Controls.Add(TB6);
-            gBoxY1.Controls.Add(TB5);
-            gBoxY1.Controls.Add(TB4);
-            gBoxY1.Controls.Add(TB3);
-            gBoxY1.Controls.Add(TB2);
-            gBoxY1.Controls.Add(TB1);
+            gBoxY1.Controls.Add(gBoxS2);
             gBoxY1.Location = new Point(38, 121);
             gBoxY1.Name = "gBoxY1";
             gBoxY1.Size = new Size(257, 338);
@@ -164,7 +160,7 @@ namespace GPA_Calculator
             CBox5S2.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox5S2.FormattingEnabled = true;
             CBox5S2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox5S2.Location = new Point(155, 302);
+            CBox5S2.Location = new Point(155, 129);
             CBox5S2.Name = "CBox5S2";
             CBox5S2.Size = new Size(93, 23);
             CBox5S2.TabIndex = 98;
@@ -174,7 +170,7 @@ namespace GPA_Calculator
             CBox4S2.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox4S2.FormattingEnabled = true;
             CBox4S2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox4S2.Location = new Point(155, 273);
+            CBox4S2.Location = new Point(155, 100);
             CBox4S2.Name = "CBox4S2";
             CBox4S2.Size = new Size(93, 23);
             CBox4S2.TabIndex = 97;
@@ -184,7 +180,7 @@ namespace GPA_Calculator
             CBox3S2.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox3S2.FormattingEnabled = true;
             CBox3S2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox3S2.Location = new Point(155, 244);
+            CBox3S2.Location = new Point(155, 71);
             CBox3S2.Name = "CBox3S2";
             CBox3S2.Size = new Size(93, 23);
             CBox3S2.TabIndex = 96;
@@ -194,7 +190,7 @@ namespace GPA_Calculator
             CBox2S2.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox2S2.FormattingEnabled = true;
             CBox2S2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox2S2.Location = new Point(155, 215);
+            CBox2S2.Location = new Point(155, 42);
             CBox2S2.Name = "CBox2S2";
             CBox2S2.Size = new Size(93, 23);
             CBox2S2.TabIndex = 95;
@@ -204,7 +200,7 @@ namespace GPA_Calculator
             CBox1S2.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox1S2.FormattingEnabled = true;
             CBox1S2.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox1S2.Location = new Point(155, 186);
+            CBox1S2.Location = new Point(155, 13);
             CBox1S2.Name = "CBox1S2";
             CBox1S2.Size = new Size(93, 23);
             CBox1S2.TabIndex = 94;
@@ -214,7 +210,7 @@ namespace GPA_Calculator
             CBox5S1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox5S1.FormattingEnabled = true;
             CBox5S1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox5S1.Location = new Point(155, 138);
+            CBox5S1.Location = new Point(158, 129);
             CBox5S1.Name = "CBox5S1";
             CBox5S1.Size = new Size(93, 23);
             CBox5S1.TabIndex = 93;
@@ -224,7 +220,7 @@ namespace GPA_Calculator
             CBox4S1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox4S1.FormattingEnabled = true;
             CBox4S1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox4S1.Location = new Point(155, 109);
+            CBox4S1.Location = new Point(158, 100);
             CBox4S1.Name = "CBox4S1";
             CBox4S1.Size = new Size(93, 23);
             CBox4S1.TabIndex = 92;
@@ -234,7 +230,7 @@ namespace GPA_Calculator
             CBox3S1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox3S1.FormattingEnabled = true;
             CBox3S1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox3S1.Location = new Point(155, 80);
+            CBox3S1.Location = new Point(158, 71);
             CBox3S1.Name = "CBox3S1";
             CBox3S1.Size = new Size(93, 23);
             CBox3S1.TabIndex = 91;
@@ -244,7 +240,7 @@ namespace GPA_Calculator
             CBox2S1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox2S1.FormattingEnabled = true;
             CBox2S1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox2S1.Location = new Point(155, 51);
+            CBox2S1.Location = new Point(158, 42);
             CBox2S1.Name = "CBox2S1";
             CBox2S1.Size = new Size(93, 23);
             CBox2S1.TabIndex = 90;
@@ -254,104 +250,86 @@ namespace GPA_Calculator
             CBox1S1.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox1S1.FormattingEnabled = true;
             CBox1S1.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox1S1.Location = new Point(155, 22);
+            CBox1S1.Location = new Point(158, 13);
             CBox1S1.Name = "CBox1S1";
             CBox1S1.Size = new Size(93, 23);
             CBox1S1.TabIndex = 80;
             // 
-            // TB10
+            // TB5S2
             // 
-            TB10.Location = new Point(6, 302);
-            TB10.Name = "TB10";
-            TB10.Size = new Size(143, 23);
-            TB10.TabIndex = 89;
+            TB5S2.Location = new Point(6, 129);
+            TB5S2.Name = "TB5S2";
+            TB5S2.Size = new Size(143, 23);
+            TB5S2.TabIndex = 89;
             // 
-            // TB9
+            // TB4S2
             // 
-            TB9.Location = new Point(6, 273);
-            TB9.Name = "TB9";
-            TB9.Size = new Size(143, 23);
-            TB9.TabIndex = 88;
+            TB4S2.Location = new Point(6, 100);
+            TB4S2.Name = "TB4S2";
+            TB4S2.Size = new Size(143, 23);
+            TB4S2.TabIndex = 88;
             // 
-            // TB8
+            // TB3S2
             // 
-            TB8.Location = new Point(6, 244);
-            TB8.Name = "TB8";
-            TB8.Size = new Size(143, 23);
-            TB8.TabIndex = 87;
+            TB3S2.Location = new Point(6, 71);
+            TB3S2.Name = "TB3S2";
+            TB3S2.Size = new Size(143, 23);
+            TB3S2.TabIndex = 87;
             // 
-            // TB7
+            // TB2S2
             // 
-            TB7.Location = new Point(6, 215);
-            TB7.Name = "TB7";
-            TB7.Size = new Size(143, 23);
-            TB7.TabIndex = 86;
+            TB2S2.Location = new Point(6, 42);
+            TB2S2.Name = "TB2S2";
+            TB2S2.Size = new Size(143, 23);
+            TB2S2.TabIndex = 86;
             // 
-            // TB6
+            // TB1S2
             // 
-            TB6.Location = new Point(6, 186);
-            TB6.Name = "TB6";
-            TB6.Size = new Size(143, 23);
-            TB6.TabIndex = 85;
+            TB1S2.Location = new Point(6, 13);
+            TB1S2.Name = "TB1S2";
+            TB1S2.Size = new Size(143, 23);
+            TB1S2.TabIndex = 85;
             // 
-            // TB5
+            // TB5S1
             // 
-            TB5.Location = new Point(6, 138);
-            TB5.Name = "TB5";
-            TB5.Size = new Size(143, 23);
-            TB5.TabIndex = 84;
+            TB5S1.Location = new Point(9, 129);
+            TB5S1.Name = "TB5S1";
+            TB5S1.Size = new Size(143, 23);
+            TB5S1.TabIndex = 84;
             // 
-            // TB4
+            // TB4S1
             // 
-            TB4.Location = new Point(6, 109);
-            TB4.Name = "TB4";
-            TB4.Size = new Size(143, 23);
-            TB4.TabIndex = 83;
+            TB4S1.Location = new Point(9, 100);
+            TB4S1.Name = "TB4S1";
+            TB4S1.Size = new Size(143, 23);
+            TB4S1.TabIndex = 83;
             // 
-            // TB3
+            // TB3S1
             // 
-            TB3.Location = new Point(6, 80);
-            TB3.Name = "TB3";
-            TB3.Size = new Size(143, 23);
-            TB3.TabIndex = 82;
+            TB3S1.Location = new Point(9, 71);
+            TB3S1.Name = "TB3S1";
+            TB3S1.Size = new Size(143, 23);
+            TB3S1.TabIndex = 82;
             // 
-            // TB2
+            // TB2S1
             // 
-            TB2.Location = new Point(6, 51);
-            TB2.Name = "TB2";
-            TB2.Size = new Size(143, 23);
-            TB2.TabIndex = 81;
+            TB2S1.Location = new Point(9, 42);
+            TB2S1.Name = "TB2S1";
+            TB2S1.Size = new Size(143, 23);
+            TB2S1.TabIndex = 81;
             // 
-            // TB1
+            // TB1S1
             // 
-            TB1.Location = new Point(6, 22);
-            TB1.Name = "TB1";
-            TB1.Size = new Size(143, 23);
-            TB1.TabIndex = 80;
+            TB1S1.Location = new Point(9, 13);
+            TB1S1.Name = "TB1S1";
+            TB1S1.Size = new Size(143, 23);
+            TB1S1.TabIndex = 80;
             // 
             // gBoxY2
             // 
             gBoxY2.BackColor = Color.Moccasin;
-            gBoxY2.Controls.Add(CBox5S4);
-            gBoxY2.Controls.Add(CBox4S4);
-            gBoxY2.Controls.Add(CBox3S4);
-            gBoxY2.Controls.Add(CBox2S4);
-            gBoxY2.Controls.Add(CBox1S4);
-            gBoxY2.Controls.Add(CBox5S3);
-            gBoxY2.Controls.Add(textBox15);
-            gBoxY2.Controls.Add(CBox4S3);
-            gBoxY2.Controls.Add(textBox20);
-            gBoxY2.Controls.Add(CBox3S3);
-            gBoxY2.Controls.Add(textBox19);
-            gBoxY2.Controls.Add(CBox2S3);
-            gBoxY2.Controls.Add(textBox18);
-            gBoxY2.Controls.Add(CBox1S3);
-            gBoxY2.Controls.Add(textBox17);
-            gBoxY2.Controls.Add(textBox16);
-            gBoxY2.Controls.Add(textBox14);
-            gBoxY2.Controls.Add(textBox13);
-            gBoxY2.Controls.Add(textBox12);
-            gBoxY2.Controls.Add(textBox11);
+            gBoxY2.Controls.Add(gBoxS3);
+            gBoxY2.Controls.Add(gBoxS4);
             gBoxY2.Location = new Point(301, 121);
             gBoxY2.Name = "gBoxY2";
             gBoxY2.Size = new Size(257, 338);
@@ -363,7 +341,7 @@ namespace GPA_Calculator
             CBox5S4.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox5S4.FormattingEnabled = true;
             CBox5S4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox5S4.Location = new Point(158, 302);
+            CBox5S4.Location = new Point(155, 128);
             CBox5S4.Name = "CBox5S4";
             CBox5S4.Size = new Size(93, 23);
             CBox5S4.TabIndex = 114;
@@ -373,7 +351,7 @@ namespace GPA_Calculator
             CBox4S4.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox4S4.FormattingEnabled = true;
             CBox4S4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox4S4.Location = new Point(158, 273);
+            CBox4S4.Location = new Point(155, 99);
             CBox4S4.Name = "CBox4S4";
             CBox4S4.Size = new Size(93, 23);
             CBox4S4.TabIndex = 113;
@@ -383,7 +361,7 @@ namespace GPA_Calculator
             CBox3S4.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox3S4.FormattingEnabled = true;
             CBox3S4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox3S4.Location = new Point(158, 244);
+            CBox3S4.Location = new Point(155, 70);
             CBox3S4.Name = "CBox3S4";
             CBox3S4.Size = new Size(93, 23);
             CBox3S4.TabIndex = 112;
@@ -393,7 +371,7 @@ namespace GPA_Calculator
             CBox2S4.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox2S4.FormattingEnabled = true;
             CBox2S4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox2S4.Location = new Point(158, 215);
+            CBox2S4.Location = new Point(155, 41);
             CBox2S4.Name = "CBox2S4";
             CBox2S4.Size = new Size(93, 23);
             CBox2S4.TabIndex = 111;
@@ -403,7 +381,7 @@ namespace GPA_Calculator
             CBox1S4.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox1S4.FormattingEnabled = true;
             CBox1S4.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox1S4.Location = new Point(158, 186);
+            CBox1S4.Location = new Point(155, 12);
             CBox1S4.Name = "CBox1S4";
             CBox1S4.Size = new Size(93, 23);
             CBox1S4.TabIndex = 110;
@@ -413,144 +391,124 @@ namespace GPA_Calculator
             CBox5S3.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox5S3.FormattingEnabled = true;
             CBox5S3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox5S3.Location = new Point(158, 138);
+            CBox5S3.Location = new Point(155, 126);
             CBox5S3.Name = "CBox5S3";
             CBox5S3.Size = new Size(93, 23);
             CBox5S3.TabIndex = 103;
             // 
-            // textBox15
+            // TB1S4
             // 
-            textBox15.Location = new Point(9, 186);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(143, 23);
-            textBox15.TabIndex = 105;
+            TB1S4.Location = new Point(6, 12);
+            TB1S4.Name = "TB1S4";
+            TB1S4.Size = new Size(143, 23);
+            TB1S4.TabIndex = 105;
             // 
             // CBox4S3
             // 
             CBox4S3.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox4S3.FormattingEnabled = true;
             CBox4S3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox4S3.Location = new Point(158, 109);
+            CBox4S3.Location = new Point(155, 97);
             CBox4S3.Name = "CBox4S3";
             CBox4S3.Size = new Size(93, 23);
             CBox4S3.TabIndex = 102;
             // 
-            // textBox20
+            // TB1S3
             // 
-            textBox20.Location = new Point(9, 22);
-            textBox20.Name = "textBox20";
-            textBox20.Size = new Size(143, 23);
-            textBox20.TabIndex = 99;
+            TB1S3.Location = new Point(6, 10);
+            TB1S3.Name = "TB1S3";
+            TB1S3.Size = new Size(143, 23);
+            TB1S3.TabIndex = 99;
             // 
             // CBox3S3
             // 
             CBox3S3.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox3S3.FormattingEnabled = true;
             CBox3S3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox3S3.Location = new Point(158, 80);
+            CBox3S3.Location = new Point(155, 68);
             CBox3S3.Name = "CBox3S3";
             CBox3S3.Size = new Size(93, 23);
             CBox3S3.TabIndex = 101;
             // 
-            // textBox19
+            // TB2S3
             // 
-            textBox19.Location = new Point(9, 51);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(143, 23);
-            textBox19.TabIndex = 101;
+            TB2S3.Location = new Point(6, 39);
+            TB2S3.Name = "TB2S3";
+            TB2S3.Size = new Size(143, 23);
+            TB2S3.TabIndex = 101;
             // 
             // CBox2S3
             // 
             CBox2S3.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox2S3.FormattingEnabled = true;
             CBox2S3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox2S3.Location = new Point(158, 51);
+            CBox2S3.Location = new Point(155, 39);
             CBox2S3.Name = "CBox2S3";
             CBox2S3.Size = new Size(93, 23);
             CBox2S3.TabIndex = 100;
             // 
-            // textBox18
+            // TB3S3
             // 
-            textBox18.Location = new Point(9, 80);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(143, 23);
-            textBox18.TabIndex = 102;
+            TB3S3.Location = new Point(6, 68);
+            TB3S3.Name = "TB3S3";
+            TB3S3.Size = new Size(143, 23);
+            TB3S3.TabIndex = 102;
             // 
             // CBox1S3
             // 
             CBox1S3.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox1S3.FormattingEnabled = true;
             CBox1S3.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox1S3.Location = new Point(158, 22);
+            CBox1S3.Location = new Point(155, 10);
             CBox1S3.Name = "CBox1S3";
             CBox1S3.Size = new Size(93, 23);
             CBox1S3.TabIndex = 99;
             // 
-            // textBox17
+            // TB4S3
             // 
-            textBox17.Location = new Point(9, 109);
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(143, 23);
-            textBox17.TabIndex = 103;
+            TB4S3.Location = new Point(6, 97);
+            TB4S3.Name = "TB4S3";
+            TB4S3.Size = new Size(143, 23);
+            TB4S3.TabIndex = 103;
             // 
-            // textBox16
+            // TB5S3
             // 
-            textBox16.Location = new Point(9, 138);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(143, 23);
-            textBox16.TabIndex = 104;
+            TB5S3.Location = new Point(6, 126);
+            TB5S3.Name = "TB5S3";
+            TB5S3.Size = new Size(143, 23);
+            TB5S3.TabIndex = 104;
             // 
-            // textBox14
+            // TB2S4
             // 
-            textBox14.Location = new Point(9, 215);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(143, 23);
-            textBox14.TabIndex = 106;
+            TB2S4.Location = new Point(6, 41);
+            TB2S4.Name = "TB2S4";
+            TB2S4.Size = new Size(143, 23);
+            TB2S4.TabIndex = 106;
             // 
-            // textBox13
+            // TB3S4
             // 
-            textBox13.Location = new Point(9, 244);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(143, 23);
-            textBox13.TabIndex = 107;
+            TB3S4.Location = new Point(6, 70);
+            TB3S4.Name = "TB3S4";
+            TB3S4.Size = new Size(143, 23);
+            TB3S4.TabIndex = 107;
             // 
-            // textBox12
+            // TB4S4
             // 
-            textBox12.Location = new Point(9, 273);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(143, 23);
-            textBox12.TabIndex = 108;
+            TB4S4.Location = new Point(6, 99);
+            TB4S4.Name = "TB4S4";
+            TB4S4.Size = new Size(143, 23);
+            TB4S4.TabIndex = 108;
             // 
-            // textBox11
+            // TB5S4
             // 
-            textBox11.Location = new Point(9, 302);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(143, 23);
-            textBox11.TabIndex = 109;
+            TB5S4.Location = new Point(6, 128);
+            TB5S4.Name = "TB5S4";
+            TB5S4.Size = new Size(143, 23);
+            TB5S4.TabIndex = 109;
             // 
             // gBoxY3
             // 
             gBoxY3.BackColor = Color.LightBlue;
-            gBoxY3.Controls.Add(CBox5S6);
-            gBoxY3.Controls.Add(CBox4S6);
-            gBoxY3.Controls.Add(CBox3S6);
-            gBoxY3.Controls.Add(CBox2S6);
-            gBoxY3.Controls.Add(CBox1S6);
-            gBoxY3.Controls.Add(CBox5S5);
-            gBoxY3.Controls.Add(textBox26);
-            gBoxY3.Controls.Add(CBox4S5);
-            gBoxY3.Controls.Add(textBox30);
-            gBoxY3.Controls.Add(CBox3S5);
-            gBoxY3.Controls.Add(textBox29);
-            gBoxY3.Controls.Add(CBox2S5);
-            gBoxY3.Controls.Add(textBox28);
-            gBoxY3.Controls.Add(CBox1S5);
-            gBoxY3.Controls.Add(textBox27);
-            gBoxY3.Controls.Add(textBox25);
-            gBoxY3.Controls.Add(textBox24);
-            gBoxY3.Controls.Add(textBox23);
-            gBoxY3.Controls.Add(textBox22);
-            gBoxY3.Controls.Add(textBox21);
             gBoxY3.Location = new Point(564, 121);
             gBoxY3.Name = "gBoxY3";
             gBoxY3.Size = new Size(257, 338);
@@ -562,7 +520,7 @@ namespace GPA_Calculator
             CBox5S6.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox5S6.FormattingEnabled = true;
             CBox5S6.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox5S6.Location = new Point(155, 302);
+            CBox5S6.Location = new Point(155, 129);
             CBox5S6.Name = "CBox5S6";
             CBox5S6.Size = new Size(93, 23);
             CBox5S6.TabIndex = 124;
@@ -572,7 +530,7 @@ namespace GPA_Calculator
             CBox4S6.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox4S6.FormattingEnabled = true;
             CBox4S6.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox4S6.Location = new Point(155, 273);
+            CBox4S6.Location = new Point(155, 100);
             CBox4S6.Name = "CBox4S6";
             CBox4S6.Size = new Size(93, 23);
             CBox4S6.TabIndex = 123;
@@ -582,7 +540,7 @@ namespace GPA_Calculator
             CBox3S6.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox3S6.FormattingEnabled = true;
             CBox3S6.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox3S6.Location = new Point(155, 244);
+            CBox3S6.Location = new Point(155, 71);
             CBox3S6.Name = "CBox3S6";
             CBox3S6.Size = new Size(93, 23);
             CBox3S6.TabIndex = 122;
@@ -592,7 +550,7 @@ namespace GPA_Calculator
             CBox2S6.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox2S6.FormattingEnabled = true;
             CBox2S6.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox2S6.Location = new Point(155, 215);
+            CBox2S6.Location = new Point(155, 42);
             CBox2S6.Name = "CBox2S6";
             CBox2S6.Size = new Size(93, 23);
             CBox2S6.TabIndex = 121;
@@ -602,7 +560,7 @@ namespace GPA_Calculator
             CBox1S6.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox1S6.FormattingEnabled = true;
             CBox1S6.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox1S6.Location = new Point(155, 186);
+            CBox1S6.Location = new Point(155, 13);
             CBox1S6.Name = "CBox1S6";
             CBox1S6.Size = new Size(93, 23);
             CBox1S6.TabIndex = 120;
@@ -612,144 +570,125 @@ namespace GPA_Calculator
             CBox5S5.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox5S5.FormattingEnabled = true;
             CBox5S5.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox5S5.Location = new Point(155, 138);
+            CBox5S5.Location = new Point(155, 126);
             CBox5S5.Name = "CBox5S5";
             CBox5S5.Size = new Size(93, 23);
             CBox5S5.TabIndex = 119;
             // 
-            // textBox26
+            // TB5S5
             // 
-            textBox26.Location = new Point(6, 138);
-            textBox26.Name = "textBox26";
-            textBox26.Size = new Size(143, 23);
-            textBox26.TabIndex = 104;
+            TB5S5.Location = new Point(6, 126);
+            TB5S5.Name = "TB5S5";
+            TB5S5.Size = new Size(143, 23);
+            TB5S5.TabIndex = 104;
             // 
             // CBox4S5
             // 
             CBox4S5.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox4S5.FormattingEnabled = true;
             CBox4S5.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox4S5.Location = new Point(155, 109);
+            CBox4S5.Location = new Point(155, 97);
             CBox4S5.Name = "CBox4S5";
             CBox4S5.Size = new Size(93, 23);
             CBox4S5.TabIndex = 118;
             // 
-            // textBox30
+            // TB1S5
             // 
-            textBox30.Location = new Point(6, 22);
-            textBox30.Name = "textBox30";
-            textBox30.Size = new Size(143, 23);
-            textBox30.TabIndex = 99;
+            TB1S5.Location = new Point(6, 10);
+            TB1S5.Name = "TB1S5";
+            TB1S5.Size = new Size(143, 23);
+            TB1S5.TabIndex = 99;
             // 
             // CBox3S5
             // 
             CBox3S5.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox3S5.FormattingEnabled = true;
             CBox3S5.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox3S5.Location = new Point(155, 80);
+            CBox3S5.Location = new Point(155, 68);
             CBox3S5.Name = "CBox3S5";
             CBox3S5.Size = new Size(93, 23);
             CBox3S5.TabIndex = 117;
             // 
-            // textBox29
+            // TB2S5
             // 
-            textBox29.Location = new Point(6, 51);
-            textBox29.Name = "textBox29";
-            textBox29.Size = new Size(143, 23);
-            textBox29.TabIndex = 101;
+            TB2S5.Location = new Point(6, 39);
+            TB2S5.Name = "TB2S5";
+            TB2S5.Size = new Size(143, 23);
+            TB2S5.TabIndex = 101;
             // 
             // CBox2S5
             // 
             CBox2S5.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox2S5.FormattingEnabled = true;
             CBox2S5.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox2S5.Location = new Point(155, 51);
+            CBox2S5.Location = new Point(155, 39);
             CBox2S5.Name = "CBox2S5";
             CBox2S5.Size = new Size(93, 23);
             CBox2S5.TabIndex = 116;
             // 
-            // textBox28
+            // TB3S5
             // 
-            textBox28.Location = new Point(6, 80);
-            textBox28.Name = "textBox28";
-            textBox28.Size = new Size(143, 23);
-            textBox28.TabIndex = 102;
+            TB3S5.Location = new Point(6, 68);
+            TB3S5.Name = "TB3S5";
+            TB3S5.Size = new Size(143, 23);
+            TB3S5.TabIndex = 102;
             // 
             // CBox1S5
             // 
             CBox1S5.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox1S5.FormattingEnabled = true;
             CBox1S5.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox1S5.Location = new Point(155, 22);
+            CBox1S5.Location = new Point(155, 10);
             CBox1S5.Name = "CBox1S5";
             CBox1S5.Size = new Size(93, 23);
             CBox1S5.TabIndex = 115;
             // 
-            // textBox27
+            // TB4S5
             // 
-            textBox27.Location = new Point(6, 109);
-            textBox27.Name = "textBox27";
-            textBox27.Size = new Size(143, 23);
-            textBox27.TabIndex = 103;
+            TB4S5.Location = new Point(6, 97);
+            TB4S5.Name = "TB4S5";
+            TB4S5.Size = new Size(143, 23);
+            TB4S5.TabIndex = 103;
             // 
-            // textBox25
+            // TB1S6
             // 
-            textBox25.Location = new Point(6, 186);
-            textBox25.Name = "textBox25";
-            textBox25.Size = new Size(143, 23);
-            textBox25.TabIndex = 105;
+            TB1S6.Location = new Point(6, 13);
+            TB1S6.Name = "TB1S6";
+            TB1S6.Size = new Size(143, 23);
+            TB1S6.TabIndex = 105;
             // 
-            // textBox24
+            // TB2S6
             // 
-            textBox24.Location = new Point(6, 215);
-            textBox24.Name = "textBox24";
-            textBox24.Size = new Size(143, 23);
-            textBox24.TabIndex = 106;
+            TB2S6.Location = new Point(6, 42);
+            TB2S6.Name = "TB2S6";
+            TB2S6.Size = new Size(143, 23);
+            TB2S6.TabIndex = 106;
             // 
-            // textBox23
+            // TB3S6
             // 
-            textBox23.Location = new Point(6, 244);
-            textBox23.Name = "textBox23";
-            textBox23.Size = new Size(143, 23);
-            textBox23.TabIndex = 107;
+            TB3S6.Location = new Point(6, 71);
+            TB3S6.Name = "TB3S6";
+            TB3S6.Size = new Size(143, 23);
+            TB3S6.TabIndex = 107;
             // 
-            // textBox22
+            // TB4S6
             // 
-            textBox22.Location = new Point(6, 273);
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(143, 23);
-            textBox22.TabIndex = 108;
+            TB4S6.Location = new Point(6, 100);
+            TB4S6.Name = "TB4S6";
+            TB4S6.Size = new Size(143, 23);
+            TB4S6.TabIndex = 108;
             // 
-            // textBox21
+            // TB5S6
             // 
-            textBox21.Location = new Point(6, 302);
-            textBox21.Name = "textBox21";
-            textBox21.Size = new Size(143, 23);
-            textBox21.TabIndex = 109;
+            TB5S6.Location = new Point(6, 129);
+            TB5S6.Name = "TB5S6";
+            TB5S6.Size = new Size(143, 23);
+            TB5S6.TabIndex = 109;
             // 
             // gBoxY4
             // 
             gBoxY4.BackColor = Color.Thistle;
-            gBoxY4.Controls.Add(CBox5S8);
-            gBoxY4.Controls.Add(CBox4S8);
-            gBoxY4.Controls.Add(CBox3S8);
-            gBoxY4.Controls.Add(CBox2S8);
-            gBoxY4.Controls.Add(CBox1S8);
-            gBoxY4.Controls.Add(CBox5S7);
-            gBoxY4.Controls.Add(textBox36);
-            gBoxY4.Controls.Add(CBox4S7);
-            gBoxY4.Controls.Add(textBox40);
-            gBoxY4.Controls.Add(CBox3S7);
-            gBoxY4.Controls.Add(textBox39);
-            gBoxY4.Controls.Add(CBox2S7);
-            gBoxY4.Controls.Add(textBox38);
-            gBoxY4.Controls.Add(CBox1S7);
-            gBoxY4.Controls.Add(textBox37);
-            gBoxY4.Controls.Add(textBox35);
-            gBoxY4.Controls.Add(textBox34);
-            gBoxY4.Controls.Add(textBox33);
-            gBoxY4.Controls.Add(textBox32);
-            gBoxY4.Controls.Add(textBox31);
+            gBoxY4.Controls.Add(gBoxS8);
             gBoxY4.Location = new Point(827, 121);
             gBoxY4.Name = "gBoxY4";
             gBoxY4.Size = new Size(257, 338);
@@ -761,7 +700,7 @@ namespace GPA_Calculator
             CBox5S8.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox5S8.FormattingEnabled = true;
             CBox5S8.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox5S8.Location = new Point(155, 302);
+            CBox5S8.Location = new Point(155, 126);
             CBox5S8.Name = "CBox5S8";
             CBox5S8.Size = new Size(93, 23);
             CBox5S8.TabIndex = 134;
@@ -771,7 +710,7 @@ namespace GPA_Calculator
             CBox4S8.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox4S8.FormattingEnabled = true;
             CBox4S8.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox4S8.Location = new Point(155, 273);
+            CBox4S8.Location = new Point(155, 97);
             CBox4S8.Name = "CBox4S8";
             CBox4S8.Size = new Size(93, 23);
             CBox4S8.TabIndex = 133;
@@ -781,7 +720,7 @@ namespace GPA_Calculator
             CBox3S8.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox3S8.FormattingEnabled = true;
             CBox3S8.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox3S8.Location = new Point(155, 244);
+            CBox3S8.Location = new Point(155, 68);
             CBox3S8.Name = "CBox3S8";
             CBox3S8.Size = new Size(93, 23);
             CBox3S8.TabIndex = 132;
@@ -791,7 +730,7 @@ namespace GPA_Calculator
             CBox2S8.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox2S8.FormattingEnabled = true;
             CBox2S8.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox2S8.Location = new Point(155, 215);
+            CBox2S8.Location = new Point(155, 39);
             CBox2S8.Name = "CBox2S8";
             CBox2S8.Size = new Size(93, 23);
             CBox2S8.TabIndex = 131;
@@ -801,7 +740,7 @@ namespace GPA_Calculator
             CBox1S8.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox1S8.FormattingEnabled = true;
             CBox1S8.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox1S8.Location = new Point(155, 186);
+            CBox1S8.Location = new Point(155, 10);
             CBox1S8.Name = "CBox1S8";
             CBox1S8.Size = new Size(93, 23);
             CBox1S8.TabIndex = 130;
@@ -811,120 +750,120 @@ namespace GPA_Calculator
             CBox5S7.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox5S7.FormattingEnabled = true;
             CBox5S7.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox5S7.Location = new Point(155, 138);
+            CBox5S7.Location = new Point(155, 126);
             CBox5S7.Name = "CBox5S7";
             CBox5S7.Size = new Size(93, 23);
             CBox5S7.TabIndex = 129;
             // 
-            // textBox36
+            // TB5S7
             // 
-            textBox36.Location = new Point(6, 138);
-            textBox36.Name = "textBox36";
-            textBox36.Size = new Size(143, 23);
-            textBox36.TabIndex = 104;
+            TB5S7.Location = new Point(6, 126);
+            TB5S7.Name = "TB5S7";
+            TB5S7.Size = new Size(143, 23);
+            TB5S7.TabIndex = 104;
             // 
             // CBox4S7
             // 
             CBox4S7.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox4S7.FormattingEnabled = true;
             CBox4S7.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox4S7.Location = new Point(155, 109);
+            CBox4S7.Location = new Point(155, 97);
             CBox4S7.Name = "CBox4S7";
             CBox4S7.Size = new Size(93, 23);
             CBox4S7.TabIndex = 128;
             // 
-            // textBox40
+            // TB1S7
             // 
-            textBox40.Location = new Point(6, 22);
-            textBox40.Name = "textBox40";
-            textBox40.Size = new Size(143, 23);
-            textBox40.TabIndex = 99;
+            TB1S7.Location = new Point(6, 10);
+            TB1S7.Name = "TB1S7";
+            TB1S7.Size = new Size(143, 23);
+            TB1S7.TabIndex = 99;
             // 
             // CBox3S7
             // 
             CBox3S7.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox3S7.FormattingEnabled = true;
             CBox3S7.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox3S7.Location = new Point(155, 80);
+            CBox3S7.Location = new Point(155, 68);
             CBox3S7.Name = "CBox3S7";
             CBox3S7.Size = new Size(93, 23);
             CBox3S7.TabIndex = 127;
             // 
-            // textBox39
+            // TB2S7
             // 
-            textBox39.Location = new Point(6, 51);
-            textBox39.Name = "textBox39";
-            textBox39.Size = new Size(143, 23);
-            textBox39.TabIndex = 101;
+            TB2S7.Location = new Point(6, 39);
+            TB2S7.Name = "TB2S7";
+            TB2S7.Size = new Size(143, 23);
+            TB2S7.TabIndex = 101;
             // 
             // CBox2S7
             // 
             CBox2S7.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox2S7.FormattingEnabled = true;
             CBox2S7.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox2S7.Location = new Point(155, 51);
+            CBox2S7.Location = new Point(155, 39);
             CBox2S7.Name = "CBox2S7";
             CBox2S7.Size = new Size(93, 23);
             CBox2S7.TabIndex = 126;
             // 
-            // textBox38
+            // TB3S7
             // 
-            textBox38.Location = new Point(6, 80);
-            textBox38.Name = "textBox38";
-            textBox38.Size = new Size(143, 23);
-            textBox38.TabIndex = 102;
+            TB3S7.Location = new Point(6, 68);
+            TB3S7.Name = "TB3S7";
+            TB3S7.Size = new Size(143, 23);
+            TB3S7.TabIndex = 102;
             // 
             // CBox1S7
             // 
             CBox1S7.DropDownStyle = ComboBoxStyle.DropDownList;
             CBox1S7.FormattingEnabled = true;
             CBox1S7.Items.AddRange(new object[] { "0.00", "0.67", "1.00", "1.33", "1.67", "2.00", "2.33", "2.67", "3.00", "3.33", "3.67", "4.00", "4.33" });
-            CBox1S7.Location = new Point(155, 22);
+            CBox1S7.Location = new Point(155, 10);
             CBox1S7.Name = "CBox1S7";
             CBox1S7.Size = new Size(93, 23);
             CBox1S7.TabIndex = 125;
             // 
-            // textBox37
+            // TB4S7
             // 
-            textBox37.Location = new Point(6, 109);
-            textBox37.Name = "textBox37";
-            textBox37.Size = new Size(143, 23);
-            textBox37.TabIndex = 103;
+            TB4S7.Location = new Point(6, 97);
+            TB4S7.Name = "TB4S7";
+            TB4S7.Size = new Size(143, 23);
+            TB4S7.TabIndex = 103;
             // 
-            // textBox35
+            // TB1S8
             // 
-            textBox35.Location = new Point(6, 186);
-            textBox35.Name = "textBox35";
-            textBox35.Size = new Size(143, 23);
-            textBox35.TabIndex = 105;
+            TB1S8.Location = new Point(6, 10);
+            TB1S8.Name = "TB1S8";
+            TB1S8.Size = new Size(143, 23);
+            TB1S8.TabIndex = 105;
             // 
-            // textBox34
+            // TB2S8
             // 
-            textBox34.Location = new Point(6, 215);
-            textBox34.Name = "textBox34";
-            textBox34.Size = new Size(143, 23);
-            textBox34.TabIndex = 106;
+            TB2S8.Location = new Point(6, 39);
+            TB2S8.Name = "TB2S8";
+            TB2S8.Size = new Size(143, 23);
+            TB2S8.TabIndex = 106;
             // 
-            // textBox33
+            // TB3S8
             // 
-            textBox33.Location = new Point(6, 244);
-            textBox33.Name = "textBox33";
-            textBox33.Size = new Size(143, 23);
-            textBox33.TabIndex = 107;
+            TB3S8.Location = new Point(6, 68);
+            TB3S8.Name = "TB3S8";
+            TB3S8.Size = new Size(143, 23);
+            TB3S8.TabIndex = 107;
             // 
-            // textBox32
+            // TB4S8
             // 
-            textBox32.Location = new Point(6, 273);
-            textBox32.Name = "textBox32";
-            textBox32.Size = new Size(143, 23);
-            textBox32.TabIndex = 108;
+            TB4S8.Location = new Point(6, 97);
+            TB4S8.Name = "TB4S8";
+            TB4S8.Size = new Size(143, 23);
+            TB4S8.TabIndex = 108;
             // 
-            // textBox31
+            // TB5S8
             // 
-            textBox31.Location = new Point(6, 302);
-            textBox31.Name = "textBox31";
-            textBox31.Size = new Size(143, 23);
-            textBox31.TabIndex = 109;
+            TB5S8.Location = new Point(6, 126);
+            TB5S8.Name = "TB5S8";
+            TB5S8.Size = new Size(143, 23);
+            TB5S8.TabIndex = 109;
             // 
             // lblY1
             // 
@@ -1043,12 +982,176 @@ namespace GPA_Calculator
             btnReset.UseVisualStyleBackColor = false;
             btnReset.Click += btnReset_Click;
             // 
+            // gBoxS2
+            // 
+            gBoxS2.BackColor = Color.DarkSalmon;
+            gBoxS2.Controls.Add(CBox5S2);
+            gBoxS2.Controls.Add(TB1S2);
+            gBoxS2.Controls.Add(CBox4S2);
+            gBoxS2.Controls.Add(TB2S2);
+            gBoxS2.Controls.Add(CBox3S2);
+            gBoxS2.Controls.Add(TB3S2);
+            gBoxS2.Controls.Add(CBox2S2);
+            gBoxS2.Controls.Add(TB4S2);
+            gBoxS2.Controls.Add(CBox1S2);
+            gBoxS2.Controls.Add(TB5S2);
+            gBoxS2.ForeColor = Color.CornflowerBlue;
+            gBoxS2.Location = new Point(0, 166);
+            gBoxS2.Name = "gBoxS2";
+            gBoxS2.Size = new Size(257, 172);
+            gBoxS2.TabIndex = 97;
+            gBoxS2.TabStop = false;
+            // 
+            // gBoxS1
+            // 
+            gBoxS1.BackColor = Color.DarkSalmon;
+            gBoxS1.Controls.Add(CBox5S1);
+            gBoxS1.Controls.Add(TB1S1);
+            gBoxS1.Controls.Add(TB2S1);
+            gBoxS1.Controls.Add(TB3S1);
+            gBoxS1.Controls.Add(TB4S1);
+            gBoxS1.Controls.Add(TB5S1);
+            gBoxS1.Controls.Add(CBox4S1);
+            gBoxS1.Controls.Add(CBox1S1);
+            gBoxS1.Controls.Add(CBox3S1);
+            gBoxS1.Controls.Add(CBox2S1);
+            gBoxS1.ForeColor = Color.CornflowerBlue;
+            gBoxS1.Location = new Point(38, 121);
+            gBoxS1.Name = "gBoxS1";
+            gBoxS1.Size = new Size(257, 161);
+            gBoxS1.TabIndex = 98;
+            gBoxS1.TabStop = false;
+            // 
+            // gBoxS3
+            // 
+            gBoxS3.BackColor = Color.Moccasin;
+            gBoxS3.Controls.Add(TB1S3);
+            gBoxS3.Controls.Add(TB5S3);
+            gBoxS3.Controls.Add(TB4S3);
+            gBoxS3.Controls.Add(CBox1S3);
+            gBoxS3.Controls.Add(TB3S3);
+            gBoxS3.Controls.Add(CBox5S3);
+            gBoxS3.Controls.Add(CBox2S3);
+            gBoxS3.Controls.Add(TB2S3);
+            gBoxS3.Controls.Add(CBox4S3);
+            gBoxS3.Controls.Add(CBox3S3);
+            gBoxS3.ForeColor = Color.CornflowerBlue;
+            gBoxS3.Location = new Point(0, 0);
+            gBoxS3.Name = "gBoxS3";
+            gBoxS3.Size = new Size(257, 161);
+            gBoxS3.TabIndex = 99;
+            gBoxS3.TabStop = false;
+            // 
+            // gBoxS4
+            // 
+            gBoxS4.BackColor = Color.Moccasin;
+            gBoxS4.Controls.Add(CBox5S4);
+            gBoxS4.Controls.Add(TB1S4);
+            gBoxS4.Controls.Add(CBox4S4);
+            gBoxS4.Controls.Add(TB5S4);
+            gBoxS4.Controls.Add(CBox3S4);
+            gBoxS4.Controls.Add(TB4S4);
+            gBoxS4.Controls.Add(TB3S4);
+            gBoxS4.Controls.Add(CBox2S4);
+            gBoxS4.Controls.Add(TB2S4);
+            gBoxS4.Controls.Add(CBox1S4);
+            gBoxS4.ForeColor = Color.CornflowerBlue;
+            gBoxS4.Location = new Point(0, 167);
+            gBoxS4.Name = "gBoxS4";
+            gBoxS4.Size = new Size(257, 171);
+            gBoxS4.TabIndex = 100;
+            gBoxS4.TabStop = false;
+            // 
+            // gBoxS5
+            // 
+            gBoxS5.BackColor = Color.LightBlue;
+            gBoxS5.Controls.Add(TB2S5);
+            gBoxS5.Controls.Add(TB4S5);
+            gBoxS5.Controls.Add(CBox1S5);
+            gBoxS5.Controls.Add(TB3S5);
+            gBoxS5.Controls.Add(CBox2S5);
+            gBoxS5.Controls.Add(CBox5S5);
+            gBoxS5.Controls.Add(CBox3S5);
+            gBoxS5.Controls.Add(TB5S5);
+            gBoxS5.Controls.Add(TB1S5);
+            gBoxS5.Controls.Add(CBox4S5);
+            gBoxS5.ForeColor = Color.CornflowerBlue;
+            gBoxS5.Location = new Point(564, 121);
+            gBoxS5.Name = "gBoxS5";
+            gBoxS5.Size = new Size(256, 161);
+            gBoxS5.TabIndex = 101;
+            gBoxS5.TabStop = false;
+            // 
+            // gBoxS6
+            // 
+            gBoxS6.BackColor = Color.LightBlue;
+            gBoxS6.Controls.Add(CBox5S6);
+            gBoxS6.Controls.Add(TB1S6);
+            gBoxS6.Controls.Add(CBox4S6);
+            gBoxS6.Controls.Add(TB5S6);
+            gBoxS6.Controls.Add(CBox3S6);
+            gBoxS6.Controls.Add(TB4S6);
+            gBoxS6.Controls.Add(CBox2S6);
+            gBoxS6.Controls.Add(TB3S6);
+            gBoxS6.Controls.Add(CBox1S6);
+            gBoxS6.Controls.Add(TB2S6);
+            gBoxS6.ForeColor = Color.CornflowerBlue;
+            gBoxS6.Location = new Point(564, 287);
+            gBoxS6.Name = "gBoxS6";
+            gBoxS6.Size = new Size(256, 172);
+            gBoxS6.TabIndex = 102;
+            gBoxS6.TabStop = false;
+            // 
+            // gBoxS7
+            // 
+            gBoxS7.BackColor = Color.Thistle;
+            gBoxS7.Controls.Add(TB3S7);
+            gBoxS7.Controls.Add(TB4S7);
+            gBoxS7.Controls.Add(CBox1S7);
+            gBoxS7.Controls.Add(CBox2S7);
+            gBoxS7.Controls.Add(TB2S7);
+            gBoxS7.Controls.Add(CBox5S7);
+            gBoxS7.Controls.Add(CBox3S7);
+            gBoxS7.Controls.Add(TB5S7);
+            gBoxS7.Controls.Add(TB1S7);
+            gBoxS7.Controls.Add(CBox4S7);
+            gBoxS7.ForeColor = Color.CornflowerBlue;
+            gBoxS7.Location = new Point(827, 121);
+            gBoxS7.Name = "gBoxS7";
+            gBoxS7.Size = new Size(256, 161);
+            gBoxS7.TabIndex = 103;
+            gBoxS7.TabStop = false;
+            // 
+            // gBoxS8
+            // 
+            gBoxS8.BackColor = Color.Thistle;
+            gBoxS8.Controls.Add(CBox5S8);
+            gBoxS8.Controls.Add(TB3S8);
+            gBoxS8.Controls.Add(CBox4S8);
+            gBoxS8.Controls.Add(TB5S8);
+            gBoxS8.Controls.Add(CBox3S8);
+            gBoxS8.Controls.Add(TB4S8);
+            gBoxS8.Controls.Add(CBox2S8);
+            gBoxS8.Controls.Add(TB2S8);
+            gBoxS8.Controls.Add(CBox1S8);
+            gBoxS8.Controls.Add(TB1S8);
+            gBoxS8.ForeColor = Color.CornflowerBlue;
+            gBoxS8.Location = new Point(1, 167);
+            gBoxS8.Name = "gBoxS8";
+            gBoxS8.Size = new Size(256, 171);
+            gBoxS8.TabIndex = 104;
+            gBoxS8.TabStop = false;
+            // 
             // Schedule
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 48, 49);
-            ClientSize = new Size(1126, 594);
+            ClientSize = new Size(1310, 840);
+            Controls.Add(gBoxS7);
+            Controls.Add(gBoxS6);
+            Controls.Add(gBoxS5);
+            Controls.Add(gBoxS1);
             Controls.Add(btnReset);
             Controls.Add(LblCGPA);
             Controls.Add(LblTCGPATag);
@@ -1068,13 +1171,24 @@ namespace GPA_Calculator
             Name = "Schedule";
             Text = "Schedule";
             gBoxY1.ResumeLayout(false);
-            gBoxY1.PerformLayout();
             gBoxY2.ResumeLayout(false);
-            gBoxY2.PerformLayout();
-            gBoxY3.ResumeLayout(false);
-            gBoxY3.PerformLayout();
             gBoxY4.ResumeLayout(false);
-            gBoxY4.PerformLayout();
+            gBoxS2.ResumeLayout(false);
+            gBoxS2.PerformLayout();
+            gBoxS1.ResumeLayout(false);
+            gBoxS1.PerformLayout();
+            gBoxS3.ResumeLayout(false);
+            gBoxS3.PerformLayout();
+            gBoxS4.ResumeLayout(false);
+            gBoxS4.PerformLayout();
+            gBoxS5.ResumeLayout(false);
+            gBoxS5.PerformLayout();
+            gBoxS6.ResumeLayout(false);
+            gBoxS6.PerformLayout();
+            gBoxS7.ResumeLayout(false);
+            gBoxS7.PerformLayout();
+            gBoxS8.ResumeLayout(false);
+            gBoxS8.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1099,47 +1213,47 @@ namespace GPA_Calculator
         private Label lblY2;
         private Label lblY3;
         private Label lblY4;
-        private TextBox TB10;
-        private TextBox TB9;
-        private TextBox TB8;
-        private TextBox TB7;
-        private TextBox TB6;
-        private TextBox TB5;
-        private TextBox TB4;
-        private TextBox TB3;
-        private TextBox TB2;
-        private TextBox TB1;
+        private TextBox TB5S2;
+        private TextBox TB4S2;
+        private TextBox TB3S2;
+        private TextBox TB2S2;
+        private TextBox TB1S2;
+        private TextBox TB5S1;
+        private TextBox TB4S1;
+        private TextBox TB3S1;
+        private TextBox TB2S1;
+        private TextBox TB1S1;
         private ComboBox CBox1S1;
-        private TextBox textBox15;
-        private TextBox textBox20;
-        private TextBox textBox19;
-        private TextBox textBox18;
-        private TextBox textBox17;
-        private TextBox textBox16;
-        private TextBox textBox14;
-        private TextBox textBox13;
-        private TextBox textBox12;
-        private TextBox textBox11;
-        private TextBox textBox26;
-        private TextBox textBox30;
-        private TextBox textBox29;
-        private TextBox textBox28;
-        private TextBox textBox27;
-        private TextBox textBox25;
-        private TextBox textBox24;
-        private TextBox textBox23;
-        private TextBox textBox22;
-        private TextBox textBox21;
-        private TextBox textBox36;
-        private TextBox textBox40;
-        private TextBox textBox39;
-        private TextBox textBox38;
-        private TextBox textBox37;
-        private TextBox textBox35;
-        private TextBox textBox34;
-        private TextBox textBox33;
-        private TextBox textBox32;
-        private TextBox textBox31;
+        private TextBox TB1S4;
+        private TextBox TB1S3;
+        private TextBox TB2S3;
+        private TextBox TB3S3;
+        private TextBox TB4S3;
+        private TextBox TB5S3;
+        private TextBox TB2S4;
+        private TextBox TB3S4;
+        private TextBox TB4S4;
+        private TextBox TB5S4;
+        private TextBox TB5S5;
+        private TextBox TB1S5;
+        private TextBox TB2S5;
+        private TextBox TB3S5;
+        private TextBox TB4S5;
+        private TextBox TB1S6;
+        private TextBox TB2S6;
+        private TextBox TB3S6;
+        private TextBox TB4S6;
+        private TextBox TB5S6;
+        private TextBox TB5S7;
+        private TextBox TB1S7;
+        private TextBox TB2S7;
+        private TextBox TB3S7;
+        private TextBox TB4S7;
+        private TextBox TB1S8;
+        private TextBox TB2S8;
+        private TextBox TB3S8;
+        private TextBox TB4S8;
+        private TextBox TB5S8;
         private ComboBox CBox5S2;
         private ComboBox CBox4S2;
         private ComboBox CBox3S2;
@@ -1185,5 +1299,13 @@ namespace GPA_Calculator
         private Label LblCGPA;
         private Label LblTCGPATag;
         private Button btnReset;
+        private GroupBox gBoxS2;
+        private GroupBox gBoxS1;
+        private GroupBox gBoxS3;
+        private GroupBox gBoxS4;
+        private GroupBox gBoxS5;
+        private GroupBox gBoxS6;
+        private GroupBox gBoxS8;
+        private GroupBox gBoxS7;
     }
 }

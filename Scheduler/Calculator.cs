@@ -1,16 +1,11 @@
-﻿using GPA_Calculator;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-using System.Windows.Forms;
-
+using GPA_Calculator;
+using System.Xml.Schema;
 
 namespace Scheduler
 {
@@ -21,11 +16,10 @@ namespace Scheduler
         double[] totals = { 0.0, 0.0, 0.0, 0.0, 0.0 };
         double[] Theory = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
         double[] Labs = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
-        string[] CourseCodes = { "", "" , "", "", ""};
-
+        string[] CourseCodes = { "", "", "", "", "" };
+        int enabledCount = 0;
         string letterGrade;
         string GPA;
-
 
         public Calculator()
         {
@@ -37,6 +31,20 @@ namespace Scheduler
             rbtn_Disabled5.Checked = true;
         }
 
+        private bool IsControlEffectivelyEnabled(Control ctrl)
+        {
+            if (ctrl == null)
+                return false;
+            Control current = ctrl;
+            while (current != null)
+            {
+                if (!current.Enabled)
+                    return false;
+                current = current.Parent;
+            }
+            return true;
+        }
+        
         private void rbtn_En_CheckedChanged(object sender, EventArgs e)
         {
             gBox1.Enabled = true; calculateTGPA();
@@ -98,6 +106,7 @@ namespace Scheduler
         {
             gBox4.Enabled = false; calculateTGPA();
         }
+        
         private void calculateCard(object sender, EventArgs e)
         {
             Button picked = (Button)sender;
@@ -127,42 +136,59 @@ namespace Scheduler
             {
                 string weightTextBoxName = "txt_Weight" + i + "B" + (n + 1);
                 string gradeTextBoxName = "txtGrade" + i + "B" + (n + 1);
+                string courseCodeName = "txt_CourseCodeB" + (n + 1);
 
                 TextBox? weightTextBox = this.Controls.Find(weightTextBoxName, true).FirstOrDefault() as TextBox;
                 TextBox? gradeTextBox = this.Controls.Find(gradeTextBoxName, true).FirstOrDefault() as TextBox;
+                TextBox? courseCode = this.Controls.Find(courseCodeName, true).FirstOrDefault() as TextBox;
 
-                if (weightTextBox != null && gradeTextBox != null)
+                if (weightTextBox == null || gradeTextBox == null ||
+                    !IsControlEffectivelyEnabled(weightTextBox) || !IsControlEffectivelyEnabled(gradeTextBox))
                 {
-                    double weight = 0;
-                    double grade = 0;
+                    continue;
+                }
 
-                    if (double.TryParse(weightTextBox.Text, out weight) && double.TryParse(gradeTextBox.Text, out grade))
+                double weight = 0;
+                double grade = 0;
+
+                if (double.TryParse(weightTextBox.Text, out weight) &&
+                    double.TryParse(gradeTextBox.Text, out grade))
+                {
+                    if (weight < 0.0 || grade < 0.0)
                     {
-
-                        if (weight < 0.0 || grade < 0.0)
+                        MessageBox.Show("You cannot have a negative weight or grade.");
+                        weightTextBox.Clear();
+                        gradeTextBox.Clear();
+                        if (resultBox != null)
                         {
-                            MessageBox.Show("You cannot have a negative weight or grade.");
-                            gradeTextBox.Clear();
-                            weightTextBox.Clear();
                             resultBox.Text = "0";
-                            return;
                         }
-
-                        weight /= 100.0;
-                        double current = weight * grade;
-                        double tempWeight = 100 * weight;
-
-                        if (i < 8)
-                        {
-                            TheorytotalPossible += tempWeight;
-                            Theory[n] += current;
-                        }
-                        else
-                        {
-                            LabstotalPossible += tempWeight;
-                            Labs[n] += current;
-                        }
+                        return;
                     }
+
+                    weight /= 100.0;
+                    double current = weight * grade;
+                    double tempWeight = 100 * weight;
+
+                    if (i < 8)
+                    {
+                        TheorytotalPossible += tempWeight;
+                        Theory[n] += current;
+                    }
+                    else
+                    {
+                        LabstotalPossible += tempWeight;
+                        Labs[n] += current;
+                    }
+                }
+
+                if (courseCode != null && IsControlEffectivelyEnabled(courseCode))
+                {
+                    CourseCodes[n] = courseCode.Text;
+                }
+                else
+                {
+                    CourseCodes[n] = null; 
                 }
             }
 
@@ -170,13 +196,18 @@ namespace Scheduler
 
             if (totals[n] >= 0.0 && totals[n] <= 100.0)
             {
-                resultBox.Text = totals[n].ToString("F2");
-                theoryBox.Text = (TheorytotalPossible == 0) ? "N/A" : ((Theory[n] / TheorytotalPossible) * 100).ToString("F2");
-                labBox.Text = (LabstotalPossible == 0) ? "N/A" : ((Labs[n] / LabstotalPossible) * 100).ToString("F2");
+                if (resultBox != null)
+                    resultBox.Text = totals[n].ToString("F2");
+                if (theoryBox != null)
+                    theoryBox.Text = (TheorytotalPossible == 0) ? "N/A" : ((Theory[n] / TheorytotalPossible) * 100).ToString("F2");
+                if (labBox != null)
+                    labBox.Text = (LabstotalPossible == 0) ? "N/A" : ((Labs[n] / LabstotalPossible) * 100).ToString("F2");
             }
             else
             {
-                resultBox.Text = theoryBox.Text = labBox.Text = "";
+                if (resultBox != null) resultBox.Text = "";
+                if (theoryBox != null) theoryBox.Text = "";
+                if (labBox != null) labBox.Text = "";
             }
 
             if (totals[n] > 100.0)
@@ -186,7 +217,7 @@ namespace Scheduler
             else if (totals[n] < 0.0)
             {
                 MessageBox.Show("Your grade is negative.");
-                resultBox.Text = "";
+                if (resultBox != null) resultBox.Text = "";
             }
 
             if ((TheorytotalPossible == 0 || (Theory[n] / TheorytotalPossible) >= 0.5) &&
@@ -214,19 +245,26 @@ namespace Scheduler
 
             if (totals[n] >= 0.0 && totals[n] <= 100.0)
             {
-                letterGradeBox.Text = letterGrade;
-                GPABox.Text = GPA;
+                if (letterGradeBox != null)
+                    letterGradeBox.Text = letterGrade;
+                if (GPABox != null)
+                    GPABox.Text = GPA;
             }
             else
             {
-                letterGradeBox.Text = "";
-                GPABox.Text = "";
+                if (letterGradeBox != null)
+                    letterGradeBox.Text = "";
+                if (GPABox != null)
+                    GPABox.Text = "";
             }
+
             calculateTGPA();
         }
+
         private void calculateTGPA()
         {
             double TGPATemp = 0, counter = 0;
+            
 
             for (int n = 1; n <= 5; n++)
             {
@@ -246,15 +284,16 @@ namespace Scheduler
                             counter++;
                             TGPA = TGPATemp / counter;
                         }
-                        else
-                        {
-                            MessageBox.Show($"Invalid GPA value in {GPABoxName}.");
-                        }
                     }
+                }
+                else
+                {
+                    totals[n - 1] = -1.0;
                 }
             }
             LblTGPA.Text = TGPA.ToString("F2");
         }
+
         private void rbtn_Disabled5_CheckedChanged(object sender, EventArgs e)
         {
             gBox5.Enabled = false;
@@ -265,11 +304,9 @@ namespace Scheduler
         }
         private void pbHelp_Click(object sender, EventArgs e)
         {
-
         }
         private void label27_Click(object sender, EventArgs e)
         {
-
         }
         private void btn_Scheduler_Click(object sender, EventArgs e)
         {
@@ -279,6 +316,7 @@ namespace Scheduler
                 scheduler = new Schedule(this);
             }
             scheduler.LoadTotals(totals);
+            scheduler.loadNames(CourseCodes);
             this.Hide();
             scheduler.Show();
         }
@@ -327,11 +365,9 @@ namespace Scheduler
                 return;
             }
 
-
             StringBuilder exportText = new StringBuilder();
             exportText.AppendLine("GPA Calculator Data Export");
             exportText.AppendLine("---------------------------------------");
-
 
             for (int i = 0; i < 5; i++)
             {

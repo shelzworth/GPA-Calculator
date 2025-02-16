@@ -11,7 +11,7 @@ namespace GPA_Calculator
     {
         private Calculator _calculator;
         private double[] GPAtotals;
-        int sem = 1; 
+        int sem = 1;
 
         public Schedule(Calculator calculator)
         {
@@ -43,7 +43,11 @@ namespace GPA_Calculator
                                               .FirstOrDefault() as ComboBox;
                 if (current != null)
                 {
-                    if (string.IsNullOrWhiteSpace(current.Text))
+                    if (GPAtotals[subject - 1] == -1)
+                    {
+                        current.Text = "";
+                    }
+                    else
                     {
                         double computedGPA;
                         double currentTotal = GPAtotals[subject - 1];
@@ -61,7 +65,6 @@ namespace GPA_Calculator
                         else if (currentTotal < 84.5) computedGPA = 3.67;
                         else if (currentTotal < 89.5) computedGPA = 4.00;
                         else computedGPA = 4.33;
-
                         current.Text = computedGPA.ToString("F2");
                     }
                 }
@@ -69,99 +72,97 @@ namespace GPA_Calculator
         }
         private void btnSaveSem_Click(object sender, EventArgs e)
         {
-            bool allFilled = true;
-            for (int subject = 1; subject <= 5; subject++)
+            double cgpa = Calculatecgpa(sem);
+            _calculator.cgpaText(cgpa);
+            LblCGPA.Text = cgpa.ToString("F2");
+            GroupBox semBox = this.Controls.Find("gBoxS" + sem, true).FirstOrDefault() as GroupBox;
+            if (sem == 9)
             {
-                ComboBox? current = this.Controls.Find("CBox" + subject + "S" + sem, true)
-                                                 .FirstOrDefault() as ComboBox;
-                if (current == null || string.IsNullOrWhiteSpace(current.Text))
-                {
-                    allFilled = false;
-                    break;
-                }
-            }
-
-            if (allFilled)
-            {
-                // Compute the cumulative GPA across *all* semesters up to 'sem'.
-                double cgpa = Calculatecgpa(sem);
-                _calculator.cgpaText(cgpa);
-                LblCGPA.Text = cgpa.ToString("F2");
-                sem++;
-
-                // The rest of your existing logic...
-                if (sem == 9)
-                {
-                    btnSaveSem.Enabled = false;
-                }
-                else
-                {
-                    lblSuccess.Visible = true;
-                    btnSaveSem.BackColor = Color.Gray;
-                    btnSaveSem.Enabled = false;
-                    System.Windows.Forms.Timer hideLabelTimer = new System.Windows.Forms.Timer();
-                    hideLabelTimer.Interval = 1200;
-                    hideLabelTimer.Tick += (s, eArgs) =>
-                    {
-                        lblSuccess.Visible = false;
-                        btnSaveSem.Enabled = true;
-                        btnSaveSem.BackColor = Color.Lime;
-                        hideLabelTimer.Stop();
-                        hideLabelTimer.Dispose();
-                    };
-                    hideLabelTimer.Start();
-                }
+                btnSaveSem.Enabled = false;
+                btnSaveSem.BackColor = Color.Gray;
             }
             else
             {
-                MessageBox.Show("Please fill in all combo boxes for semester " + sem + " before saving.");
+                lblSuccess.Visible = true;
+                btnSaveSem.BackColor = Color.Gray;
+                btnSaveSem.Enabled = false;
+                System.Windows.Forms.Timer hideLabelTimer = new System.Windows.Forms.Timer();
+                hideLabelTimer.Interval = 1200;
+                hideLabelTimer.Tick += (s, eArgs) =>
+                {
+                    lblSuccess.Visible = false;
+                    btnSaveSem.Enabled = true;
+                    btnSaveSem.BackColor = Color.Lime;
+                    hideLabelTimer.Stop();
+                    hideLabelTimer.Dispose();
+                };
+                hideLabelTimer.Start();
+                semBox.Enabled = false;
             }
+            sem++;
         }
         private double Calculatecgpa(int currentSemester)
         {
             double total = 0;
             int filledCount = 0;
 
-            // Loop over *all* semesters from 1 to the current one.
             for (int s = 1; s <= currentSemester; s++)
             {
-                // Each semester has 5 subjects
                 for (int subject = 1; subject <= 5; subject++)
                 {
-                    // Example naming: "CBox1S1", "CBox2S1", ... "CBox5S4"
                     ComboBox? current = this.Controls.Find("CBox" + subject + "S" + s, true)
                                                      .FirstOrDefault() as ComboBox;
-
-                    if (current != null && double.TryParse(current.Text, out double value))
+                    if (current != null && !string.IsNullOrWhiteSpace(current.Text) &&
+                        double.TryParse(current.Text, out double value))
                     {
                         total += value;
                         filledCount++;
                     }
                 }
             }
-
-            // Avoid division by zero if no boxes are filled
             return (filledCount > 0) ? (total / filledCount) : 0;
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            ClearAllComboBoxes(this);
+            ClearAll(this);
             LblCGPA.Text = "_____";
+            btnSaveSem.Enabled = true;
             sem = 1;
         }
 
-        private void ClearAllComboBoxes(Control parent)
+        private void ClearAll(Control parent)
         {
+            for(int x = 1; x < 9; x++)
+            {
+                GroupBox semBox = this.Controls.Find("gBoxS" + x, true).FirstOrDefault() as GroupBox;
+                semBox.Enabled = true;
+            }
             foreach (Control ctrl in parent.Controls)
             {
                 if (ctrl is ComboBox combo)
                 {
                     combo.SelectedIndex = -1;
                 }
-                else if (ctrl.HasChildren)
+                else if (ctrl is TextBox textBox)
                 {
-                    ClearAllComboBoxes(ctrl);
+                    textBox.Clear();
+                }
+                if (ctrl.HasChildren)
+                {
+                    ClearAll(ctrl);
+                }
+            }
+        }
+        public void loadNames(String[] CourseCodes)
+        {
+            for (int i = 0; i < CourseCodes.Length; i++)
+            {
+                string courseCodeName = "TB" + (i + 1) + "S" + sem;
+                TextBox? courseCode = this.Controls.Find(courseCodeName, true).FirstOrDefault() as TextBox;
+                if (courseCode != null)
+                {
+                    courseCode.Text = CourseCodes[i] ?? "";
                 }
             }
         }

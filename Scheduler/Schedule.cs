@@ -1,10 +1,4 @@
-﻿using GPA_Calculator;
-using System;
-using System.Drawing;
-using System.Linq;
-using System.Windows.Forms;
-using Scheduler;
-using System.IO;
+﻿using Scheduler;
 using System.Text;
 
 namespace GPA_Calculator
@@ -78,6 +72,10 @@ namespace GPA_Calculator
             _calculator.cgpaText(cgpa);
             LblCGPA.Text = cgpa.ToString("F2");
             GroupBox semBox = this.Controls.Find("gBoxS" + sem, true).FirstOrDefault() as GroupBox;
+            if(!CheckCourseNames(sem))
+            {
+                return;
+            }
             if (sem == 9)
             {
                 btnSaveSem.Enabled = false;
@@ -110,10 +108,6 @@ namespace GPA_Calculator
 
             for (int s = 1; s <= currentSemester; s++)
             {
-                if (!CheckCourseNames(s))
-                {
-                    return 0.0;
-                }
                 for (int subject = 1; subject <= 5; subject++)
                 {
                     ComboBox? current = this.Controls.Find("CBox" + subject + "S" + s, true)
@@ -247,7 +241,7 @@ namespace GPA_Calculator
                                                        .FirstOrDefault() as TextBox;
                 if (courseNameTextBox == null || string.IsNullOrWhiteSpace(courseNameTextBox.Text))
                 {
-                    MessageBox.Show($"Please ensure that the course name for Subject {subject} in Semester {sem} is filled out before exporting.",
+                    MessageBox.Show($"Please ensure that the course name for Subject {subject} in Semester {sem} is filled out before exporting or saving.",
                                     "Missing Course Name",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Warning);

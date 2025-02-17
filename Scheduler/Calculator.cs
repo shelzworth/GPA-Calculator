@@ -1,11 +1,5 @@
-﻿using System;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Text;
 using GPA_Calculator;
-using System.Xml.Schema;
 
 namespace Scheduler
 {
@@ -17,7 +11,6 @@ namespace Scheduler
         double[] Theory = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
         double[] Labs = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
         string[] CourseCodes = { "", "", "", "", "" };
-        int enabledCount = 0;
         string letterGrade;
         string GPA;
 

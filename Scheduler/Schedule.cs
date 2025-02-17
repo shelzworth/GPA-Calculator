@@ -4,6 +4,8 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Scheduler;
+using System.IO;
+using System.Text;
 
 namespace GPA_Calculator
 {
@@ -108,6 +110,10 @@ namespace GPA_Calculator
 
             for (int s = 1; s <= currentSemester; s++)
             {
+                if (!CheckCourseNames(s))
+                {
+                    return 0.0;
+                }
                 for (int subject = 1; subject <= 5; subject++)
                 {
                     ComboBox? current = this.Controls.Find("CBox" + subject + "S" + s, true)
@@ -165,6 +171,90 @@ namespace GPA_Calculator
                     courseCode.Text = CourseCodes[i] ?? "";
                 }
             }
+        }
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            StringBuilder exportText = new StringBuilder();
+            exportText.AppendLine("Schedule Data Export");
+            exportText.AppendLine("---------------------------------------");
+
+            int savedSemesters = sem - 1;
+            if (savedSemesters < 1)
+            {
+                MessageBox.Show("No semester data to export.", "Export Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            for (int s = 1; s <= savedSemesters; s++)
+            {
+                if (!CheckCourseNames(s))
+                {
+                    return;
+                }
+                exportText.AppendLine($"Semester {s}:");
+
+                int numSubjects = GPAtotals != null ? GPAtotals.Length : 5;
+
+                for (int subject = 1; subject <= numSubjects; subject++)
+                {
+                    TextBox courseNameTextBox = this.Controls.Find("TB" + subject + "S" + s, true).FirstOrDefault() as TextBox;
+                    ComboBox gpaComboBox = this.Controls.Find("CBox" + subject + "S" + s, true).FirstOrDefault() as ComboBox;
+
+                    string courseName = courseNameTextBox != null ? courseNameTextBox.Text : "N/A";
+                    string gpaValue = gpaComboBox != null ? gpaComboBox.Text : "N/A";
+
+                    if (!string.IsNullOrWhiteSpace(courseName) || !string.IsNullOrWhiteSpace(gpaValue))
+                    {
+                        exportText.AppendLine($"  Subject {subject}:");
+                        exportText.AppendLine($"    Course Name: {courseName}");
+                        exportText.AppendLine($"    GPA: {gpaValue}");
+                    }
+                }
+                exportText.AppendLine();
+            }
+
+            exportText.AppendLine("---------------------------------------");
+            exportText.AppendLine("Overall CGPA: " + LblCGPA.Text);
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Text Files|*.txt",
+                Title = "Save Schedule Data Export",
+                FileName = "TermGPAData.txt"
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    File.WriteAllText(saveFileDialog.FileName, exportText.ToString());
+                    MessageBox.Show("Data exported successfully!", "Export Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred while exporting data:\n" + ex.Message, "Export Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+        private bool CheckCourseNames(int sem)
+        {
+            // Determine the number of subjects for this semester.
+            int numSubjects = GPAtotals != null ? GPAtotals.Length : 5;
+            for (int subject = 1; subject <= numSubjects; subject++)
+            {
+                // Assume the course name textbox is named "TB{subject}S{sem}"
+                TextBox courseNameTextBox = this.Controls.Find("TB" + subject + "S" + sem, true)
+                                                       .FirstOrDefault() as TextBox;
+                if (courseNameTextBox == null || string.IsNullOrWhiteSpace(courseNameTextBox.Text))
+                {
+                    MessageBox.Show($"Please ensure that the course name for Subject {subject} in Semester {sem} is filled out before exporting.",
+                                    "Missing Course Name",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Warning);
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

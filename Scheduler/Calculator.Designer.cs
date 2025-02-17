@@ -3343,6 +3343,7 @@ namespace Scheduler
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.FromArgb(50, 48, 49);
             ClientSize = new Size(1924, 1019);
             Controls.Add(btnExport);
@@ -3366,8 +3367,8 @@ namespace Scheduler
             Controls.Add(gBox1);
             MaximumSize = new Size(2400, 1140);
             Name = "Calculator";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "GPA Calculator";
-            WindowState = FormWindowState.Maximized;
             Load += GPA_Calculator_Load;
             gBox1.ResumeLayout(false);
             gBox1.PerformLayout();

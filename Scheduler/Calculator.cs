@@ -264,7 +264,6 @@ namespace Scheduler
         private void calculateTGPA()
         {
             double TGPATemp = 0, counter = 0;
-            
 
             for (int n = 1; n <= 5; n++)
             {
@@ -333,17 +332,7 @@ namespace Scheduler
                 if (courseCard != null && courseCard.Enabled)
                 {
                     atLeastOneEnabled = true;
-                    TextBox courseCodeTextBox = this.Controls.Find("txt_CourseCodeB" + subjectNumber, true).FirstOrDefault() as TextBox;
                     TextBox courseNameTextBox = this.Controls.Find("txt_CourseNameB" + subjectNumber, true).FirstOrDefault() as TextBox;
-
-                    if (courseCodeTextBox == null || string.IsNullOrWhiteSpace(courseCodeTextBox.Text))
-                    {
-                        MessageBox.Show($"Please ensure that the course code field for Subject {subjectNumber} is filled out before exporting.",
-                                        "Missing Course Code",
-                                        MessageBoxButtons.OK,
-                                        MessageBoxIcon.Warning);
-                        return;
-                    }
 
                     if (courseNameTextBox == null || string.IsNullOrWhiteSpace(courseNameTextBox.Text))
                     {
@@ -376,6 +365,7 @@ namespace Scheduler
 
                 if (courseCard != null && courseCard.Enabled)
                 {
+                    TextBox courseName = this.Controls.Find("txt_CourseNameB" + (i + 1), true).FirstOrDefault() as TextBox;
                     TextBox courseCodeTextBox = this.Controls.Find("txt_CourseCodeB" + (i + 1), true).FirstOrDefault() as TextBox;
                     Label resultLabel = this.Controls.Find("lblResult" + subjectNumber, true).FirstOrDefault() as Label;
                     Label theoryLabel = this.Controls.Find("lblTheory" + subjectNumber, true).FirstOrDefault() as Label;
@@ -383,7 +373,7 @@ namespace Scheduler
                     Label letterGradeLabel = this.Controls.Find("lblLetterGrade" + subjectNumber, true).FirstOrDefault() as Label;
                     Label GPALabel = this.Controls.Find("lblGPA" + subjectNumber, true).FirstOrDefault() as Label;
 
-                    exportText.AppendLine($"Subject: {courseCodeTextBox?.Text}");
+                    exportText.AppendLine($"Subject: {courseName?.Text} - {courseCodeTextBox?.Text}" );
                     exportText.AppendLine($"   Total Grade: {(resultLabel != null ? resultLabel.Text : "N/A")}");
                     exportText.AppendLine($"   Theory Score: {(theoryLabel != null ? theoryLabel.Text : "N/A")}");
                     exportText.AppendLine($"   Lab Score: {(labLabel != null ? labLabel.Text : "N/A")}");
@@ -398,7 +388,7 @@ namespace Scheduler
             {
                 Filter = "Text File|*.txt",
                 Title = "Save GPA Data",
-                FileName = "GPA_Data.txt"
+                FileName = "TermGPAData.txt"
             };
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)

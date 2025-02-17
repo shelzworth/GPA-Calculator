@@ -13,7 +13,7 @@ using GPA_Calculator;
 
 namespace Scheduler
 {
-    
+
     public partial class Start : Form
     {
         public Calculator calculator = new Calculator();
@@ -49,7 +49,27 @@ namespace Scheduler
 
         private void Start_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+
+        }
+
+        private void btnLinkedin_Click(object sender, EventArgs e)
+        {
+            string url = "https://www.linkedin.com/in/sheldon-cerejo/";
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = url,
+                UseShellExecute = true
+            });
+        }
+
+        private void btnGithub_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/shelzworth";
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = url,
+                UseShellExecute = true
+            });
         }
     }
 }

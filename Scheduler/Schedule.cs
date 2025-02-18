@@ -232,11 +232,9 @@ namespace GPA_Calculator
         }
         private bool CheckCourseNames(int sem)
         {
-            // Determine the number of subjects for this semester.
             int numSubjects = GPAtotals != null ? GPAtotals.Length : 5;
             for (int subject = 1; subject <= numSubjects; subject++)
             {
-                // Assume the course name textbox is named "TB{subject}S{sem}"
                 TextBox courseNameTextBox = this.Controls.Find("TB" + subject + "S" + sem, true)
                                                        .FirstOrDefault() as TextBox;
                 if (courseNameTextBox == null || string.IsNullOrWhiteSpace(courseNameTextBox.Text))

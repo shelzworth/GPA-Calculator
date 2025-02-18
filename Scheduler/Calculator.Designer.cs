@@ -326,6 +326,7 @@ namespace Scheduler
             LblTCGPATag = new Label();
             LblCGPA = new Label();
             btnExport = new Button();
+            label28 = new Label();
             gBox1.SuspendLayout();
             gBoxMain.SuspendLayout();
             gbox_En1.SuspendLayout();
@@ -979,7 +980,7 @@ namespace Scheduler
             gBoxMain.Controls.Add(label1);
             gBoxMain.Controls.Add(rBtn_Multi);
             gBoxMain.ForeColor = Color.White;
-            gBoxMain.Location = new Point(12, 765);
+            gBoxMain.Location = new Point(12, 764);
             gBoxMain.Name = "gBoxMain";
             gBoxMain.Size = new Size(713, 56);
             gBoxMain.TabIndex = 49;
@@ -3258,7 +3259,7 @@ namespace Scheduler
             LblTGPATag.BackColor = Color.FromArgb(0, 15, 255, 255);
             LblTGPATag.Font = new Font("Verdana", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LblTGPATag.ForeColor = Color.White;
-            LblTGPATag.Location = new Point(732, 779);
+            LblTGPATag.Location = new Point(732, 778);
             LblTGPATag.Name = "LblTGPATag";
             LblTGPATag.Size = new Size(204, 35);
             LblTGPATag.TabIndex = 72;
@@ -3270,7 +3271,7 @@ namespace Scheduler
             LblTGPA.BackColor = Color.FromArgb(0, 15, 255, 255);
             LblTGPA.Font = new Font("Verdana", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LblTGPA.ForeColor = Color.White;
-            LblTGPA.Location = new Point(933, 781);
+            LblTGPA.Location = new Point(933, 780);
             LblTGPA.Name = "LblTGPA";
             LblTGPA.Size = new Size(99, 32);
             LblTGPA.TabIndex = 73;
@@ -3282,7 +3283,7 @@ namespace Scheduler
             label27.BackColor = Color.FromArgb(0, 15, 255, 255);
             label27.Font = new Font("Verdana", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label27.ForeColor = Color.White;
-            label27.Location = new Point(12, 839);
+            label27.Location = new Point(12, 823);
             label27.Name = "label27";
             label27.Size = new Size(852, 35);
             label27.TabIndex = 74;
@@ -3293,11 +3294,11 @@ namespace Scheduler
             // 
             btn_Scheduler.BackColor = SystemColors.Window;
             btn_Scheduler.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_Scheduler.Location = new Point(870, 839);
+            btn_Scheduler.Location = new Point(870, 837);
             btn_Scheduler.Name = "btn_Scheduler";
-            btn_Scheduler.Size = new Size(138, 35);
+            btn_Scheduler.Size = new Size(205, 35);
             btn_Scheduler.TabIndex = 75;
-            btn_Scheduler.Text = "Scheduler";
+            btn_Scheduler.Text = "CGPA Calculator";
             btn_Scheduler.UseVisualStyleBackColor = false;
             btn_Scheduler.Click += btn_Scheduler_Click;
             // 
@@ -3307,7 +3308,7 @@ namespace Scheduler
             LblTCGPATag.BackColor = Color.FromArgb(0, 15, 255, 255);
             LblTCGPATag.Font = new Font("Verdana", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LblTCGPATag.ForeColor = Color.White;
-            LblTCGPATag.Location = new Point(1027, 779);
+            LblTCGPATag.Location = new Point(1027, 778);
             LblTCGPATag.Name = "LblTCGPATag";
             LblTCGPATag.Size = new Size(260, 35);
             LblTCGPATag.TabIndex = 76;
@@ -3320,7 +3321,7 @@ namespace Scheduler
             LblCGPA.BackColor = Color.FromArgb(0, 15, 255, 255);
             LblCGPA.Font = new Font("Verdana", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LblCGPA.ForeColor = Color.White;
-            LblCGPA.Location = new Point(1282, 782);
+            LblCGPA.Location = new Point(1282, 781);
             LblCGPA.Name = "LblCGPA";
             LblCGPA.Size = new Size(99, 32);
             LblCGPA.TabIndex = 77;
@@ -3339,13 +3340,26 @@ namespace Scheduler
             btnExport.UseVisualStyleBackColor = false;
             btnExport.Click += btnExport_Click;
             // 
+            // label28
+            // 
+            label28.BackColor = Color.FromArgb(0, 15, 255, 255);
+            label28.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label28.ForeColor = Color.White;
+            label28.Location = new Point(18, 858);
+            label28.Name = "label28";
+            label28.Size = new Size(837, 23);
+            label28.TabIndex = 80;
+            label28.Text = "If your course code or GPA does not load correctly on the CGPA calculator, click calculate again.";
+            label28.TextAlign = ContentAlignment.TopCenter;
+            // 
             // Calculator
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.FromArgb(50, 48, 49);
-            ClientSize = new Size(1924, 1019);
+            ClientSize = new Size(1924, 956);
+            Controls.Add(label28);
             Controls.Add(btnExport);
             Controls.Add(LblCGPA);
             Controls.Add(LblTCGPATag);
@@ -3757,5 +3771,6 @@ namespace Scheduler
         private Label LblTCGPATag;
         private Label LblCGPA;
         private Button btnExport;
+        private Label label28;
     }
 }

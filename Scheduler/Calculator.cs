@@ -5,7 +5,7 @@ namespace Scheduler
 {
     public partial class Calculator : Form
     {
-        private Schedule scheduler; 
+        private Schedule scheduler;
         double TheorytotalPossible, LabstotalPossible, TGPA;
         double[] totals = { 0.0, 0.0, 0.0, 0.0, 0.0 };
         double[] Theory = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
@@ -37,7 +37,7 @@ namespace Scheduler
             }
             return true;
         }
-        
+
         private void rbtn_En_CheckedChanged(object sender, EventArgs e)
         {
             gBox1.Enabled = true; calculateTGPA();
@@ -99,7 +99,7 @@ namespace Scheduler
         {
             gBox4.Enabled = false; calculateTGPA();
         }
-        
+
         private void calculateCard(object sender, EventArgs e)
         {
             Button picked = (Button)sender;
@@ -181,7 +181,7 @@ namespace Scheduler
                 }
                 else
                 {
-                    CourseCodes[n] = null; 
+                    CourseCodes[n] = null;
                 }
             }
 
@@ -366,7 +366,7 @@ namespace Scheduler
                     Label letterGradeLabel = this.Controls.Find("lblLetterGrade" + subjectNumber, true).FirstOrDefault() as Label;
                     Label GPALabel = this.Controls.Find("lblGPA" + subjectNumber, true).FirstOrDefault() as Label;
 
-                    exportText.AppendLine($"Subject: {courseName?.Text} - {courseCodeTextBox?.Text}" );
+                    exportText.AppendLine($"Subject: {courseName?.Text} - {courseCodeTextBox?.Text}");
                     exportText.AppendLine($"   Total Grade: {(resultLabel != null ? resultLabel.Text : "N/A")}");
                     exportText.AppendLine($"   Theory Score: {(theoryLabel != null ? theoryLabel.Text : "N/A")}");
                     exportText.AppendLine($"   Lab Score: {(labLabel != null ? labLabel.Text : "N/A")}");
@@ -402,6 +402,11 @@ namespace Scheduler
             LblTCGPATag.Visible = true;
             LblCGPA.Visible = true;
             LblCGPA.Text = cgpa.ToString("F2");
+        }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

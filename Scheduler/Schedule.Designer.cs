@@ -142,9 +142,9 @@ namespace GPA_Calculator
             lblScheduleTitle.ForeColor = Color.White;
             lblScheduleTitle.Location = new Point(38, 29);
             lblScheduleTitle.Name = "lblScheduleTitle";
-            lblScheduleTitle.Size = new Size(777, 59);
+            lblScheduleTitle.Size = new Size(415, 59);
             lblScheduleTitle.TabIndex = 72;
-            lblScheduleTitle.Text = "Scheduler and CGPA Calculator";
+            lblScheduleTitle.Text = "CGPA Calculator";
             // 
             // gBoxY1
             // 

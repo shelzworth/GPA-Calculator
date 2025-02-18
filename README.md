@@ -8,4 +8,14 @@ In the future I plan to add a function which will make a mock term transcript pr
 Download Link:
 https://drive.google.com/file/d/1uTTBXtoojXAIhSDvs-rQrPUq802hoUJe/view?usp=sharing
 
-Some features and bug fixes are still underway but general use is possible. 
+Key Features Include:
+ - Simple UI for user friendliness and easy navigation.
+ - Calculating hypothetical or actual single course grades even accounting for theory and lab components.
+ - Calculating term TGPA by summing the GPAs of each course and dividing by the number of enabled courses.
+ - Dynamically calculating TGPA as course grades are calculated and based on enabled courses accounting for courses that may be dropped.
+ - Ability to dynamically edit data and only add to the CGPA calculation if the semester is saved.
+ - Resetting the CGPA calculator and clearing all inputs.
+ - Exporting one or both CGPA and TGPA data into a well structured text file for the user to keep record of.
+
+FEATURES NOT FULLY IMPLEMENTED YET:
+ - Ability to upload the exported text file in order to fill out the course Scheduler.

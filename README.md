@@ -7,6 +7,7 @@ In the future I plan to add a function which will make a mock term transcript pr
 
 Download Link:
 https://drive.google.com/file/d/1uTTBXtoojXAIhSDvs-rQrPUq802hoUJe/view?usp=sharing
+(Down at the moment)
 
 Key Features Include:
  - Simple UI for user friendliness and easy navigation.

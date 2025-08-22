@@ -18,5 +18,6 @@ Key Features Include:
 
 FEATURES NOT FULLY IMPLEMENTED YET:
  - Ability to upload the exported text file in order to fill out the course Scheduler.
+
 KNOWN ISSUES:
  - Calculator does not resize properly for some smaller screen resolutions.
